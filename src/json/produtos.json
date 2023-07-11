@@ -1,350 +1,322 @@
 [
     {
         "id": 1,
-        "name": "Capa protetora Kawaii para Nintendo Switch",
+        "name": "Capa protetora Sakura Card Captors para Nintendo Switch",
         "price": 51,
         "shipping": {
             "price": 34,
-            "originCep": 12837643,
-             
+            "originCep": 12837643
+        },
+        "rating": 4.2,
+        "description": "A capa protetora Sakura Card Captors é a combinação perfeita de estilo adorável e proteção confiável para o seu precioso console Nintendo Switch. Com um design irresistível rosa kawaii, essa capa adiciona um toque de fofura aos seus momentos de jogo, destacando-se entre os demais jogadores. Feita com materiais de alta qualidade, ela oferece uma camada robusta de defesa contra arranhões, poeira e pequenos impactos, mantendo o console em excelente estado por muito tempo. Além da proteção, a capa possui uma funcionalidade inteligente de desanexação, permitindo que você remova facilmente a parte traseira para uma experiência mais confortável ou ajustes na configuração. A instalação é simples e rápida, garantindo uma proteção sólida sem comprometer o acesso às portas, botões e controles essenciais do Nintendo Switch. Eleve o estilo e a proteção do seu console com a Capa Dura Rosa Kawaii, desfrutando de uma experiência de jogo cheia de charme, personalidade e confiabilidade. Não deixe seu console desprotegido, mantenha-o seguro e estiloso!",
+        "images": {
+            "image1": "public/img/capa-sakura-1.png",
+            "image2": "public/img/capa-sakura-2.png",
+            "image3": "public/img/capa-sakura-3.png"
+        },
+        "quantity": 1,
+        "isFavorite": false,
+        "category": "Capa protetora",
+        "slug": "capa-protetora-sakura-card-captors-nintendo-switch"
     },
-    "rating": 4.2,
-    "description": "A Capa Dura Rosa Kawaii é a combinação perfeita de estilo adorável e proteção confiável para o seu precioso console Nintendo Switch. Com um design irresistível rosa kawaii, essa capa adiciona um toque de fofura aos seus momentos de jogo, destacando-se entre os demais jogadores. Feita com materiais de alta qualidade, ela oferece uma camada robusta de defesa contra arranhões, poeira e pequenos impactos, mantendo o console em excelente estado por muito tempo. Além da proteção, a capa possui uma funcionalidade inteligente de desanexação, permitindo que você remova facilmente a parte traseira para uma experiência mais confortável ou ajustes na configuração. A instalação é simples e rápida, garantindo uma proteção sólida sem comprometer o acesso às portas, botões e controles essenciais do Nintendo Switch. Eleve o estilo e a proteção do seu console com a Capa Dura Rosa Kawaii, desfrutando de uma experiência de jogo cheia de charme, personalidade e confiabilidade. Não deixe seu console desprotegido, mantenha-o seguro e estiloso!",
-    "images": {
-      "thumbnail": "thumbnail-url-produto-1",
-      "image1": "image1-url-produto-1",
-      "image2": "image2-url-produto-1",
-      "image3": "image3-url-produto-1",
+    {
+        "id": 2,
+        "name": "Thumb Grip com desenho de gato para Nintendo Switch/Lite",
+        "price": 64.9,
+        "shipping": {
+            "price": 34,
+            "originCep": 12837643
+        },
+        "rating": 4.5,
+        "description": "O conjunto de caps de joystick GeekShare Fat Cat Thumb Grip apresenta um adorável tema de gato gordinho, encantando os entusiastas de jogos e amantes de gatos. Feitas de silicone de alta qualidade, as capas são projetadas para se encaixar perfeitamente nos joysticks do Nintendo Switch ou Nintendo Switch Lite, proporcionando aderência confortável e segura. Com uma superfície texturizada, elas melhoram o controle e a precisão durante o jogo, permitindo movimentos suaves e precisos. A instalação é fácil e rápida, não interferindo na funcionalidade dos botões. Além de melhorar o desempenho, as capas adicionam personalidade ao console, sendo ideais para jogadores ávidos e amantes de acessórios divertidos. Eleve sua experiência de jogo com o GeekShare Fat Cat Thumb Grip Joystick Cap para Nintendo Switch/Lite, desfrutando de conforto, controle e estilo. Não limite sua diversão, adicione um toque especial ao seu console com essas adoráveis capas de joystick!",
+        "images": {
+            "image1": "public/img/thumb-grip-gato-1.png",
+            "image2": "public/img/thumb-grip-gato-2.png",
+            "image3": "public/img/thumb-grip-gato-3.png"
+        },
+        "quantity": 1,
+        "isFavorite": false,
+        "category": "Thumb Grip",
+        "slug": "thumb-grip-com-desenho-de-gato-para-nintendo-switch-lite"
     },
-    "quantity": 1,
-    "isFavorite": false,
-    "category": "Capa protetora",
-  },
-   {
-    "id": 2,
-    "name": "Thumb Grip com desenho de gato para Nintendo Switch/Lite",
-    "price": 64.9,
-    "shipping": {
-        "price": 34,
-        "originCep": 12837643
-          
-
+    {
+        "id": 3,
+        "name": "Capa Decorativa de botão com Design de sapo Para Nintendo Switch Lite",
+        "price": 17.9,
+        "shipping": {
+            "price": 34,
+            "originCep": 12837643
+        },
+        "rating": 3.9,
+        "description": "Esta capa antiderrapante em forma de sapo e animais é perfeita para personalizar seu Nintendo Switch NS Lite. Feita de material de alta qualidade, oferece aderência segura e confortável durante o jogo, protegendo contra quedas e arranhões. É resistente a manchas e poeira, sendo fácil de colocar e remover. Compatível com o Nintendo Switch NS Lite, proporciona uma experiência de jogo mais confortável e divertida. Eleve seu estilo de jogo com esta capa antiderrapante e aproveite horas de diversão com total proteção.",
+        "images": {
+            "image1": "public/img/thumb-grip-sapo-1.png",
+            "image2": "public/img/thumb-grip-sapo-2.png",
+            "image3": "public/img/thumb-grip-sapo-3.png"
+        },
+        "quantity": 1,
+        "isFavorite": false,
+        "category": "Thumb Grip",
+        "slug": "capa-decorativa-de-botao-com-design-de-sapo-para-nintendo-switch-lite"
     },
-    "rating": 4.5,
-    "description": "O conjunto de caps de joystick GeekShare Fat Cat Thumb Grip apresenta um adorável tema de gato gordinho, encantando os entusiastas de jogos e amantes de gatos. Feitas de silicone de alta qualidade, as capas são projetadas para se encaixar perfeitamente nos joysticks do Nintendo Switch ou Nintendo Switch Lite, proporcionando aderência confortável e segura. Com uma superfície texturizada, elas melhoram o controle e a precisão durante o jogo, permitindo movimentos suaves e precisos. A instalação é fácil e rápida, não interferindo na funcionalidade dos botões. Além de melhorar o desempenho, as capas adicionam personalidade ao console, sendo ideais para jogadores ávidos e amantes de acessórios divertidos. Eleve sua experiência de jogo com o GeekShare Fat Cat Thumb Grip Joystick Cap para Nintendo Switch/Lite, desfrutando de conforto, controle e estilo. Não limite sua diversão, adicione um toque especial ao seu console com essas adoráveis capas de joystick!",
-    "images": {
-      "thumbnail": "thumbnail-url-produto-2",
-      "image1": "image1-url-produto-2",
-      "image2": "image2-url-produto-2",
-      "image3": "image3-url-produto-2",
+    {
+        "id": 4,
+        "name": "Estojo de armazenamento Mymelody com 24 slots",
+        "price": 32.9,
+        "shipping": {
+            "price": 34,
+            "originCep": 12837643
+        },
+        "rating": 4.9,
+        "description": "Nosso estojo de armazenamento é ideal para os entusiastas de jogos. Feito com materiais de alta qualidade, oferece durabilidade e proteção excepcional para seus cartuchos de jogo. Com capacidade para [número] cartões, mantém sua coleção organizada. Os compartimentos internos mantêm os cartões seguros durante o transporte. Além disso, possui bolsos extras para acessórios essenciais. Seu design compacto e portátil o torna perfeito para viagens. A capa externa resistente protege contra impactos. O fecho seguro garante que seus cartuchos estejam protegidos. Organize sua coleção com estilo e segurança com nosso estojo de armazenamento. Eleve sua experiência de jogo com praticidade e proteção!",
+        "images": {
+            "image1": "public/img/estojo-mymelody-1.png",
+            "image2": "public/img/estojo-mymelody-2.png",
+            "image3": "public/img/estojo-mymelody-3.png"
+        },
+        "quantity": 1,
+        "isFavorite": false,
+        "category": "Armazenamento",
+        "slug": "estojo-de-armazenamento-mymelody-com-24-slots"
     },
-    "quantity": 1,
-    "isFavorite": false,
-    "category": "Thumb Grip",
-  },
-   {
-    "id": 3,
-    "name": "Capas Decorativas de Botão com Design de sapo Para Nintendo Switch Lite",
-    "price": 17.9,
-    "shipping": {
-        "price": 34,
-        "originCep": 12837643
-          
-
+    {
+        "id": 5,
+        "name": "Estojo de Transporte rosa para Nintendo Switch Oled",
+        "price": 116.9,
+        "shipping": {
+            "price": 34,
+            "originCep": 12837643
+        },
+        "rating": 4.3,
+        "description": "Este estojo de transporte para Nintendo Switch Oled oferece proteção superior para o seu console. Com uma capa de vidro temperado 9H, seu Switch estará protegido contra arranhões e impactos. O estojo possui compartimentos internos estratégicos para armazenar seus Joy-Cons, cabos, adaptadores e cartões de jogo. O suporte de vidro integrado oferece uma posição ergonômica e ajustável para jogar em modo mesa. Leve e compacto, o estojo é facilmente transportável e possui uma bolsa de armazenamento em PU para proteção extra. Mantenha todos os seus acessórios organizados e prontos para uso com este estojo de transporte. Eleve sua experiência de jogo com proteção e praticidade imbatíveis!",
+        "images": {
+            "image1": "image1-url-produto-2",
+            "image2": "image2-url-produto-2",
+            "image3": "image3-url-produto-2"
+        },
+        "quantity": 1,
+        "isFavorite": false,
+        "category": "Armazenamento",
+        "slug": "estojo-de-transporte-rosa-para-nintendo-switch-oled"
     },
-    "rating": 3.9,
-    "description": "Esta capa antiderrapante em forma de sapo e animais é perfeita para personalizar seu Nintendo Switch NS Lite. Feita de material de alta qualidade, oferece aderência segura e confortável durante o jogo, protegendo contra quedas e arranhões. É resistente a manchas e poeira, sendo fácil de colocar e remover. Compatível com o Nintendo Switch NS Lite, proporciona uma experiência de jogo mais confortável e divertida. Eleve seu estilo de jogo com esta capa antiderrapante e aproveite horas de diversão com total proteção.",
-    "images": {
-      "thumbnail": "thumbnail-url-produto-2",
-      "image1": "image1-url-produto-2",
-      "image2": "image2-url-produto-2",
-      "image3": "image3-url-produto-2",
+    {
+        "id": 6,
+        "name": "Caixa de armazenamento de cartões de jogo em acrílico com design de pata de gato",
+        "price": 43.63,
+        "shipping": {
+            "price": 34,
+            "originCep": 12837643
+        },
+        "rating": 4.7,
+        "description": "A caixa de armazenamento de cartões de jogo em acrílico com design de pata de gato é uma opção encantadora e prática para organizar e proteger sua coleção de jogos Nintendo Switch. Feita de acrílico durável, ela oferece proteção confiável contra poeira, água e impactos leves. Com grande capacidade, você pode armazenar uma quantidade generosa de cartões de jogo e cartões TF, mantendo-os organizados e fáceis de encontrar. O sistema magnético à prova de poeira mantém a caixa bem fechada, garantindo a segurança dos seus cartões. Seu design compacto e portátil permite que você a leve em suas viagens ou sessões de jogo com amigos. Adquira agora mesmo a Caixa de Armazenamento de Cartões de Jogo em Acrílico com Design de Pata de Gato e tenha uma solução encantadora para proteger e organizar seus cartões de jogo com estilo!",
+        "images": {
+            "image1": "image1-url-produto-2",
+            "image2": "image2-url-produto-2",
+            "image3": "image3-url-produto-2"
+        },
+        "quantity": 1,
+        "isFavorite": false,
+        "category": "Armazenamento",
+        "slug": "caixa-para-cartoes-de-jogo-com-design-de-pata-de-gato"
     },
-    "quantity": 1,
-    "isFavorite": false,
-    "category": "Thumb Grip",
-  },
-   {
-    "id": 4,
-    "name": "Estojo de armazenamento Para Switch Game Cards com 24 slots",
-    "price": 32.9,
-    "shipping": {
-        "price": 34,
-        "originCep": 12837643
-          
-
+    {
+        "id": 7,
+        "name": "Capa protetora rosa compatível com Nintendo Switch Pro",
+        "price": 92.9,
+        "shipping": {
+            "price": 34,
+            "originCep": 12837643
+        },
+        "rating": 4.7,
+        "description": "Esta capa rosa traz um toque de cor e estilo ao seu Nintendo Switch Pro. Com seu design elegante e vibrante, ela adiciona um visual único e moderno ao seu controle, permitindo que você se destaque durante as sessões de jogo. Feita com material de alta qualidade, a capa proporciona uma proteção adicional contra arranhões, desgaste e sujeira, mantendo o seu controle em excelente estado. Ela é fácil de aplicar, sem deixar resíduos ou danificar o controle original. A capa é projetada especificamente para se encaixar perfeitamente no Nintendo Switch Pro, garantindo que todos os botões, portas e funcionalidades permaneçam totalmente acessíveis e funcionais. Você pode desfrutar de uma experiência de jogo confortável e imersiva sem comprometer a funcionalidade do seu controle. Além disso, a capa rosa adiciona uma camada adicional de aderência ao controle, proporcionando uma sensação firme e confortável durante as sessões de jogo mais intensas.",
+        "images": {
+            "image1": "image1-url-produto-2",
+            "image2": "image2-url-produto-2",
+            "image3": "image3-url-produto-2"
+        },
+        "quantity": 1,
+        "isFavorite": false,
+        "category": "Capa protetora",
+        "slug": "capa-protetora-rosa-nintendo-switch-pro"
     },
-    "rating": 4.9,
-    "description": "Nosso estojo de armazenamento é ideal para os entusiastas de jogos. Feito com materiais de alta qualidade, oferece durabilidade e proteção excepcional para seus cartuchos de jogo. Com capacidade para [número] cartões, mantém sua coleção organizada. Os compartimentos internos mantêm os cartões seguros durante o transporte. Além disso, possui bolsos extras para acessórios essenciais. Seu design compacto e portátil o torna perfeito para viagens. A capa externa resistente protege contra impactos. O fecho seguro garante que seus cartuchos estejam protegidos. Organize sua coleção com estilo e segurança com nosso estojo de armazenamento. Eleve sua experiência de jogo com praticidade e proteção!",
-    "images": {
-      "thumbnail": "thumbnail-url-produto-2",
-      "image1": "image1-url-produto-2",
-      "image2": "image2-url-produto-2",
-      "image3": "image3-url-produto-2",
+    {
+        "id": 8,
+        "name": "Volante para Nintendo Switch 4 em 1",
+        "price": 69.9,
+        "shipping": {
+            "price": 34,
+            "originCep": 12837643
+        },
+        "rating": 4.2,
+        "description": "Com o conjunto 4 em 1 de volantes para Nintendo Switch, você terá uma experiência de corrida virtual emocionante e imersiva. Cada volante é projetado com alta qualidade e durabilidade, proporcionando controle firme e confortável durante as corridas. Os recortes precisos permitem acesso fácil a todos os botões e funcionalidades dos controles, garantindo total controle sobre o veículo virtual. A instalação é rápida e simples, e o design ergonômico dos volantes oferece conforto mesmo em sessões prolongadas. Eleve seu jogo de corrida com o Volante para Nintendo Switch 4 em 1 e desfrute de diversão e imersão incomparáveis. Seja o campeão nas pistas virtuais com esses incríveis acessórios.",
+        "images": {
+            "image1": "image1-url-produto-2",
+            "image2": "image2-url-produto-2",
+            "image3": "image3-url-produto-2"
+        },
+        "quantity": 1,
+        "isFavorite": false,
+        "category": "Nintendo Switch Sports",
+        "slug": "volante-para-nintendo-switch"
     },
-    "quantity": 1,
-    "isFavorite": false,
-    "category": "Armazenamento",
-  },
-   {
-    "id": 5,
-    "name": "Estojo de Transporte para Nintendo Switch Oled",
-    "price": 116.9,
-    "shipping": {
-        "price": 34,
-        "originCep": 12837643
+    {
+        "id": 9,
+        "name": "Conjunto de 4 Capas Decorativas de Botão com Design de Garra de Gato, compatíveis com Nintendo Switch Oled/Lite",
+        "price": 12.83,
+        "shipping": {
+            "price": 34,
+            "originCep": 12837643
+        },
+        "rating": 4.2,
+        "description": "O Conjunto de 4 Capas Decorativas de Botão com Design de Garra de Gato é perfeito para os jogadores que desejam se destacar. Com um design encantador de garra de gato, essas capas são projetadas para encaixar perfeitamente nos botões do Nintendo Switch Oled/Lite, proporcionando uma aparência distinta e elegante. Feitas com materiais de alta qualidade, elas são duráveis e resistentes, protegendo os botões do desgaste diário. A instalação é rápida e fácil, e elas não afetam a jogabilidade. Com o conjunto de 4 capas, você pode personalizar seu console de acordo com seu gosto, experimentando diferentes combinações de cores e designs. Transforme seu Nintendo Switch em uma obra de arte com o Conjunto de 4 Capas Decorativas de Botão com Design de Garra de Gato e adicione um toque de estilo e personalidade aos seus jogos!",
+        "images": {
+            "image1": "image1-url-produto-2",
+            "image2": "image2-url-produto-2",
+            "image3": "image3-url-produto-2"
+        },
+        "quantity": 1,
+        "isFavorite": false,
+        "category": "Thumb Grip",
+        "slug": "4-capas-decorativas-botao-garra-de-gato"
     },
-    "rating": 4.3,
-    "description": "Este estojo de transporte para Nintendo Switch Oled oferece proteção superior para o seu console. Com uma capa de vidro temperado 9H, seu Switch estará protegido contra arranhões e impactos. O estojo possui compartimentos internos estratégicos para armazenar seus Joy-Cons, cabos, adaptadores e cartões de jogo. O suporte de vidro integrado oferece uma posição ergonômica e ajustável para jogar em modo mesa. Leve e compacto, o estojo é facilmente transportável e possui uma bolsa de armazenamento em PU para proteção extra. Mantenha todos os seus acessórios organizados e prontos para uso com este estojo de transporte. Eleve sua experiência de jogo com proteção e praticidade imbatíveis!",
-    "images": {
-      "thumbnail": "thumbnail-url-produto-2",
-      "image1": "image1-url-produto-2",
-      "image2": "image2-url-produto-2",
-      "image3": "image3-url-produto-2",
+    {
+        "id": 10,
+        "name": "Capa protetora Shiba Inu para Nintendo Switch Lite",
+        "price": 85.2,
+        "shipping": {
+            "price": 34,
+            "originCep": 12837643
+        },
+        "rating": 4.2,
+        "description": "A Capa de Proteção Fofa Shiba Inu é perfeita para adicionar charme irresistível ao seu Nintendo Switch Lite. Feita com material de alta qualidade, ela protege o console contra arranhões, poeira e pequenos impactos, mantendo-o em excelente estado. Além da proteção, a capa oferece aderência confortável para evitar escorregões durante as sessões de jogo. Com fácil instalação e acesso aos botões essenciais, ela eleva o estilo e a proteção do seu Nintendo Switch Lite. Mantenha seu console seguro e adorável com a Capa de Proteção Fofa Shiba Inu e desfrute de uma experiência de jogo encantadora e confiável.",
+        "images": {
+            "image1": "image1-url-produto-2",
+            "image2": "image2-url-produto-2",
+            "image3": "image3-url-produto-2"
+        },
+        "quantity": 1,
+        "isFavorite": false,
+        "category": "Capa protetora",
+        "slug": "capa-protetora-shiba-inu"
     },
-    "quantity": 1,
-    "isFavorite": false,
-    "category": "Armazenamento",
-  },
-   {
-    "id": 6,
-    "name": "Caixa de Armazenamento de Cartões de Jogo em Acrílico com Design de Pata de Gato",
-    "price": 43.63,
-    "shipping": {
-        "price": 34,
-        "originCep": 12837643
-          
-
+    {
+        "id": 11,
+        "name": "Capa protetora animais marinhos compatível com Nintendo Switch OLED",
+        "price": 37.9,
+        "shipping": {
+            "price": 34,
+            "originCep": 12837643
+        },
+        "rating": 4.9,
+        "description": "A capa protetora com design animado e colorido é perfeita para os entusiastas de desenhos animados e jogos. Com uma variedade de opções de estampas e personagens, você pode personalizar o visual do seu Nintendo Switch OLED com o seu favorito. Feita com materiais de alta qualidade, a capa oferece uma proteção sólida e duradoura contra arranhões, poeira e pequenos impactos, mantendo o console em excelente estado. Além de fornecer proteção, a capa adiciona personalidade e estilo, permitindo que você mostre sua paixão por desenhos animados, filmes ou personagens favoritos. A instalação é rápida e fácil, basta encaixar a capa diretamente no console, garantindo que todos os botões, portas e controles permaneçam acessíveis. Os recortes precisos permitem o acesso às saídas de ar, ao slot de cartão de jogo e às demais funcionalidades do Nintendo Switch OLED. Eleve o visual e a proteção do seu console com a Capa Protetora Desenho Animado, adicionando diversão e estilo. Transforme seu Nintendo Switch OLED em um centro de entretenimento e expressão pessoal com esta incrível capa protetora.",
+        "images": {
+            "image1": "image1-url-produto-2",
+            "image2": "image2-url-produto-2",
+            "image3": "image3-url-produto-2"
+        },
+        "quantity": 1,
+        "isFavorite": false,
+        "category": "Capa protetora",
+        "slug": "capa-protetora-animais-marinhos"
     },
-    "rating": 4.7,
-    "description": "A caixa de armazenamento de cartões de jogo em acrílico com design de pata de gato é uma opção encantadora e prática para organizar e proteger sua coleção de jogos Nintendo Switch. Feita de acrílico durável, ela oferece proteção confiável contra poeira, água e impactos leves. Com grande capacidade, você pode armazenar uma quantidade generosa de cartões de jogo e cartões TF, mantendo-os organizados e fáceis de encontrar. O sistema magnético à prova de poeira mantém a caixa bem fechada, garantindo a segurança dos seus cartões. Seu design compacto e portátil permite que você a leve em suas viagens ou sessões de jogo com amigos. Adquira agora mesmo a Caixa de Armazenamento de Cartões de Jogo em Acrílico com Design de Pata de Gato e tenha uma solução encantadora para proteger e organizar seus cartões de jogo com estilo!",
-    "images": {
-      "thumbnail": "thumbnail-url-produto-2",
-      "image1": "image1-url-produto-2",
-      "image2": "image2-url-produto-2",
-      "image3": "image3-url-produto-2",
+    {
+        "id": 12,
+        "name": "Capa Do Joystick Grip para Nintendo Switch, Oled, Lite de Sakura Card Captors",
+        "price": 14.9,
+        "shipping": {
+            "price": 34,
+            "originCep": 12837643
+        },
+        "rating": 4.7,
+        "description": "Esta capa personalizada é perfeita para os fãs de Sakura Card Captors que desejam adicionar um toque mágico aos seus controles de Nintendo Switch. Com um design encantador inspirado na série, ela se encaixa perfeitamente nos controles Joy-Con, proporcionando uma aderência confortável e firme durante as sessões de jogo. Além de adicionar estilo, a capa oferece proteção contra arranhões e pequenos impactos. Fácil de instalar, mantém acesso total aos botões e controles. Seja um fã dedicado ou apenas alguém que busca acessórios exclusivos, esta capa é essencial. Adquira a Capa do Joystick Grip para Nintendo Switch de Sakura Card Captors e mergulhe em uma experiência de jogo mágica!",
+        "images": {
+            "image1": "image1-url-produto-2",
+            "image2": "image2-url-produto-2",
+            "image3": "image3-url-produto-2"
+        },
+        "quantity": 1,
+        "isFavorite": false,
+        "category": "Thumb Grip",
+        "slug": "capa-joystick-grip"
     },
-    "quantity": 1,
-    "isFavorite": false,
-    "category": "Armazenamento",
-  },
-   {
-    "id": 7,
-    "name": "Capa protetora rosa compatível com Nintendo Switch Pro",
-    "price": 92.9,
-    "shipping": {
-        "price": 34,
-        "originCep": 12837643
-          
-
+    {
+        "id": 13,
+        "name": "Capa Protetora de TPU Rígida para Nintendo Switch NS",
+        "price": 55,
+        "shipping": {
+            "price": 34,
+            "originCep": 12837643
+        },
+        "rating": 4.7,
+        "description": "A capa protetora de TPU rígida para o Nintendo Switch NS oferece uma camada de segurança adicional contra arranhões, impactos e sujeira. Com um ajuste perfeito e design durável, proporciona proteção confiável para o console. A cor roxa vibrante adiciona personalidade e um visual elegante à experiência de jogo. Feita de material de TPU rígido, oferece proteção sólida sem comprometer o acesso aos botões, controles e portas do Nintendo Switch. Além de proteger o console, a capa é compatível com outros acessórios, como suportes de carregamento, docas e controles adicionais. A instalação é rápida e fácil, não exigindo ferramentas ou conhecimento técnico. Mantenha seu Nintendo Switch seguro e estiloso com a Capa Protetora de TPU Rígida em roxo, elevando sua experiência de jogo para um novo nível.",
+        "images": {
+            "image1": "image1-url-produto-2",
+            "image2": "image2-url-produto-2",
+            "image3": "image3-url-produto-2"
+        },
+        "quantity": 1,
+        "isFavorite": false,
+        "category": "Capa protetora",
+        "slug": "capa-protetora-de-tpu-rigida-para-nintendo-switch-ns"
     },
-    "rating": 4.7,
-    "description": "Esta capa rosa traz um toque de cor e estilo ao seu Nintendo Switch Pro. Com seu design elegante e vibrante, ela adiciona um visual único e moderno ao seu controle, permitindo que você se destaque durante as sessões de jogo. Feita com material de alta qualidade, a capa proporciona uma proteção adicional contra arranhões, desgaste e sujeira, mantendo o seu controle em excelente estado. Ela é fácil de aplicar, sem deixar resíduos ou danificar o controle original. A capa é projetada especificamente para se encaixar perfeitamente no Nintendo Switch Pro, garantindo que todos os botões, portas e funcionalidades permaneçam totalmente acessíveis e funcionais. Você pode desfrutar de uma experiência de jogo confortável e imersiva sem comprometer a funcionalidade do seu controle. Além disso, a capa rosa adiciona uma camada adicional de aderência ao controle, proporcionando uma sensação firme e confortável durante as sessões de jogo mais intensas.",
-    "images": {
-      "thumbnail": "thumbnail-url-produto-2",
-      "image1": "image1-url-produto-2",
-      "image2": "image2-url-produto-2",
-      "image3": "image3-url-produto-2",
+    {
+        "id": 14,
+        "name": "Par de raquetes badminton com orelha de gatinho compatível com Nintendo Switch OLED",
+        "price": 55,
+        "shipping": {
+            "price": 34,
+            "originCep": 12837643
+        },
+        "rating": 4.7,
+        "description": "As raquetes de badminton com orelhas de gatinho são perfeitas para os amantes de gatos e jogos. Feitas com materiais de alta qualidade, oferecem aderência segura e confortável aos controles Joy-Con do Nintendo Switch Oled. Com um design encantador, adicionam diversão e estilo às suas sessões de jogo. O conjunto inclui 2 raquetes para jogar com um amigo ou desfrutar de diferentes configurações de jogo. Transforme suas sessões de jogo em momentos cheios de fofura e diversão com este conjunto de raquetes exclusivas.",
+        "images": {
+            "image1": "image1-url-produto-2",
+            "image2": "image2-url-produto-2",
+            "image3": "image3-url-produto-2"
+        },
+        "quantity": 1,
+        "isFavorite": false,
+        "category": "Nintendo Switch Sports",
+        "slug": "raquetes-badminton-gatinho-nintendo-switch-oled"
     },
-    "quantity": 1,
-    "isFavorite": false,
-    "category": "Capa protetora",
-  },
-   {
-    "id": 8,
-    "name": "Volante para Nintendo Switch 4 em 1",
-    "price": 69.9,
-    "shipping": {
-        "price": 34,
-        "originCep": 12837643
-          
-
+    {
+        "id": 15,
+        "name": "Capa protetora amarela compatível com Nintendo Switch Pro",
+        "price": 92.9,
+        "shipping": {
+            "price": 34,
+            "originCep": 12837643
+        },
+        "rating": 4.2,
+        "description": "Com sua cor amarela vibrante e design moderno, esta capa vai adicionar um toque de personalidade ao seu controle do Nintendo Switch Pro. Feita com materiais de alta qualidade, ela proporciona uma camada protetora durável, mantendo seu controle seguro contra arranhões, poeira e desgaste diário. A aplicação da capa é rápida e fácil, não deixando resíduos pegajosos ao ser removida. Ela se encaixa perfeitamente no formato.",
+        "images": {
+            "image1": "image1-url-produto-2",
+            "image2": "image2-url-produto-2",
+            "image3": "image3-url-produto-2"
+        },
+        "quantity": 1,
+        "isFavorite": false,
+        "category": "Capa protetora",
+        "slug": "capa-protetora-amarela-nintendo-switch-pro"
     },
-    "rating": 4.2,
-    "description": "Com o conjunto 4 em 1 de volantes para Nintendo Switch, você terá uma experiência de corrida virtual emocionante e imersiva. Cada volante é projetado com alta qualidade e durabilidade, proporcionando controle firme e confortável durante as corridas. Os recortes precisos permitem acesso fácil a todos os botões e funcionalidades dos controles, garantindo total controle sobre o veículo virtual. A instalação é rápida e simples, e o design ergonômico dos volantes oferece conforto mesmo em sessões prolongadas. Eleve seu jogo de corrida com o Volante para Nintendo Switch 4 em 1 e desfrute de diversão e imersão incomparáveis. Seja o campeão nas pistas virtuais com esses incríveis acessórios.",
-    "images": {
-      "thumbnail": "thumbnail-url-produto-2",
-      "image1": "image1-url-produto-2",
-      "image2": "image2-url-produto-2",
-      "image3": "image3-url-produto-2",
-    },
-    "quantity": 1,
-    "isFavorite": false,
-    "category": "Nintendo Switch Sports",
-  },
-   {
-    "id": 9,
-    "name": "Conjunto de 4 Capas Decorativas de Botão com Design de Garra de Gato, compatíveis com Nintendo Switch Oled/Lite",
-    "price": 12.83,
-    "shipping": {
-        "price": 34,
-        "originCep": 12837643
-          
-
-    },
-    "rating": 4.2,
-    "description": "O Conjunto de 4 Capas Decorativas de Botão com Design de Garra de Gato é perfeito para os jogadores que desejam se destacar. Com um design encantador de garra de gato, essas capas são projetadas para encaixar perfeitamente nos botões do Nintendo Switch Oled/Lite, proporcionando uma aparência distinta e elegante. Feitas com materiais de alta qualidade, elas são duráveis e resistentes, protegendo os botões do desgaste diário. A instalação é rápida e fácil, e elas não afetam a jogabilidade. Com o conjunto de 4 capas, você pode personalizar seu console de acordo com seu gosto, experimentando diferentes combinações de cores e designs. Transforme seu Nintendo Switch em uma obra de arte com o Conjunto de 4 Capas Decorativas de Botão com Design de Garra de Gato e adicione um toque de estilo e personalidade aos seus jogos!",
-    "images": {
-      "thumbnail": "thumbnail-url-produto-2",
-      "image1": "image1-url-produto-2",
-      "image2": "image2-url-produto-2",
-      "image3": "image3-url-produto-2",
-    },
-    "quantity": 1,
-    "isFavorite": false,
-    "category": "Thumb Grip",
-  },
-   {
-    "id": 10,
-    "name": "Capa protetora Shiba Inu para Nintendo Switch Lite",
-    "price": 85.2,
-    "shipping": {
-        "price": 34,
-        "originCep": 12837643
-          
-
-    },
-    "rating": 4.2,
-    "description": "A Capa de Proteção Fofa Shiba Inu é perfeita para adicionar charme irresistível ao seu Nintendo Switch Lite. Feita com material de alta qualidade, ela protege o console contra arranhões, poeira e pequenos impactos, mantendo-o em excelente estado. Além da proteção, a capa oferece aderência confortável para evitar escorregões durante as sessões de jogo. Com fácil instalação e acesso aos botões essenciais, ela eleva o estilo e a proteção do seu Nintendo Switch Lite. Mantenha seu console seguro e adorável com a Capa de Proteção Fofa Shiba Inu e desfrute de uma experiência de jogo encantadora e confiável.",
-    "images": {
-      "thumbnail": "thumbnail-url-produto-2",
-      "image1": "image1-url-produto-2",
-      "image2": "image2-url-produto-2",
-      "image3": "image3-url-produto-2",
-    },
-    "quantity": 1,
-    "isFavorite": false,
-    "category": "Capa protetora",
-  },
-   {
-    "id": 11,
-    "name": "Capa protetora desenho animado, compatível com Nintendo Switch OLED",
-    "price": 37.9,
-    "shipping": {
-        "price": 34,
-        "originCep": 12837643
-          
-
-    },
-    "rating": 4.9,
-    "description": "A capa protetora com design animado e colorido é perfeita para os entusiastas de desenhos animados e jogos. Com uma variedade de opções de estampas e personagens, você pode personalizar o visual do seu Nintendo Switch OLED com o seu favorito. Feita com materiais de alta qualidade, a capa oferece uma proteção sólida e duradoura contra arranhões, poeira e pequenos impactos, mantendo o console em excelente estado. Além de fornecer proteção, a capa adiciona personalidade e estilo, permitindo que você mostre sua paixão por desenhos animados, filmes ou personagens favoritos. A instalação é rápida e fácil, basta encaixar a capa diretamente no console, garantindo que todos os botões, portas e controles permaneçam acessíveis. Os recortes precisos permitem o acesso às saídas de ar, ao slot de cartão de jogo e às demais funcionalidades do Nintendo Switch OLED. Eleve o visual e a proteção do seu console com a Capa Protetora Desenho Animado, adicionando diversão e estilo. Transforme seu Nintendo Switch OLED em um centro de entretenimento e expressão pessoal com esta incrível capa protetora.",
-    "images": {
-      "thumbnail": "thumbnail-url-produto-2",
-      "image1": "image1-url-produto-2",
-      "image2": "image2-url-produto-2",
-      "image3": "image3-url-produto-2",
-    },
-    "quantity": 1,
-    "isFavorite": false,
-    "category": "Capa protetora",
-  },
-   {
-    "id": 12,
-    "name": "Capa Do Joystick Grip para Nintendo Switch, Oled, Lite de Sakura Card Captors",
-    "price": 14.9,
-    "shipping": {
-        "price": 34,
-        "originCep": 12837643
-          
-
-    },
-    "rating": 4.7,
-    "description": "Esta capa personalizada é perfeita para os fãs de Sakura Card Captors que desejam adicionar um toque mágico aos seus controles de Nintendo Switch. Com um design encantador inspirado na série, ela se encaixa perfeitamente nos controles Joy-Con, proporcionando uma aderência confortável e firme durante as sessões de jogo. Além de adicionar estilo, a capa oferece proteção contra arranhões e pequenos impactos. Fácil de instalar, mantém acesso total aos botões e controles. Seja um fã dedicado ou apenas alguém que busca acessórios exclusivos, esta capa é essencial. Adquira a Capa do Joystick Grip para Nintendo Switch de Sakura Card Captors e mergulhe em uma experiência de jogo mágica!",
-    "images": {
-      "thumbnail": "thumbnail-url-produto-2",
-      "image1": "image1-url-produto-2",
-      "image2": "image2-url-produto-2",
-      "image3": "image3-url-produto-2",
-    },
-    "quantity": 1,
-    "isFavorite": false,
-    "category": "Thumb Grip",
-  },
-   {
-    "id": 13,
-    "name": "Capa Protetora de TPU Rígida para Nintendo Switch NS",
-    "price": 55,
-    "shipping": {
-        "price": 34,
-        "originCep": 12837643
-          
-
-    },
-    "rating": 4.7,
-    "description": "A capa protetora de TPU rígida para o Nintendo Switch NS oferece uma camada de segurança adicional contra arranhões, impactos e sujeira. Com um ajuste perfeito e design durável, proporciona proteção confiável para o console. A cor roxa vibrante adiciona personalidade e um visual elegante à experiência de jogo. Feita de material de TPU rígido, oferece proteção sólida sem comprometer o acesso aos botões, controles e portas do Nintendo Switch. Além de proteger o console, a capa é compatível com outros acessórios, como suportes de carregamento, docas e controles adicionais. A instalação é rápida e fácil, não exigindo ferramentas ou conhecimento técnico. Mantenha seu Nintendo Switch seguro e estiloso com a Capa Protetora de TPU Rígida em roxo, elevando sua experiência de jogo para um novo nível.",
-    "images": {
-      "thumbnail": "thumbnail-url-produto-2",
-      "image1": "image1-url-produto-2",
-      "image2": "image2-url-produto-2",
-      "image3": "image3-url-produto-2",
-    },
-    "quantity": 1,
-    "isFavorite": false,
-    "category": "Capa protetora",
-  },
-   {
-    "id": 14,
-    "name": "Par de raquetes badminton compatível com Nintendo Switch OLED",
-    "price": 55,
-    "shipping": {
-        "price": 34,
-        "originCep": 12837643
-          
-
-    },
-    "rating": 4.7,
-    "description": "As raquetes de badminton com orelhas de gatinho são perfeitas para os amantes de gatos e jogos. Feitas com materiais de alta qualidade, oferecem aderência segura e confortável aos controles Joy-Con do Nintendo Switch Oled. Com um design encantador, adicionam diversão e estilo às suas sessões de jogo. O conjunto inclui 2 raquetes para jogar com um amigo ou desfrutar de diferentes configurações de jogo. Transforme suas sessões de jogo em momentos cheios de fofura e diversão com este conjunto de raquetes exclusivas.",
-    "images": {
-      "thumbnail": "thumbnail-url-produto-2",
-      "image1": "image1-url-produto-2",
-      "image2": "image2-url-produto-2",
-      "image3": "image3-url-produto-2",
-    },
-    "quantity": 1,
-    "isFavorite": false,
-    "category": "Nintendo Switch Sports",
-  },
-   {
-    "id": 15,
-    "name": "Capa protetora amarela compatível com Nintendo Switch Pro",
-    "price": 92.9,
-    "shipping": {
-        "price": 34,
-        "originCep": 12837643
-          
-    },
-    "rating": 4.2,
-    "description": "Com sua cor amarela vibrante e design moderno, esta capa vai adicionar um toque de personalidade ao seu controle do Nintendo Switch Pro. Feita com materiais de alta qualidade, ela proporciona uma camada protetora durável, mantendo seu controle seguro contra arranhões, poeira e desgaste diário. A aplicação da capa é rápida e fácil, não deixando resíduos pegajosos ao ser removida. Ela se encaixa perfeitamente no formato.",
-    "images": {
-      "thumbnail": "thumbnail-url-produto-2",
-      "image1": "image1-url-produto-2",
-      "image2": "image2-url-produto-2",
-      "image3": "image3-url-produto-2"
-    },
-    "quantity": 1,
-    "isFavorite": false,
-    "category": "Capa protetora",
-  },
-   {
-    "id": 16,
-    "name": "Transparente Glitter Silicone Thumb Stick Grip",
-    "price": 32,
-    "shipping": {
-        "price": 34,
-        "originCep": 12837643
-          
-
-    },
-    "rating": 4.8,
-    "description": "A capa de silicone transparente com efeito glitter é perfeita para adicionar estilo e brilho ao seu console de jogos. Feita de silicone macio de alta qualidade, proporciona conforto e aderência aprimorada durante o jogo. Os sticks analógicos do Nintendo Switch ficam mais suaves e precisos, melhorando a jogabilidade. Além disso, oferece proteção contra desgaste e poeira e é fácil de colocar e remover. Compatível com vários modelos, possui recortes precisos para acesso aos botões e funcionalidades. Eleve seu estilo de jogo com a Transparente Glitter Silicone Thumb Stick Grip Cap, adicionando um toque de glamour ao seu Nintendo Switch.",
-    "images": {
-      "thumbnail": "thumbnail-url-produto-2",
-      "image1": "image1-url-produto-2",
-      "image2": "image2-url-produto-2",
-      "image3": "image3-url-produto-2",
-    },
-    "quantity": 1,
-    "isFavorite": false,
-    "category": "Thumb Grip"
-  }
+    {
+        "id": 16,
+        "name": "Thumb Grip transparente com efeito glitter",
+        "price": 32,
+        "shipping": {
+            "price": 34,
+            "originCep": 12837643
+        },
+        "rating": 4.8,
+        "description": "A capa de silicone transparente com efeito glitter é perfeita para adicionar estilo e brilho ao seu console de jogos. Feita de silicone macio de alta qualidade, proporciona conforto e aderência aprimorada durante o jogo. Os sticks analógicos do Nintendo Switch ficam mais suaves e precisos, melhorando a jogabilidade. Além disso, oferece proteção contra desgaste e poeira e é fácil de colocar e remover. Compatível com vários modelos, possui recortes precisos para acesso aos botões e funcionalidades. Eleve seu estilo de jogo com a Transparente Glitter Silicone Thumb Stick Grip Cap, adicionando um toque de glamour ao seu Nintendo Switch.",
+        "images": {
+            "image1": "image1-url-produto-2",
+            "image2": "image2-url-produto-2",
+            "image3": "image3-url-produto-2"
+        },
+        "quantity": 1,
+        "isFavorite": false,
+        "category": "Thumb Grip",
+        "slug": "thumb-grip-transparente-com-efeito-glitter"
+    }
 ]
