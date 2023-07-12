@@ -1,11 +1,11 @@
-import React from "react";
+import { AuthProvider } from "contexts/auth";
 import ReactDOM from "react-dom/client";
+import AppRoutes from "routes";
 import "./reset.css";
-import AppRoutes from "/Routes";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-    <React.StrictMode>
+    <AuthProvider>
         <AppRoutes />
-    </React.StrictMode>
+    </AuthProvider>
 );
