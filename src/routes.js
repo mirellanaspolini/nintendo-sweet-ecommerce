@@ -1,15 +1,15 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 // import Menu from "./componentes/Menu";
-import NotFound from "componentes/NotFound";
+import NotFound from "páginas/NotFound";
 import useAuth from "contexts/useAuth";
 import { Fragment } from "react";
-import PaginaInicial from "./componentes/PaginaInicial";
-import SignIn from "./componentes/SignIn";
-import SignUp from "./componentes/SignUp";
+import PaginaInicial from "./páginas/PaginaInicial";
+import SignIn from "./páginas/SignIn";
+import SignUp from "./páginas/SignUp";
 
 const Private = ({ Item }) => {
-    const { logado } = useAuth();
-    return logado > 0 ? <Item /> : <SignIn />;
+    const { signed } = useAuth();
+    return signed > 0 ? <Item /> : <SignIn />;
 };
 
 function AppRoutes() {
@@ -20,7 +20,7 @@ function AppRoutes() {
 
                 <Routes>
                     <Route
-                        path="/"
+                        path="/home"
                         element={<Private Item={PaginaInicial} />}
                     ></Route>
                     <Route path="/entrar" element={<SignIn />}></Route>
