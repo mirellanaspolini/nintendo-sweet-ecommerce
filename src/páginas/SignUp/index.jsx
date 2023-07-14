@@ -63,7 +63,7 @@ const SignUp = () => {
                     return setEmail(e.target.value), setError("");
                 }}
             />
-            <Input
+            <Input 
                 placeholder="No mínimo 8 dígitos"
                 label="Senha"
                 tipo="password"

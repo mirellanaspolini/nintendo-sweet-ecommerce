@@ -1,15 +1,1 @@
-label {
-    color: var(--violeta-01);
-    font: 500 20px Poppins;
-    margin-bottom: 8px;
-}
-
-input {
-    border: 2px solid var(--violeta-01);
-    padding: 14px 16px;
-    color: var(--cinza-06);
-    border-radius: 16px;
-    font: 500 16px Roboto;
-    margin-bottom: 8px;
-}
 
