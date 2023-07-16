@@ -3,8 +3,8 @@ module.exports = {
     content: ["./src/**/*.{js,jsx,ts,tsx}"],
     theme: {
         fontFamily: {
-            sans: ["Poppins"],
-            serif: ["Roboto"],
+            titulos: ["Poppins"],
+            textos: ["Roboto"],
         },
         extend: {
             colors: {

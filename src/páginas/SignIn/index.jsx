@@ -2,7 +2,7 @@ import Botao from "componentes/Botao";
 import Input from "componentes/Input";
 import useAuth from "contexts/useAuth";
 import { useState } from "react";
-import { Link, Navigate, useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const SignIn = () => {
     const [email, setEmail] = useState("");
@@ -17,6 +17,9 @@ const SignIn = () => {
         if (!email | !senha) {
             setError("Preencha todos os campos");
             return;
+        } else if (senha.length < 8) {
+            setError("A senha precisa ter pelo menos 8 caracteres")
+            return;
         }
 
         const res = signin(email, senha);
@@ -30,14 +33,14 @@ const SignIn = () => {
     };
 
     return (
-        <div className="h-screen flex items-center justify-center">
-            <form className="rounded-3xl shadow-lg p-14 flex flex-col gap-2 w-[480px] ">
+        <section className="h-screen flex items-center justify-center">
+            <form className="rounded-3xl shadow-lg p-14 flex flex-col gap-2 w-[480px]">
                 <img
-                    className="w-[200px] self-center mb-5"
-                    src="/img/NS-logo.svg"
-                    alt=""
+                    className="w-[180px] inline self-center mb-5"
+                    src="./img/NS-logo.svg"
+                    alt="Logo da Nintendo Sweet"
                 />
-                <h1 className="text-violeta-01 text-3xl text-center">
+                <h1 className="text-violeta-01 font-medium text-3xl text-center">
                     Fazer login
                 </h1>
                 <Input
@@ -58,17 +61,17 @@ const SignIn = () => {
                         return [setSenha(e.target.value), setError("")];
                     }}
                 />
-                <Link className="text-end font-serif underline text-pink-600" to="/cadastre-se">
+                <Link className="text-end font-textos underline text-pink-600" to="#">
                     Esqueci minha senha
                 </Link>
-                <p>{error}</p>
+                <p className="font-textos text-pink-600">{error}</p>
                 <Botao onclick={handleLogin}>Entrar</Botao>
-                <p className="text-center font-serif text-lavanda">
+                <p className="text-center font-textos text-lavanda">
                     Não tem uma conta? &nbsp;
                     <Link className="text-pink-600 underline" to="/cadastre-se">Criar conta</Link>
                 </p>
             </form>
-        </div>
+        </section>
     );
 };
 

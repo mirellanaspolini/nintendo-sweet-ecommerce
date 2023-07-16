@@ -6,6 +6,7 @@ import { Fragment } from "react";
 import PaginaInicial from "./páginas/PaginaInicial";
 import SignIn from "./páginas/SignIn";
 import SignUp from "./páginas/SignUp";
+import Menu from "componentes/Menu";
 
 const Private = ({ Item }) => {
     const { signed } = useAuth();
@@ -16,12 +17,12 @@ function AppRoutes() {
     return (
         <BrowserRouter>
             <Fragment>
-                {/* <Menu /> */}
+                <Menu />
 
                 <Routes>
                     <Route
                         path="/home"
-                        element={<Private Item={PaginaInicial} />}
+                        element={<PaginaInicial/>}
                     ></Route>
                     <Route path="/entrar" element={<SignIn />}></Route>
                     <Route path="/cadastre-se" element={<SignUp />}></Route>
