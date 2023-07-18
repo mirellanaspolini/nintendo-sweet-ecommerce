@@ -1,5 +1,4 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-// import Menu from "./componentes/Menu";
 import PaginaPadrao from "componentes/PaginaPadrao";
 import useAuth from "contexts/useAuth";
 import NotFound from "páginas/NotFound";
