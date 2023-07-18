@@ -36,7 +36,7 @@ const SignIn = () => {
         <section className="h-screen flex items-center justify-center">
             <form className="rounded-3xl shadow-lg p-14 flex flex-col gap-2 w-[480px]">
                 <img
-                    className="w-[180px] inline self-center mb-5"
+                    className="h-[60px] inline self-center mb-5"
                     src="./img/NS-logo.svg"
                     alt="Logo da Nintendo Sweet"
                 />
