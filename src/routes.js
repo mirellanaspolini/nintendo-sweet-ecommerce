@@ -1,13 +1,11 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-// import Menu from "./componentes/Menu";
-import NotFound from "páginas/NotFound";
+import PaginaPadrao from "componentes/PaginaPadrao";
 import useAuth from "contexts/useAuth";
+import NotFound from "páginas/NotFound";
 import { Fragment } from "react";
 import PaginaInicial from "./páginas/PaginaInicial";
 import SignIn from "./páginas/SignIn";
 import SignUp from "./páginas/SignUp";
-import Menu from "componentes/Menu";
-import PaginaPadrao from "componentes/PaginaPadrao";
 
 const Private = ({ Item }) => {
     const { signed } = useAuth();
