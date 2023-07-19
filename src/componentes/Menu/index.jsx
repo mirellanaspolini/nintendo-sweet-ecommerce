@@ -55,6 +55,11 @@ const Menu = () => {
                         tipo="search"
                     />
                 </div>
+                <Input
+                    classe="order-last lg:order-2 lg:w-full min-w-[300px]"
+                    placeholder="O que você procura?"
+                    tipo="search"
+                />
             </header>
         </div>
     );
