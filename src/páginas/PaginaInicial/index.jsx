@@ -9,9 +9,7 @@ const PaginaInicial = () => {
 
     return (
         <>
-            <Botao onclick={() => [signout(), navigate("/home")]}>
-                Sair
-            </Botao>
+            <Botao onclick={() => [signout(), navigate("/entrar")]}>Sair</Botao>
             <div>pagina inicial</div>
         </>
     );

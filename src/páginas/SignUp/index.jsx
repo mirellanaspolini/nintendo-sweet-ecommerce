@@ -36,10 +36,10 @@ const SignUp = () => {
     };
 
     return (
-        <section className="h-screen flex items-center justify-center">
+        <section className=" flex items-center justify-center">
             <form className="rounded-3xl shadow-lg p-14 flex flex-col gap-2 w-[480px]">
                 <img
-                    className="w-[180px] self-center mb-5"
+                    className="h-[60px] self-center mb-5"
                     src="./img/NS-logo.svg"
                     alt="Logo da Nintendo Sweet"
                     />
@@ -89,7 +89,7 @@ const SignUp = () => {
                 />
                 <p className="font-textos text-pink-600">{error}</p>
                 <Botao onclick={handleSignup}>Criar conta</Botao>
-                <p className="text-center font-textos text-lavanda">Já tem uma conta?&nbsp;<Link className="text-pink-600 underline" to="/entrar">Entrar</Link></p>
+                <p className="text-center font-textos text-lilas">Já tem uma conta?&nbsp;<Link className="text-pink-600 underline" to="/entrar">Entrar</Link></p>
             </form>
         </section>
     );

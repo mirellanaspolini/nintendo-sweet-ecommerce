@@ -10,9 +10,9 @@
         "rating": 4.2,
         "description": "A capa protetora Sakura Card Captors é a combinação perfeita de estilo adorável e proteção confiável para o seu precioso console Nintendo Switch. Com um design irresistível rosa kawaii, essa capa adiciona um toque de fofura aos seus momentos de jogo, destacando-se entre os demais jogadores. Feita com materiais de alta qualidade, ela oferece uma camada robusta de defesa contra arranhões, poeira e pequenos impactos, mantendo o console em excelente estado por muito tempo. Além da proteção, a capa possui uma funcionalidade inteligente de desanexação, permitindo que você remova facilmente a parte traseira para uma experiência mais confortável ou ajustes na configuração. A instalação é simples e rápida, garantindo uma proteção sólida sem comprometer o acesso às portas, botões e controles essenciais do Nintendo Switch. Eleve o estilo e a proteção do seu console com a Capa Dura Rosa Kawaii, desfrutando de uma experiência de jogo cheia de charme, personalidade e confiabilidade. Não deixe seu console desprotegido, mantenha-o seguro e estiloso!",
         "images": {
-            "image1": "public/img/capa-sakura-1.png",
-            "image2": "public/img/capa-sakura-2.png",
-            "image3": "public/img/capa-sakura-3.png"
+            "image1": "public/img/produtos/capa-sakura-1.png",
+            "image2": "public/img/produtos/capa-sakura-2.png",
+            "image3": "public/img/produtos/capa-sakura-3.png"
         },
         "quantity": 1,
         "isFavorite": false,
@@ -30,9 +30,9 @@
         "rating": 4.5,
         "description": "O conjunto de caps de joystick GeekShare Fat Cat Thumb Grip apresenta um adorável tema de gato gordinho, encantando os entusiastas de jogos e amantes de gatos. Feitas de silicone de alta qualidade, as capas são projetadas para se encaixar perfeitamente nos joysticks do Nintendo Switch ou Nintendo Switch Lite, proporcionando aderência confortável e segura. Com uma superfície texturizada, elas melhoram o controle e a precisão durante o jogo, permitindo movimentos suaves e precisos. A instalação é fácil e rápida, não interferindo na funcionalidade dos botões. Além de melhorar o desempenho, as capas adicionam personalidade ao console, sendo ideais para jogadores ávidos e amantes de acessórios divertidos. Eleve sua experiência de jogo com o GeekShare Fat Cat Thumb Grip Joystick Cap para Nintendo Switch/Lite, desfrutando de conforto, controle e estilo. Não limite sua diversão, adicione um toque especial ao seu console com essas adoráveis capas de joystick!",
         "images": {
-            "image1": "public/img/thumb-grip-gato-1.png",
-            "image2": "public/img/thumb-grip-gato-2.png",
-            "image3": "public/img/thumb-grip-gato-3.png"
+            "image1": "public/img/produtos/thumb-grip-gato-1.png",
+            "image2": "public/img/produtos/thumb-grip-gato-2.png",
+            "image3": "public/img/produtos/thumb-grip-gato-3.png"
         },
         "quantity": 1,
         "isFavorite": false,
@@ -50,9 +50,9 @@
         "rating": 3.9,
         "description": "Esta capa antiderrapante em forma de sapo e animais é perfeita para personalizar seu Nintendo Switch NS Lite. Feita de material de alta qualidade, oferece aderência segura e confortável durante o jogo, protegendo contra quedas e arranhões. É resistente a manchas e poeira, sendo fácil de colocar e remover. Compatível com o Nintendo Switch NS Lite, proporciona uma experiência de jogo mais confortável e divertida. Eleve seu estilo de jogo com esta capa antiderrapante e aproveite horas de diversão com total proteção.",
         "images": {
-            "image1": "public/img/thumb-grip-sapo-1.png",
-            "image2": "public/img/thumb-grip-sapo-2.png",
-            "image3": "public/img/thumb-grip-sapo-3.png"
+            "image1": "public/img/produtos/thumb-grip-sapo-1.png",
+            "image2": "public/img/produtos/thumb-grip-sapo-2.png",
+            "image3": "public/img/produtos/thumb-grip-sapo-3.png"
         },
         "quantity": 1,
         "isFavorite": false,
@@ -70,9 +70,9 @@
         "rating": 4.9,
         "description": "Nosso estojo de armazenamento é ideal para os entusiastas de jogos. Feito com materiais de alta qualidade, oferece durabilidade e proteção excepcional para seus cartuchos de jogo. Com capacidade para [número] cartões, mantém sua coleção organizada. Os compartimentos internos mantêm os cartões seguros durante o transporte. Além disso, possui bolsos extras para acessórios essenciais. Seu design compacto e portátil o torna perfeito para viagens. A capa externa resistente protege contra impactos. O fecho seguro garante que seus cartuchos estejam protegidos. Organize sua coleção com estilo e segurança com nosso estojo de armazenamento. Eleve sua experiência de jogo com praticidade e proteção!",
         "images": {
-            "image1": "public/img/estojo-mymelody-1.png",
-            "image2": "public/img/estojo-mymelody-2.png",
-            "image3": "public/img/estojo-mymelody-3.png"
+            "image1": "public/img/produtos/estojo-mymelody-1.png",
+            "image2": "public/img/produtos/estojo-mymelody-2.png",
+            "image3": "public/img/produtos/estojo-mymelody-3.png"
         },
         "quantity": 1,
         "isFavorite": false,
