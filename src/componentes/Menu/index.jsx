@@ -25,11 +25,11 @@ const Menu = () => {
                         </>
                     ) : (
                         <>
-                            <BotaoIcone icon="before:bg-cart hover:before:bg-cartWhiteFilled"></BotaoIcone>
-                            <BotaoIcone icon="before:bg-favFilled hover:before:bg-favWhiteFilled"></BotaoIcone>
-                            <BotaoIcone icon="flex items-center gap-2 before:bg-profile hover:before:bg-profileWhite before:rounded-full">
+                            <BotaoIcone arialabel="Abrir carrinho" icon="before:bg-cart hover:before:bg-cartWhiteFilled"></BotaoIcone>
+                            <BotaoIcone arialabel="Abrir favoritos" icon="before:bg-fav hover:before:bg-favWhiteFilled"></BotaoIcone>
+                            <BotaoIcone arialabel="Minha conta" icon="flex items-center gap-2 before:bg-profile hover:before:bg-profileWhite before:rounded-full">
                                 <p className="sm:inline hidden"> Minha conta</p>
-                                <svg
+                                <svg aria-label="Ver opções"
                                     xmlns="http://www.w3.org/2000/svg"
                                     width="12"
                                     height="8"
@@ -48,12 +48,13 @@ const Menu = () => {
                         </>
                     )}
                 </div>
-                <div className="self-stretch w-full lg:w-auto">
+                <div className="self-stretch w-full lg:w-auto relative">
                     <Input
-                        classe="order-last lg:order-2 min-w-[300px] mb-0 md:min-w-[300px] min-w-[0px]"
+                        classe="mt-2 order-last lg:order-2 min-w-auto md:min-w-[300px]"
                         placeholder="O que você procura?"
                         tipo="search"
                     />
+                    <button className="p-3 absolute right-0 top-3"><img src="/img/icons/Search_icon.svg" alt="Buscar" /></button>
                 </div>
             </header>
         </div>
