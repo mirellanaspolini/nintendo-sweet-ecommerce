@@ -25,11 +25,23 @@ const Menu = () => {
                         </>
                     ) : (
                         <>
-                            <BotaoIcone arialabel="Abrir carrinho" icon="before:bg-cart hover:before:bg-cartWhiteFilled"></BotaoIcone>
-                            <BotaoIcone arialabel="Abrir favoritos" icon="before:bg-fav hover:before:bg-favWhiteFilled"></BotaoIcone>
-                            <BotaoIcone arialabel="Minha conta" icon="flex items-center gap-2 before:bg-profile hover:before:bg-profileWhite before:rounded-full">
+                            <BotaoIcone
+                                arialabel="Abrir carrinho"
+                                icon="before:bg-cart hover:before:bg-cartWhiteFilled"
+                                rota="/carrinho"
+                            ></BotaoIcone>
+                            <BotaoIcone
+                                arialabel="Abrir favoritos"
+                                icon="before:bg-fav hover:before:bg-favWhiteFilled"
+                                rota="/favoritos"
+                            ></BotaoIcone>
+                            <BotaoIcone
+                                arialabel="Minha conta"
+                                icon="flex items-center gap-2 before:bg-profile hover:before:bg-profileWhite before:rounded-full"
+                            >
                                 <p className="sm:inline hidden"> Minha conta</p>
-                                <svg aria-label="Ver opções"
+                                <svg
+                                    aria-label="Ver opções"
                                     xmlns="http://www.w3.org/2000/svg"
                                     width="12"
                                     height="8"
@@ -54,7 +66,9 @@ const Menu = () => {
                         placeholder="O que você procura?"
                         tipo="search"
                     />
-                    <button className="p-3 absolute right-0 top-3"><img src="/img/icons/Search_icon.svg" alt="Buscar" /></button>
+                    <button className="p-3 absolute right-0 top-3">
+                        <img src="/img/icons/Search_icon.svg" alt="Buscar" />
+                    </button>
                 </div>
             </header>
         </div>
