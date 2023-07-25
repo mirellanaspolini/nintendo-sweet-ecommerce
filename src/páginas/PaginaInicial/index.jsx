@@ -1,8 +1,7 @@
 import Botao from "componentes/Botao";
+import Produtos from "componentes/Produtos";
 import useAuth from "contexts/useAuth";
-import React from "react";
 import { useNavigate } from "react-router-dom";
-
 const PaginaInicial = () => {
     const { signout } = useAuth();
     const navigate = useNavigate();
@@ -11,6 +10,7 @@ const PaginaInicial = () => {
         <>
             <Botao onclick={() => [signout(), navigate("/entrar")]}>Sair</Botao>
             <div>pagina inicial</div>
+            <Produtos/>
         </>
     );
 };
