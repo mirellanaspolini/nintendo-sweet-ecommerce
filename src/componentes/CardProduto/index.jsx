@@ -1,4 +1,3 @@
-import Botao from "componentes/Botao";
 import BotaoIcone from "componentes/BotaoIcone";
 import React from "react";
 import { Link } from "react-router-dom";
@@ -9,10 +8,8 @@ const CardProduto = ({ produto }) => {
             className="font-medium font-titulos rounded-3xl p-4 shadow-lg"
             key={produto.id}
         >
-            <Link to={produto.slug}>
-                <img className="w-full h-[169px] object-cover" src={produto.images[0]} alt={produto.name} />
-            </Link>
-           
+            <img src={produto.images[0]} alt={produto.name} />
+
             <div>
                 <p className="text-2xl text-rosa-01">
                     R$ {produto.price.toFixed(2)}
