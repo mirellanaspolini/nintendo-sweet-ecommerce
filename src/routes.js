@@ -6,6 +6,7 @@ import { Fragment } from "react";
 import PaginaInicial from "./páginas/PaginaInicial";
 import SignIn from "./páginas/SignIn";
 import SignUp from "./páginas/SignUp";
+import SearchResults from "páginas/SearchResults";
 
 const Private = ({ Item }) => {
     const { signed } = useAuth();
@@ -19,6 +20,7 @@ function AppRoutes() {
                 <Routes>
                     <Route path="/" element={<PaginaPadrao />}>
                         <Route path="home" element={<PaginaInicial />} />
+                        <Route path="search" element={<SearchResults />} />
                     </Route>
 
                     <Route path="/entrar" element={<SignIn />}></Route>
@@ -27,8 +29,6 @@ function AppRoutes() {
                     {/* <Route path="produtos/:slug" element={<PaginaProduto />} /> */}
                     <Route path="*" element={<NotFound />} />
                 </Routes>
-
-                {/* <Rodape /> */}
             </Fragment>
         </BrowserRouter>
     );

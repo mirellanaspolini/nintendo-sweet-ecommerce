@@ -4,22 +4,32 @@ import { Link } from "react-router-dom";
 
 const CardProduto = ({ produto }) => {
     return (
-        <li
-            className="font-medium font-titulos rounded-3xl p-4 shadow-lg"
-            key={produto.id}
-        >
-            <img src={produto.images[0]} alt={produto.name} />
+        <li className="font-medium font-titulos rounded-3xl shadow-lg">
+            <Link to={produto.slug}>
+                <img
+                    className="w-full h-[200px] object-cover rounded-t-3xl"
+                    src={produto.images[0]}
+                    alt={produto.name}
+                />
+            </Link>
 
-            <div>
+            <div className="p-4">
                 <p className="text-2xl text-rosa-01">
                     R$ {produto.price.toFixed(2)}
                 </p>
                 <Link to={produto.slug}>
-                    <h3 className="text-xl text-rosa-03">{produto.name}</h3>
+                    <h3 className="mb-4 text-lg text-rosa-03">
+                        {produto.name}
+                    </h3>
                 </Link>
-                <BotaoIcone icon="before:bg-cart hover:before:bg-cartWhiteFilled">
-                    adicionar ao carrinho
-                </BotaoIcone>
+                <div className="self-stretch w-full lg:w-auto relative">
+                    <BotaoIcone
+                        classe="w-full"
+                        icon="before:bg-cart hover:before:bg-cartWhiteFilled"
+                    >
+                        Adicionar ao carrinho
+                    </BotaoIcone>
+                </div>
             </div>
         </li>
     );

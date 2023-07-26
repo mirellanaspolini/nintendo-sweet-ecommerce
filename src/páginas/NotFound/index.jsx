@@ -6,7 +6,7 @@ import { useNavigate } from "react-router-dom";
 const NotFound = () => {
     const navigate = useNavigate();
     const handleClick = () => {
-        navigate("/");
+        navigate(-1);
     };
     return (
         <section className="h-screen gap-6 flex items-center justify-center flex flex-col items-center m-auto">
