@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import listaProdutos from "./json/produtos.json";
+import listaProdutos from "json/produtos.json";
 import Botao from "componentes/Botao";
 import CardProduto from "componentes/CardProduto";
 
