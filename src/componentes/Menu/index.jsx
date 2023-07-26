@@ -1,17 +1,25 @@
-import React from "react";
+import React, { useState } from "react";
 import BotaoIcone from "componentes/BotaoIcone";
 import Input from "componentes/Input";
 import useAuth from "contexts/useAuth";
 import Botao from "componentes/Botao";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const Menu = () => {
     const { signed } = useAuth();
     const isLoggedIn = () => (signed > 0 ? true : false);
-    // alert(isLoggedIn())
+
+    const [searchQuery, setSearchQuery] = useState("");
+    const navigate = useNavigate();
+
+    const handleSearch = (e) => {
+        e.preventDefault();
+        navigate(`/search?query=${encodeURIComponent(searchQuery)}`);
+    };
+
     return (
         <div className="w-full block bg-lavanda">
-            <header className="flex flex-wrap m-auto px-5 gap-x-9 gap-y-6 py-5 justify-between items-center max-w-5xl">
+            <header className="flex flex-wrap m-auto gap-x-9 gap-y-6 px-4 md:px-6 py-5 justify-between items-center max-w-5xl">
                 <div className="h-[38px] w-[38px] order-first duration-100 bg-logoMin bg-no-repeat bg-contain sm:bg-logo sm:w-[190px] sm:h-[60px]"></div>
                 <div className="flex lg:gap-5 gap-2 lg:order-last">
                     {isLoggedIn() == false ? (
@@ -61,11 +69,15 @@ const Menu = () => {
                     )}
                 </div>
                 <div className="self-stretch w-full lg:w-auto relative">
-                    <Input
-                        classe="mt-2 order-last lg:order-2 min-w-auto md:min-w-[300px]"
-                        placeholder="O que você procura?"
-                        tipo="search"
-                    />
+                    <form onSubmit={handleSearch}>
+                        <Input
+                            classe="mt-2 order-last lg:order-2 min-w-auto md:min-w-[300px]"
+                            placeholder="O que você procura?"
+                            tipo="search"
+                            value={searchQuery}
+                            onChange={(e) => setSearchQuery(e.target.value)}
+                        />
+                    </form>
                     <button className="p-3 absolute right-0 top-3">
                         <img src="/img/icons/Search_icon.svg" alt="Buscar" />
                     </button>

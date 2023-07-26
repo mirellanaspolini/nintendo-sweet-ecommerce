@@ -1,7 +1,6 @@
-import React, { useState } from "react";
-import listaProdutos from "json/produtos.json";
-import Botao from "componentes/Botao";
 import CardProduto from "componentes/CardProduto";
+import listaProdutos from "json/produtos.json";
+import { useState } from "react";
 
 const Produtos = () => {
     const [searchTerm, setSearchTerm] = useState("");
@@ -42,7 +41,7 @@ const Produtos = () => {
                     <option value="categoria2">Categoria 2</option>
                 </select>
             </div>
-            <ul className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+            <ul className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 lg:gap-5 gap-4">
                 {filteredProducts.map((product) => (
                     <CardProduto key={product.id} produto={{ ...product }} />
                 ))}

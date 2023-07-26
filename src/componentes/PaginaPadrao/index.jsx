@@ -3,12 +3,14 @@ import { Outlet } from "react-router-dom";
 
 const PaginaPadrao = () => {
     return (
-        <main>
+        <div>
             <Menu />
 
-            <Outlet />
-        </main>
+            <main className="m-4 md:m-6">
+                <Outlet />
+            </main>
+        </div>
     );
-}
+};
 
 export default PaginaPadrao;
