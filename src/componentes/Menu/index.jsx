@@ -16,7 +16,7 @@ const Menu = () => {
                 <div className="flex lg:gap-5 gap-2 lg:order-last">
                     {isLoggedIn() == false ? (
                         <>
-                            <Botao classeBtn="secundaria">
+                            <Botao classeBtn="secundario">
                                 <Link to="/entrar">Entrar</Link>
                             </Botao>
                             <Botao>

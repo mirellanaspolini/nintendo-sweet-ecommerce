@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import listaProdutos from "json/produtos.json";
+import listaProdutos from "./json/produtos.json";
 import Botao from "componentes/Botao";
 import CardProduto from "componentes/CardProduto";
 
@@ -26,7 +26,6 @@ const Produtos = () => {
 
     return (
         <div>
-            <h2>Lista de Produtos</h2>
             <div>
                 <input
                     type="text"
@@ -45,7 +44,7 @@ const Produtos = () => {
             </div>
             <ul className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
                 {filteredProducts.map((product) => (
-                    <CardProduto produto={{ ...product }} />
+                    <CardProduto key={product.id} produto={{ ...product }} />
                 ))}
             </ul>
         </div>
