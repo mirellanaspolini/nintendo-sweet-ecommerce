@@ -1,12 +1,13 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom";
-import PaginaPadrao from "componentes/PaginaPadrao";
+import DefaultPage from "componentes/DefaultPage";
 import useAuth from "contexts/useAuth";
-import NotFound from "páginas/NotFound";
+import NotFound from "pages/NotFound";
+import SearchResults from "pages/SearchResults";
 import { Fragment } from "react";
-import PaginaInicial from "./páginas/PaginaInicial";
-import SignIn from "./páginas/SignIn";
-import SignUp from "./páginas/SignUp";
-import SearchResults from "páginas/SearchResults";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import HomePage from "./pages/Home";
+import SignIn from "./pages/SignIn";
+import SignUp from "./pages/SignUp";
+import ProductPage from "pages/ProductPage";
 
 const Private = ({ Item }) => {
     const { signed } = useAuth();
@@ -18,15 +19,15 @@ function AppRoutes() {
         <BrowserRouter>
             <Fragment>
                 <Routes>
-                    <Route path="/" element={<PaginaPadrao />}>
-                        <Route path="home" element={<PaginaInicial />} />
+                    <Route path="/" element={<DefaultPage />}>
+                        <Route path="/" element={<HomePage />} />
                         <Route path="search" element={<SearchResults />} />
                     </Route>
 
                     <Route path="/entrar" element={<SignIn />}></Route>
                     <Route path="/cadastre-se" element={<SignUp />}></Route>
 
-                    {/* <Route path="produtos/:slug" element={<PaginaProduto />} /> */}
+                    <Route path="/produtos/:slug" element={<ProductPage />} /> {/* curso ola mundo - alura */}
                     <Route path="*" element={<NotFound />} />
                 </Routes>
             </Fragment>

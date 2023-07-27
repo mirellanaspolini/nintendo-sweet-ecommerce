@@ -1,8 +1,9 @@
-import React, { useState } from "react";
+import Botao from "componentes/Botao";
 import BotaoIcone from "componentes/BotaoIcone";
+import Example from "componentes/Dropdown";
 import Input from "componentes/Input";
 import useAuth from "contexts/useAuth";
-import Botao from "componentes/Botao";
+import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 
 const Menu = () => {
@@ -20,7 +21,7 @@ const Menu = () => {
     return (
         <div className="w-full block bg-lavanda">
             <header className="flex flex-wrap m-auto gap-x-9 gap-y-6 px-4 md:px-6 py-5 justify-between items-center max-w-5xl">
-                <div className="h-[38px] w-[38px] order-first duration-100 bg-logoMin bg-no-repeat bg-contain sm:bg-logo sm:w-[190px] sm:h-[60px]"></div>
+                <div className="h-[38px] w-[38px] order-first duration-100 bg-logoMin bg-no-repeat bg-contain sm:bg-logo sm:w-[165px] sm:h-[50px]"></div>
                 <div className="flex lg:gap-5 gap-2 lg:order-last">
                     {isLoggedIn() == false ? (
                         <>
@@ -35,50 +36,29 @@ const Menu = () => {
                         <>
                             <BotaoIcone
                                 arialabel="Abrir carrinho"
-                                icon="before:bg-cart hover:before:bg-cartWhiteFilled"
+                                icon="before:bg-cart"
                                 rota="/carrinho"
                             ></BotaoIcone>
                             <BotaoIcone
                                 arialabel="Abrir favoritos"
-                                icon="before:bg-fav hover:before:bg-favWhiteFilled"
+                                icon="before:bg-fav"
                                 rota="/favoritos"
                             ></BotaoIcone>
-                            <BotaoIcone
-                                arialabel="Minha conta"
-                                icon="flex items-center gap-2 before:bg-profile hover:before:bg-profileWhite before:rounded-full"
-                            >
-                                <p className="sm:inline hidden"> Minha conta</p>
-                                <svg
-                                    aria-label="Ver opções"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    width="12"
-                                    height="8"
-                                    viewBox="0 0 15 9"
-                                    fill="none"
-                                >
-                                    <path
-                                        d="M14 1L7.5 7.5L1 1"
-                                        stroke="#4F359B"
-                                        stroke-width="2"
-                                        stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                    />
-                                </svg>
-                            </BotaoIcone>
+                            <Example />
                         </>
                     )}
                 </div>
                 <div className="self-stretch w-full lg:w-auto relative">
                     <form onSubmit={handleSearch}>
                         <Input
-                            classe="mt-2 order-last lg:order-2 min-w-auto md:min-w-[300px]"
+                            classe="order-last lg:order-2 min-w-auto md:min-w-[300px]"
                             placeholder="O que você procura?"
                             tipo="search"
                             value={searchQuery}
                             onChange={(e) => setSearchQuery(e.target.value)}
                         />
                     </form>
-                    <button className="p-3 absolute right-0 top-3">
+                    <button className="p-3 absolute right-0 top-0">
                         <img src="/img/icons/Search_icon.svg" alt="Buscar" />
                     </button>
                 </div>

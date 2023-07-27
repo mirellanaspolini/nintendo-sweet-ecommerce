@@ -1,4 +1,3 @@
-import React from "react";
 
 const Botao = ({ onclick, children, classeBtn = "padrao", classe }) => {
     const classes =
@@ -13,7 +12,7 @@ const Botao = ({ onclick, children, classeBtn = "padrao", classe }) => {
     return (
         <>
             <button
-                className={`${classe} font-titulo font-medium text-lg sm:text-xl rounded-full border-2 px-3 py-2 sm:py-3 duration-200 ${classes}`}
+                className={`${classe} font-titulos font-medium text-lg sm:text-xl rounded-full border-2 px-3 py-2 sm:py-3 duration-200 ${classes}`}
                 onClick={onclick}
             >
                 {children}
