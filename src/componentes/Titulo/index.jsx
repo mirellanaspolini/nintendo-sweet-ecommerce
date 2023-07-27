@@ -2,7 +2,7 @@ const Titulos = ({ corTexto, children }) => {
     const classes = corTexto === "rosa" ? "text-rosa-01" : "text-violeta-01";
 
     return (
-        <h1 className={` ${classes} font-bold text-4xl text-center`}>
+        <h1 className={` ${classes} font-bold text-3xl text-center`}>
             {children}
         </h1>
     );

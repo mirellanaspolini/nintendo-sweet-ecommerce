@@ -3,29 +3,29 @@ import listaProdutos from "json/produtos.json";
 import { useState } from "react";
 
 const Produtos = () => {
-    const [searchTerm, setSearchTerm] = useState("");
-    const [selectedCategory, setSelectedCategory] = useState("");
+    // const [searchTerm, setSearchTerm] = useState("");
+    // const [selectedCategory, setSelectedCategory] = useState("");
 
-    const handleSearchChange = (event) => {
-        setSearchTerm(event.target.value);
-    };
+    // const handleSearchChange = (event) => {
+    //     setSearchTerm(event.target.value);
+    // };
 
-    const handleCategoryChange = (event) => {
-        setSelectedCategory(event.target.value);
-    };
+    // const handleCategoryChange = (event) => {
+    //     setSelectedCategory(event.target.value);
+    // };
 
-    const filteredProducts = listaProdutos.filter((product) => {
-        const nameMatch = product.name
-            .toLowerCase()
-            .includes(searchTerm.toLowerCase());
-        const categoryMatch =
-            selectedCategory === "" || product.category === selectedCategory;
-        return nameMatch && categoryMatch;
-    });
+    // const filteredProducts = listaProdutos.filter((product) => {
+    //     const nameMatch = product.name
+    //         .toLowerCase()
+    //         .includes(searchTerm.toLowerCase());
+    //     const categoryMatch =
+    //         selectedCategory === "" || product.category === selectedCategory;
+    //     return nameMatch && categoryMatch;
+    // });
 
     return (
         <div>
-            <div>
+            {/* <div>
                 <input
                     type="text"
                     placeholder="Pesquisar por nome"
@@ -40,9 +40,9 @@ const Produtos = () => {
                     <option value="armazenamento">Armazenamento</option>
                     <option value="categoria2">Categoria 2</option>
                 </select>
-            </div>
+            </div> */}
             <ul className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 lg:gap-5 gap-4">
-                {filteredProducts.map((product) => (
+                {listaProdutos.map((product) => (
                     <CardProduto key={product.id} produto={{ ...product }} />
                 ))}
             </ul>

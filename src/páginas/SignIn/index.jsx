@@ -1,5 +1,6 @@
 import Botao from "componentes/Botao";
 import Input from "componentes/Input";
+import Titulos from "componentes/Titulo";
 import useAuth from "contexts/useAuth";
 import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
@@ -40,9 +41,7 @@ const SignIn = () => {
                     src="./img/NS-logo.svg"
                     alt="Logo da Nintendo Sweet"
                 />
-                <h1 className="text-violeta-01 font-medium text-3xl text-center">
-                    Fazer login
-                </h1>
+                <Titulos>Fazer login</Titulos>
                 <Input
                     placeholder="email@exemplo.com"
                     label="Email"

@@ -13,7 +13,7 @@ const CardProduto = ({ produto }) => {
                 />
             </Link>
 
-            <div className="p-4">
+            <div className="p-4 h-min">
                 <p className="text-2xl text-rosa-01">
                     R$ {produto.price.toFixed(2)}
                 </p>

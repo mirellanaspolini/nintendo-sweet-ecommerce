@@ -22,7 +22,7 @@ const NotFound = () => {
                 />
             </div>
             <Botao classeBtn="rosa" onclick={handleClick}>
-                Ir para a página principal
+                Voltar
             </Botao>
         </section>
     );
