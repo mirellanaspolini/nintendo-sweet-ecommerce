@@ -21,7 +21,7 @@ const Menu = () => {
     return (
         <div className="w-full block bg-lavanda">
             <header className="flex flex-wrap m-auto gap-x-9 gap-y-6 px-4 md:px-6 py-5 justify-between items-center max-w-5xl">
-                <div className="h-[38px] w-[38px] order-first duration-100 bg-logoMin bg-no-repeat bg-contain sm:bg-logo sm:w-[165px] sm:h-[50px]"></div>
+                <Link to="/" className="h-[38px] w-[38px] order-first duration-100 bg-logoMin bg-no-repeat bg-contain sm:bg-logo sm:w-[165px] sm:h-[50px]"></Link>
                 <div className="flex lg:gap-5 gap-2 lg:order-last">
                     {isLoggedIn() == false ? (
                         <>

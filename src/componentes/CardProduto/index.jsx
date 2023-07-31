@@ -1,11 +1,10 @@
 import BotaoIcone from "componentes/BotaoIcone";
-import React from "react";
 import { Link } from "react-router-dom";
 
 const CardProduto = ({ produto }) => {
     return (
         <li className="font-medium font-titulos rounded-3xl shadow-lg">
-            <Link to={"/produtos/"+produto.slug}>
+            <Link to={"/produtos/" + produto.slug}>
                 <img
                     className="w-full h-[200px] object-cover rounded-t-3xl"
                     src={produto.images[0]}
@@ -17,7 +16,7 @@ const CardProduto = ({ produto }) => {
                 <p className="text-2xl text-rosa-01">
                     R$ {produto.price.toFixed(2)}
                 </p>
-                <Link to={"/produtos/"+produto.slug}>
+                <Link to={"/produtos/" + produto.slug}>
                     <h3 className="mb-4 text-lg text-rosa-03">
                         {produto.name}
                     </h3>

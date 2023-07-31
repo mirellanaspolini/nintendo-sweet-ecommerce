@@ -7,7 +7,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import HomePage from "./pages/Home";
 import SignIn from "./pages/SignIn";
 import SignUp from "./pages/SignUp";
-import ProductPage from "pages/ProductPage";
+import ProductPage from "componentes/ProductPage";
 
 const Private = ({ Item }) => {
     const { signed } = useAuth();
@@ -27,7 +27,7 @@ function AppRoutes() {
                     <Route path="/entrar" element={<SignIn />}></Route>
                     <Route path="/cadastre-se" element={<SignUp />}></Route>
 
-                    <Route path="/produtos/:slug" element={<ProductPage />} /> {/* curso ola mundo - alura */}
+                    <Route path="/produtos/:slug/*" element={<ProductPage />} /> {/* curso ola mundo - alura */}
                     <Route path="*" element={<NotFound />} />
                 </Routes>
             </Fragment>
