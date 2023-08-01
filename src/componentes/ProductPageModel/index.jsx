@@ -1,4 +1,5 @@
 import Botao from "componentes/Botao";
+import ReactImageGallery from "react-image-gallery";
 import { ReactMarkdown } from "react-markdown/lib/react-markdown";
 
 const ProductPageModel = ({ product }) => {
@@ -22,20 +23,31 @@ const ProductPageModel = ({ product }) => {
         return stars;
     };
 
+    const imagens = product.images;
+    console.log(imagens);
+
+    const items = product.images.map((img) => {
+        console.log(img);
+        return {
+            thumbnail: img,
+            original: img,
+            originalClass: "rounded-lg  h-[260px] object-cover lg:h-[390px]",
+            thumbnailClass: "rounded-3xl h-[80px] w-1/3",
+        };
+    });
+
     return (
         <>
-            <article className="flex gap-5 mb-9">
-                <div className="w-2/5 flex flex-wrap">
-                    {product.images.map((img) => {
-                        return (
-                            <img
-                                className="border-4 border-amarelo-01 rounded-xl w-1/2"
-                                src={img}
-                                alt
-                            />
-                        );
-                    })}
+            <article className="flex flex-col md:flex-row gap-5 mb-9">
+                <div className="w-2/5">
+                    <ReactImageGallery
+                        items={items}
+                        showFullscreenButton={false}
+                        showPlayButton={false}
+                        showNav={false}
+                    />
                 </div>
+
                 <div className="w-3/5">
                     <h3 className="text-xl font-titulos mb-2">
                         {product.name}
@@ -49,12 +61,46 @@ const ProductPageModel = ({ product }) => {
                     </h2>
 
                     {/* ------------------------------------ */}
-                    <p>Quantidade</p>
-                    <span className="flex gap-2 items-center">
-                        <Botao classeBtn="secundario">-</Botao>
-                        {product.quantity}
-                        <Botao>+</Botao>
-                    </span>
+                    <div className="flex items-center gap-16">
+                        <p>Quantidade:</p>
+                        <span className="flex gap-2 items-center">
+                            <Botao
+                                classeBtn="secundario"
+                                classe="py-0 px-0 sm:py-0"
+                            >
+                                <svg
+                                    className="hover:fill-branco fill-violeta-01"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="12"
+                                    height="12"
+                                    viewBox="0 0 12 12"
+                                    fill="none"
+                                >
+                                    <path
+                                        fill-rule="evenodd"
+                                        clip-rule="evenodd"
+                                        d="M0 5.75C0 5.55109 0.0790175 5.36032 0.21967 5.21967C0.360322 5.07902 0.551088 5 0.75 5H11.25C11.4489 5 11.6397 5.07902 11.7803 5.21967C11.921 5.36032 12 5.55109 12 5.75C12 5.94891 11.921 6.13968 11.7803 6.28033C11.6397 6.42098 11.4489 6.5 11.25 6.5H0.75C0.551088 6.5 0.360322 6.42098 0.21967 6.28033C0.0790175 6.13968 0 5.94891 0 5.75Z"
+                                    />
+                                </svg>
+                            </Botao>
+                            {product.quantity}
+                            <Botao classe="py-0 px-0 sm:py-0">
+                                <svg
+                                    className=" hover:fill-violeta-01 fill-branco"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="12"
+                                    height="12"
+                                    viewBox="0 0 12 12"
+                                    fill="none"
+                                >
+                                    <path
+                                        d="M6.75 0.75C6.75 0.551088 6.67098 0.360322 6.53033 0.21967C6.38968 0.0790175 6.19891 0 6 0C5.80109 0 5.61032 0.0790175 5.46967 0.21967C5.32902 0.360322 5.25 0.551088 5.25 0.75V5.25H0.75C0.551088 5.25 0.360322 5.32902 0.21967 5.46967C0.0790175 5.61032 0 5.80109 0 6C0 6.19891 0.0790175 6.38968 0.21967 6.53033C0.360322 6.67098 0.551088 6.75 0.75 6.75H5.25V11.25C5.25 11.4489 5.32902 11.6397 5.46967 11.7803C5.61032 11.921 5.80109 12 6 12C6.19891 12 6.38968 11.921 6.53033 11.7803C6.67098 11.6397 6.75 11.4489 6.75 11.25V6.75H11.25C11.4489 6.75 11.6397 6.67098 11.7803 6.53033C11.921 6.38968 12 6.19891 12 6C12 5.80109 11.921 5.61032 11.7803 5.46967C11.6397 5.32902 11.4489 5.25 11.25 5.25H6.75V0.75Z"
+                                        fill=""
+                                    />
+                                </svg>
+                            </Botao>
+                        </span>
+                    </div>
                 </div>
             </article>
 
