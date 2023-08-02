@@ -31,15 +31,15 @@ const ProductPageModel = ({ product }) => {
         return {
             thumbnail: img,
             original: img,
-            originalClass: "rounded-lg  h-[260px] object-cover lg:h-[390px]",
-            thumbnailClass: "rounded-3xl h-[80px] w-1/3",
+            originalClass: "rounded-lg  h-[240px] object-cover lg:h-[360px]",
+            thumbnailClass: "rounded-3xl max-w-[100px] w-1/3",
         };
     });
 
     return (
         <>
             <article className="flex flex-col md:flex-row gap-5 mb-9">
-                <div className="w-2/5">
+                <div className="w-full md:w-2/5 border-4 border-indigo-500/100 imageGalley-wrapper">
                     <ReactImageGallery
                         items={items}
                         showFullscreenButton={false}
@@ -56,7 +56,7 @@ const ProductPageModel = ({ product }) => {
                         {renderFullStars()}
                         {renderEmptyStars()}
                     </div>
-                    <h2 className="text-3xl text-rosa-01 font-titulos">
+                    <h2 className="text-3xl text-rosa-01 mb-4 font-titulos">
                         R$ {product.price.toFixed(2)}
                     </h2>
 
@@ -103,6 +103,8 @@ const ProductPageModel = ({ product }) => {
                     </div>
                 </div>
             </article>
+
+            <hr className="border-t-2 border-amarelo-02 mb-5" />
 
             <article>
                 <h4 className="text-rosa-01 font-titulos text-xl mb-1">

@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const CardProduto = ({ produto }) => {
     return (
-        <li className="font-medium font-titulos rounded-3xl shadow-lg">
+        <div className="font-medium font-titulos rounded-3xl shadow-lg">
             <Link to={"/produtos/" + produto.slug}>
                 <img
                     className="w-full h-[200px] object-cover rounded-t-3xl"
@@ -17,7 +17,7 @@ const CardProduto = ({ produto }) => {
                     R$ {produto.price.toFixed(2)}
                 </p>
                 <Link to={"/produtos/" + produto.slug}>
-                    <h3 className="mb-4 text-lg text-rosa-03">
+                    <h3 className="mb-4 text-lg text-rosa-03 cardProduct_name">
                         {produto.name}
                     </h3>
                 </Link>
@@ -30,7 +30,7 @@ const CardProduto = ({ produto }) => {
                     </BotaoIcone>
                 </div>
             </div>
-        </li>
+        </div>
     );
 };
 

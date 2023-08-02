@@ -19,7 +19,9 @@ const Produtos = () => {
         <div>
             <ul className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 lg:gap-5 gap-4">
                 {listaProdutos.map((product) => (
-                    <CardProduto key={product.id} produto={{ ...product }} />
+                    <ul key={product.id}>
+                        <CardProduto produto={{ ...product }} />
+                    </ul>
                 ))}
             </ul>
         </div>
