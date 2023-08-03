@@ -4,9 +4,7 @@ import { ReactMarkdown } from "react-markdown/lib/react-markdown";
 
 const ProductPageModel = ({ product }) => {
     const fullStars = Math.floor(product.rating);
-    console.log(fullStars);
     const emptyStars = 5 - fullStars;
-    console.log(emptyStars);
 
     const renderFullStars = () => {
         const stars = [];
@@ -23,15 +21,14 @@ const ProductPageModel = ({ product }) => {
         return stars;
     };
 
-    const imagens = product.images;
-    console.log(imagens);
+    console.log(product.inPromotion);
 
     const items = product.images.map((img) => {
         console.log(img);
         return {
             thumbnail: img,
             original: img,
-            originalClass: "rounded-lg  h-[240px] object-cover lg:h-[360px]",
+            originalClass: "rounded-lg  h-[280px] sm:h-[360px] object-cover lg:h-[360px]",
             thumbnailClass: "rounded-3xl max-w-[100px] w-1/3",
         };
     });
@@ -49,16 +46,36 @@ const ProductPageModel = ({ product }) => {
                 </div>
 
                 <div className="w-3/5">
-                    <h3 className="text-xl font-titulos mb-2">
+                    <h3 className="text-xl text-violeta-01 font-titulos mb-2">
                         {product.name}
                     </h3>
                     <div className="flex gap-1 mb-4">
                         {renderFullStars()}
                         {renderEmptyStars()}
                     </div>
-                    <h2 className="text-3xl text-rosa-01 mb-4 font-titulos">
+
+                    {product.inPromotion[0] ? (
+                        <>
+                            <p className="line-through text-lg text-rosa-02 font-titulos">
+                                R$
+                                {product.price.toFixed(2)}
+                            </p>
+                            <h2
+                                className={
+                                    "text-3xl text-rosa-01 mb-4 font-titulos"
+                                }
+                            >
+                                R$
+                                {(
+                                    product.price -
+                                    product.price * product.inPromotion[1]
+                                ).toFixed(2)}
+                            </h2>
+                        </>
+                    ) : (<h2 className="text-3xl text-rosa-01 mb-4 font-titulos">
                         R$ {product.price.toFixed(2)}
-                    </h2>
+                    </h2>)}
+                    
 
                     {/* ------------------------------------ */}
                     <div className="flex items-center gap-16">

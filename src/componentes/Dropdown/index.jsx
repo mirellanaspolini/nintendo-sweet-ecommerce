@@ -19,7 +19,7 @@ const Dropdown = () => {
                         width="24px"
                         alt=""
                     />
-                    Minha conta
+                    <span className="sr-only sm:not-sr-only">Minha conta</span>
                     <img
                         src="/img/icons/chevron-down-violet.svg"
                         width="18px"

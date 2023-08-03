@@ -5,7 +5,7 @@ import useAuth from "contexts/useAuth";
 import products from "json/produtos.json";
 import { useNavigate } from "react-router-dom";
 
-const PaginaInicial = () => {
+const Home = () => {
     const { signout } = useAuth();
     const navigate = useNavigate();
 
@@ -24,12 +24,12 @@ const PaginaInicial = () => {
 
     return (
         <>
-            <article className="flex gap-5 mb-6">
-                <aside className="w-1/5">
+            <article className="flex flex-col md:flex-row gap-2 sm:gap-5 mb-6">
+                <aside className="w-full md:w-1/5">
                     <h3 className="mb-2 text-violeta-02 font-medium font-titulos">
                         Busque por categorias:
                     </h3>
-                    <div className="flex gap-2 flex-wrap mb-6">
+                    <div className="flex gap-2 sm:flex-wrap pb-4 whitespace-nowrap overflow-x-scroll sm:overflow-hidden ">
                         {category.map((c) => (
                             <Category category={c} />
                         ))}
@@ -45,4 +45,4 @@ const PaginaInicial = () => {
     );
 };
 
-export default PaginaInicial;
+export default Home;

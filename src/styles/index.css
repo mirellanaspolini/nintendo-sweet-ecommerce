@@ -5,10 +5,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Roboto:wght@400;500&display=swap");
 
 @layer {
-   
-
     .image-gallery-content .image-gallery-slide .image-gallery-image {
-        border: 4px solid #ffe794;
+        border: 4px solid #c33470 !important;
         border-radius: 40px;
         height: 100% !important;
         object-fit: cover !important;
@@ -30,15 +28,23 @@
     .image-gallery-thumbnails .image-gallery-thumbnails-container {
         text-align: left !important;
     }
-    .imageGalley-wrapper {
-        border: 4px solid black;
+    .cardProduct_name,
+    .productDescription p {
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+        display: -webkit-box;
+        overflow: hidden;
     }
-    .cardProduct_name {
-            line-height: 20px;
-            -webkit-box-orient: vertical;
-            -webkit-line-clamp: 3;
-            display: -webkit-box;
-            overflow: hidden;
-        
+    .addCartButton::before {
+        content: url("/public/img/icons/cart-filled_icon.svg");
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 0.5rem;
+        width: 22px;
+        height: 22px;
+        object-fit: contain;
+    }
+    .addCartButton:hover::before {
+        content: url("/public/img/icons/cart-white-filled_icon.svg");
     }
 }

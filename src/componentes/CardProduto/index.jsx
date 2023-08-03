@@ -1,4 +1,4 @@
-import BotaoIcone from "componentes/BotaoIcone";
+import AddCartButton from "componentes/AddCartButton";
 import { Link } from "react-router-dom";
 
 const CardProduto = ({ produto }) => {
@@ -17,17 +17,20 @@ const CardProduto = ({ produto }) => {
                     R$ {produto.price.toFixed(2)}
                 </p>
                 <Link to={"/produtos/" + produto.slug}>
-                    <h3 className="mb-4 text-lg text-rosa-03 cardProduct_name">
+                    <h3
+                        className="mb-4 text-lg text-rosa-03 cardProduct_name"
+                        title={produto.name}
+                    >
                         {produto.name}
                     </h3>
                 </Link>
                 <div className="self-stretch w-full lg:w-auto relative">
-                    <BotaoIcone
+                    <AddCartButton
                         classe="w-full"
-                        icon="before:bg-cart hover:before:bg-cartWhiteFilled"
+                        icon="before:content-[''] before:block before:bg-cart hover:before:bg-cartWhiteFilled"
                     >
                         Adicionar ao carrinho
-                    </BotaoIcone>
+                    </AddCartButton>
                 </div>
             </div>
         </div>
