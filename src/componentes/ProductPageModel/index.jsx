@@ -1,27 +1,30 @@
+import AddCartButton from "componentes/AddCartButton";
+import AddFavButton from "componentes/AddFavButton";
 import Botao from "componentes/Botao";
+import Rating from "componentes/Rating";
 import ReactImageGallery from "react-image-gallery";
 import { ReactMarkdown } from "react-markdown/lib/react-markdown";
 
 const ProductPageModel = ({ product }) => {
-    const fullStars = Math.floor(product.rating);
-    const emptyStars = 5 - fullStars;
+    // const fullStars = Math.floor(product.rating);
+    // const emptyStars = 5 - fullStars;
 
-    const renderFullStars = () => {
-        const stars = [];
-        for (let i = 0; i < fullStars; i++) {
-            stars.push(<img src="/img/icons/star-filled_icon.svg" alt />);
-        }
-        return stars;
-    };
-    const renderEmptyStars = () => {
-        const stars = [];
-        for (let i = 0; i < emptyStars; i++) {
-            stars.push(<img src="/img/icons/star_icon.svg" alt />);
-        }
-        return stars;
-    };
+    // const renderFullStars = () => {
+    //     const stars = [];
+    //     for (let i = 0; i < fullStars; i++) {
+    //         stars.push(<img src="/img/icons/star-filled_icon.svg" alt />);
+    //     }
+    //     return stars;
+    // };
+    // const renderEmptyStars = () => {
+    //     const stars = [];
+    //     for (let i = 0; i < emptyStars; i++) {
+    //         stars.push(<img src="/img/icons/star_icon.svg" alt />);
+    //     }
+    //     return stars;
+    // };
 
-    console.log(product.inPromotion);
+    // console.log(product.inPromotion);
 
     const items = product.images.map((img) => {
         console.log(img);
@@ -45,15 +48,11 @@ const ProductPageModel = ({ product }) => {
                     />
                 </div>
 
-                <div className="w-3/5">
+                <div className="sm:w-3/5">
                     <h3 className="text-xl text-violeta-01 font-titulos mb-2">
                         {product.name}
                     </h3>
-                    <div className="flex gap-1 mb-4">
-                        {renderFullStars()}
-                        {renderEmptyStars()}
-                    </div>
-
+                    <Rating rating={product.rating}/>
                     {product.inPromotion[0] ? (
                         <>
                             <p className="line-through text-lg text-rosa-02 font-titulos">
@@ -78,8 +77,8 @@ const ProductPageModel = ({ product }) => {
                     
 
                     {/* ------------------------------------ */}
-                    <div className="flex items-center gap-16">
-                        <p>Quantidade:</p>
+                    <div className="flex items-center gap-16 mb-5">
+                        <p className="text-cinza-06">Quantidade:</p>
                         <span className="flex gap-2 items-center">
                             <Botao
                                 classeBtn="secundario"
@@ -118,10 +117,14 @@ const ProductPageModel = ({ product }) => {
                             </Botao>
                         </span>
                     </div>
+                    <div className="flex flex-wrap gap-2">
+                        <AddCartButton/>
+                        <AddFavButton/>
+                    </div>
                 </div>
             </article>
 
-            <hr className="border-t-2 border-amarelo-02 mb-5" />
+            <hr className="border-t-2 border-rosa-01 mb-5" />
 
             <article>
                 <h4 className="text-rosa-01 font-titulos text-xl mb-1">

@@ -50,11 +50,11 @@ const SearchResults = () => {
                     <h2 className="text-violeta-01 font-bold font-titulos mb-2">
                         Resultados de busca para "{query}":
                     </h2>
-                    <ul className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 lg:gap-5 gap-4">
+                    <ul className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 lg:gap-5 gap-3 sm:gap-4">
                         {searchResults.map((product) => (
                             <CardProduto
                                 key={product.id}
-                                produto={{ ...product }}
+                                product={{ ...product }}
                             />
                         ))}
                     </ul>

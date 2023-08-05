@@ -35,16 +35,30 @@
         display: -webkit-box;
         overflow: hidden;
     }
-    .addCartButton::before {
-        content: url("/public/img/icons/cart-filled_icon.svg");
+    .addCartButton::before,
+    .addFavButton::before {
+        content: "";
         display: inline-block;
         vertical-align: middle;
         margin-right: 0.5rem;
-        width: 22px;
-        height: 22px;
+        width: 18px;
+        height: 18px;
         object-fit: contain;
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    .addCartButton::before {
+        background-image: url("/public/img/icons/cart-white-filled_icon.svg");
+
     }
     .addCartButton:hover::before {
-        content: url("/public/img/icons/cart-white-filled_icon.svg");
+        background-image: url("/public/img/icons/cart-filled_icon.svg");
+    }
+    .addFavButton::before {
+        background-image: url("/public/img/icons/fav_icon.svg");
+    }
+    .addFavButton:hover::before {
+        background-image: url("/public/img/icons/fav-white_icon.svg");
     }
 }

@@ -36,10 +36,10 @@ const Home = () => {
                     </div>
                 </aside>
                 <div className="flex-1">
-                    <CardProductPromotion produto={inPromotion} />
+                    <CardProductPromotion product={inPromotion} />
                 </div>
             </article>
-            <hr className="border-t-2 border-lavanda mb-6" />
+            <hr className="border-t-2 border-lilas mb-6" />
             <Produtos />
         </>
     );
