@@ -55,7 +55,7 @@ module.exports = {
                 favWhiteFilled:
                     'url("/public/img/icons/fav-white-filled_icon.svg")',
                 filter: 'url("/public/img/icons/Filter_icon.svg")',
-                minus: 'url("/public/img/icons/minus_icon.svg")',
+                minus: "",
                 plus: 'url("/public/img/icons/plus_icon.svg")',
                 search: 'url("/public/img/icons/Search_icon.svg")',
                 shipping: 'url("/public/img/icons/Shipping_icon.svg")',

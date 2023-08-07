@@ -40,6 +40,7 @@ const Home = () => {
                 </div>
             </article>
             <hr className="border-t-2 border-lilas mb-6" />
+            {/* filtros */}
             <Produtos />
         </>
     );
