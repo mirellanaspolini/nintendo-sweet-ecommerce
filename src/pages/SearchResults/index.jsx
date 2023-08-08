@@ -1,5 +1,5 @@
 import Botao from "componentes/Botao";
-import CardProduto from "componentes/CardProduto";
+import CardProduto from "componentes/CardProduct";
 import Header from "componentes/Header";
 import productList from "json/produtos.json";
 import { useLocation, useNavigate } from "react-router-dom";

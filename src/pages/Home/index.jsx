@@ -1,6 +1,6 @@
 import CardProductPromotion from "componentes/CardProductPromotion";
 import Category from "componentes/Category";
-import Produtos from "componentes/Produtos";
+import Products from "componentes/Products";
 import useAuth from "contexts/useAuth";
 import products from "json/produtos.json";
 import { useNavigate } from "react-router-dom";
@@ -29,7 +29,7 @@ const Home = () => {
                     <h3 className="mb-2 text-violeta-02 font-medium font-titulos">
                         Busque por categorias:
                     </h3>
-                    <div className="flex gap-2 sm:flex-wrap pb-4 whitespace-nowrap overflow-x-scroll sm:overflow-hidden ">
+                    <div className="flex gap-2 sm:flex-wrap pb-4 whitespace-nowrap overflow-x-scroll sm:overflow-hidden">
                         {category.map((c) => (
                             <Category category={c} />
                         ))}
@@ -41,7 +41,7 @@ const Home = () => {
             </article>
             <hr className="border-t-2 border-lilas mb-6" />
             {/* filtros */}
-            <Produtos />
+            <Products />
         </>
     );
 };

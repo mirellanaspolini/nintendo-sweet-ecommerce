@@ -7,8 +7,10 @@ import ReactImageGallery from "react-image-gallery";
 import { ReactMarkdown } from "react-markdown/lib/react-markdown";
 
 const ProductPageModel = ({ product }) => {
-    const { cart, addProduct, removeProduct } = useCartContext();
-    const cartProducts = cart.find((cartItem) => cartItem.id === product.id);
+    const { cartItems, addProduct, removeProduct } = useCartContext();
+    const cartProducts = cartItems.find(
+        (cartItem) => cartItem.id === product.id
+    );
 
     const items = product.images.map((img) => {
         return {

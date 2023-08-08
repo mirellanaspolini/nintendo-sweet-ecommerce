@@ -36,6 +36,7 @@ module.exports = {
                 "amarelo-02": "#fbeaad",
                 "amarelo-03": "#ffe794",
                 "amarelo-04": "#8d6d00",
+                "amarelo-05": "#4E3D06",
             },
             backgroundImage: {
                 profile: 'url("/public/img/icons/Profile_icon.svg")',

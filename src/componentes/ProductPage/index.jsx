@@ -1,4 +1,4 @@
-import CardProduto from "componentes/CardProduto";
+import CardProduto from "componentes/CardProduct";
 import DefaultPage from "componentes/DefaultPage";
 import ProductPageModel from "componentes/ProductPageModel";
 import products from "json/produtos.json";

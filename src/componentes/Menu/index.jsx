@@ -1,6 +1,6 @@
 import Botao from "componentes/Botao";
 import BotaoIcone from "componentes/BotaoIcone";
-import Example from "componentes/Dropdown";
+import Dropdown from "componentes/Dropdown";
 import Input from "componentes/Input";
 import useAuth from "contexts/useAuth";
 import { useState } from "react";
@@ -21,8 +21,11 @@ const Menu = () => {
     return (
         <div className="w-full block bg-lavanda">
             <header className="flex flex-wrap m-auto gap-x-9 gap-y-6 px-4 md:px-6 py-5 justify-between items-center max-w-5xl">
-                <Link to="/" className="h-[38px] w-[38px] order-first duration-100 bg-logoMin bg-no-repeat bg-contain sm:bg-logo sm:w-[165px] sm:h-[50px]"></Link>
-                <div className="flex lg:gap-5 gap-2 lg:order-last">
+                <Link
+                    to="/"
+                    className="h-[38px] w-[38px] order-first duration-100 bg-logoMin bg-no-repeat bg-contain sm:bg-logo sm:w-[165px] sm:h-[50px]"
+                ></Link>
+                <div className="flex lg:gap-3 gap-2 lg:order-last">
                     {isLoggedIn() == false ? (
                         <>
                             <Botao classeBtn="secundario">
@@ -44,7 +47,7 @@ const Menu = () => {
                                 icon="before:bg-fav"
                                 rota="/favoritos"
                             ></BotaoIcone>
-                            <Example />
+                            <Dropdown />
                         </>
                     )}
                 </div>
