@@ -1,4 +1,4 @@
-import Botao from "componentes/Botao";
+import Botao from "componentes/Button";
 import CardProduto from "componentes/CardProduct";
 import Header from "componentes/Header";
 import productList from "json/produtos.json";
@@ -41,7 +41,7 @@ const SearchResults = () => {
                             alt="Gato branco brincando com um novelo de lã amarelo"
                         />
                     </div>
-                    <Botao classeBtn="rosa" onclick={handleClick}>
+                    <Botao classBtn="rosa" onclick={handleClick}>
                         Voltar para a página principal
                     </Botao>
                 </section>

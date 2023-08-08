@@ -1,5 +1,5 @@
-import Botao from "componentes/Botao";
-import BotaoIcone from "componentes/BotaoIcone";
+import Botao from "componentes/Button";
+import BotaoIcone from "componentes/IconButton";
 import Dropdown from "componentes/Dropdown";
 import Input from "componentes/Input";
 import useAuth from "contexts/useAuth";
@@ -28,7 +28,7 @@ const Menu = () => {
                 <div className="flex lg:gap-3 gap-2 lg:order-last">
                     {isLoggedIn() == false ? (
                         <>
-                            <Botao classeBtn="secundario">
+                            <Botao classBtn="secundary">
                                 <Link to="/entrar">Entrar</Link>
                             </Botao>
                             <Botao>

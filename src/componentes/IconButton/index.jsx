@@ -1,6 +1,6 @@
 import { useNavigate } from "react-router-dom";
 
-const BotaoIcone = ({ onclick, children, icon, arialabel, rota, classe }) => {
+const IconButton = ({ onclick, children, icon, arialabel, rota, classe }) => {
     const navigate = useNavigate();
     const handleClick = () => {
         navigate(rota);
@@ -16,4 +16,4 @@ const BotaoIcone = ({ onclick, children, icon, arialabel, rota, classe }) => {
     );
 };
 
-export default BotaoIcone;
+export default IconButton;

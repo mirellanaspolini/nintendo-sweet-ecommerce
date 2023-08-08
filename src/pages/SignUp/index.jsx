@@ -1,4 +1,4 @@
-import Botao from "componentes/Botao";
+import Botao from "componentes/Button";
 import Input from "componentes/Input";
 import Header from "componentes/Header";
 import useAuth from "contexts/useAuth";
