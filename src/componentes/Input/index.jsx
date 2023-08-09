@@ -1,12 +1,19 @@
-
 const Input = ({
     label,
-    classe,
+    classe = "",
     placeholder,
     onChange,
     tipo = "text",
     value,
+    size = "lg",
 }) => {
+    const sizeClass =
+        size === "lg"
+            ? "py-3 px-4 rounded-2xl w-full"
+            : size === "sm"
+            ? "px-2 py-1 rounded-xl w-[120px]"
+            : "";
+
     return (
         <div>
             <label
@@ -16,7 +23,7 @@ const Input = ({
                 {label}
             </label>
             <input
-                className={`${classe} w-full font-textos text-base border-2 rounded-2xl border-violeta-01 text-cinza-06  py-3 px-4`}
+                className={`${classe} ${sizeClass} font-textos text-base border-2 border-violeta-01 text-cinza-06 `}
                 type={tipo}
                 id={`txt${label}`}
                 placeholder={placeholder}

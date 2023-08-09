@@ -28,7 +28,7 @@ export const useCartContext = () => {
         }
         setCartItems((oldCart) =>
             oldCart.map((cartItem) => {
-                if (cartItem.id === newProduct.id) newProduct.quantity += 1;
+                if (cartItem.id === newProduct.id) cartItem.quantity += 1;
                 return cartItem;
             })
         );
