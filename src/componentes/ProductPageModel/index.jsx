@@ -1,6 +1,7 @@
 import AddCartButton from "componentes/AddCartButton";
 import AddFavButton from "componentes/AddFavButton";
 import Botao from "componentes/Button";
+import Input from "componentes/Input";
 import Rating from "componentes/Rating";
 import { useCartContext } from "contexts/Cart";
 import ReactImageGallery from "react-image-gallery";
@@ -47,7 +48,7 @@ const ProductPageModel = ({ product }) => {
                             </p>
                             <h2
                                 className={
-                                    "text-3xl text-rosa-01 mb-4 font-titulos"
+                                    "text-3xl text-rosa-01 mb-5 font-titulos"
                                 }
                             >
                                 R$
@@ -62,10 +63,18 @@ const ProductPageModel = ({ product }) => {
                             R$ {product.price.toFixed(2)}
                         </h2>
                     )}
-
-                    {/* ------------------------------------ */}
+                    <div className="flex items-center gap-2 mb-5">
+                        <img
+                            src="/img/icons/Shipping_icon.svg"
+                            alt=""
+                        />
+                        <p className="text-cinza-06 font-textos">
+                            Calcular frete:
+                        </p>
+                        <Input size="sm" placeholder="Digite o CEP" />
+                    </div>
                     <div className="flex items-center gap-16 mb-5">
-                        <p className="text-cinza-06">Quantidade:</p>
+                        <p className="text-cinza-06 font-textos">Quantidade:</p>
                         <span className="flex gap-2 items-center">
                             <Botao
                                 onclick={() => removeProduct(product.id)}

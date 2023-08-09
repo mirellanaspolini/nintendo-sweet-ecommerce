@@ -8,7 +8,6 @@ import { useNavigate } from "react-router-dom";
 const Cart = () => {
     const { cartItems, addProduct, removeProduct, calculateCartTotal } =
         useCartContext();
-    console.log(calculateCartTotal());
     const navigate = useNavigate();
     const handleClick = () => {
         navigate("/");
