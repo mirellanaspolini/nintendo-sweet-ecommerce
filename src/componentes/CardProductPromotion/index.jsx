@@ -1,4 +1,4 @@
-import BotaoIcone from "componentes/IconButton";
+import ButtonIcone from "componentes/IconButton";
 import { ReactMarkdown } from "react-markdown/lib/react-markdown";
 import { Link } from "react-router-dom";
 

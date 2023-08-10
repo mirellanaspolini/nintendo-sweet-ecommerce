@@ -1,14 +1,16 @@
 import AddCartButton from "componentes/AddCartButton";
 import AddFavButton from "componentes/AddFavButton";
-import Botao from "componentes/Button";
+import Button from "componentes/Button";
 import Input from "componentes/Input";
 import Rating from "componentes/Rating";
 import { useCartContext } from "contexts/Cart";
+import { useFavoriteContext } from "contexts/Favorites";
 import ReactImageGallery from "react-image-gallery";
 import { ReactMarkdown } from "react-markdown/lib/react-markdown";
 
 const ProductPageModel = ({ product }) => {
     const { cartItems, addProduct, removeProduct } = useCartContext();
+    const { fav } = useFavoriteContext();
     const cartProducts = cartItems.find(
         (cartItem) => cartItem.id === product.id
     );
@@ -64,10 +66,7 @@ const ProductPageModel = ({ product }) => {
                         </h2>
                     )}
                     <div className="flex items-center gap-2 mb-5">
-                        <img
-                            src="/img/icons/Shipping_icon.svg"
-                            alt=""
-                        />
+                        <img src="/img/icons/Shipping_icon.svg" alt="" />
                         <p className="text-cinza-06 font-textos">
                             Calcular frete:
                         </p>
@@ -76,13 +75,13 @@ const ProductPageModel = ({ product }) => {
                     <div className="flex items-center gap-16 mb-5">
                         <p className="text-cinza-06 font-textos">Quantidade:</p>
                         <span className="flex gap-2 items-center">
-                            <Botao
+                            <Button
                                 onclick={() => removeProduct(product.id)}
                                 classBtn="secundary"
                                 classe="btnRemoveQuantity"
                             />
                             {cartProducts?.quantity || 0}
-                            <Botao
+                            <Button
                                 onclick={() => addProduct(product)}
                                 classe="btnAddQuantity"
                             />
@@ -90,7 +89,10 @@ const ProductPageModel = ({ product }) => {
                     </div>
                     <div className="flex flex-wrap gap-2">
                         <AddCartButton onClick={() => addProduct(product)} />
-                        <AddFavButton />
+                        <AddFavButton
+                            onClick={() => fav(product)}
+                            // isFavorite={isFavorite(product.id ? "remover dos favs" : "adicionar aos favs")}
+                        />
                     </div>
                 </div>
             </article>

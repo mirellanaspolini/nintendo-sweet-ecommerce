@@ -1,4 +1,4 @@
-import Botao from "componentes/Button";
+import Button from "componentes/Button";
 import Input from "componentes/Input";
 import Header from "componentes/Header";
 import useAuth from "contexts/useAuth";
@@ -89,7 +89,7 @@ const SignUp = () => {
                     }}
                 />
                 <p className="font-textos text-pink-600">{error}</p>
-                <Botao onclick={handleSignup}>Criar conta</Botao>
+                <Button onclick={handleSignup}>Criar conta</Button>
                 <p className="text-center font-textos text-lilas">
                     Já tem uma conta?&nbsp;
                     <Link className="text-pink-600 underline" to="/entrar">

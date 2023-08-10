@@ -1,4 +1,4 @@
-import Botao from "componentes/Button";
+import Button from "componentes/Button";
 import { useCartContext } from "contexts/Cart";
 import { Link } from "react-router-dom";
 
@@ -37,13 +37,13 @@ const CardProductCart = ({ product }) => {
 
                     <div className="flex items-center justify-between">
                         <span className="flex gap-2 items-center">
-                            <Botao
+                            <Button
                                 onclick={() => removeProduct(product.id)}
                                 classBtn="secundary"
                                 classe="btnRemoveQuantity"
                             />
                             {product?.quantity || 0}
-                            <Botao
+                            <Button
                                 onclick={() => addProduct(product)}
                                 classe="btnAddQuantity"
                             />

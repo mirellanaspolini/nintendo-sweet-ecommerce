@@ -1,4 +1,4 @@
-import Botao from "componentes/Button";
+import Button from "componentes/Button";
 import CardProduto from "componentes/CardProduct";
 import Header from "componentes/Header";
 import productList from "json/produtos.json";
@@ -25,7 +25,7 @@ const SearchResults = () => {
     return (
         <div>
             {searchResults.length == 0 ? (
-                <section className="h-screen gap-6 flex items-center pt-4 flex flex-col items-center m-auto">
+                <section className="gap-6 flex items-center pt-4 flex flex-col items-center m-auto">
                     <Header corTexto="rosa">
                         Ops! Não encontramos nenhum resultado para a sua busca.
                     </Header>
@@ -41,9 +41,9 @@ const SearchResults = () => {
                             alt="Gato branco brincando com um novelo de lã amarelo"
                         />
                     </div>
-                    <Botao classBtn="rosa" onclick={handleClick}>
+                    <Button classBtn="rosa" onclick={handleClick}>
                         Voltar para a página principal
-                    </Botao>
+                    </Button>
                 </section>
             ) : (
                 <>

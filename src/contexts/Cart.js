@@ -1,22 +1,20 @@
 import { createContext, useContext, useState } from "react";
 
-export const CarrinhoContext = createContext();
-CarrinhoContext.displayName = "Cart";
+export const CartContext = createContext();
+CartContext.displayName = "Cart";
 
-export const CarrinhoProvider = ({ children }) => {
+export const CartProvider = ({ children }) => {
     const [cartItems, setCartItems] = useState([]);
-    const [cartTotal, setCartTotal] = useState(0);
 
     return (
-        <CarrinhoContext.Provider value={{ cartItems, setCartItems }}>
+        <CartContext.Provider value={{ cartItems, setCartItems }}>
             {children}
-        </CarrinhoContext.Provider>
+        </CartContext.Provider>
     );
 };
 
 export const useCartContext = () => {
-    const { cartItems, setCartItems, setCartTotal, cartTotal } =
-        useContext(CarrinhoContext);
+    const { cartItems, setCartItems } = useContext(CartContext);
 
     const addProduct = (newProduct) => {
         const hasOnCart = cartItems.some(
@@ -57,5 +55,11 @@ export const useCartContext = () => {
         return total;
     };
 
-    return { cartItems, setCartItems, addProduct, removeProduct, calculateCartTotal };
+    return {
+        cartItems,
+        setCartItems,
+        addProduct,
+        removeProduct,
+        calculateCartTotal,
+    };
 };

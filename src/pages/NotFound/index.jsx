@@ -1,4 +1,4 @@
-import Botao from "componentes/Button";
+import Button from "componentes/Button";
 import Header from "componentes/Header";
 import React from "react";
 import { useNavigate } from "react-router-dom";
@@ -21,9 +21,9 @@ const NotFound = () => {
                     alt="Gato branco brincando com um novelo de lã amarelo"
                 />
             </div>
-            <Botao classBtn="rosa" onclick={handleClick}>
+            <Button classBtn="rosa" onclick={handleClick}>
                 Voltar
-            </Botao>
+            </Button>
         </section>
     );
 };

@@ -1,5 +1,5 @@
-import Botao from "componentes/Button";
-import BotaoIcone from "componentes/IconButton";
+import Button from "componentes/Button";
+import ButtonIcone from "componentes/IconButton";
 import Dropdown from "componentes/Dropdown";
 import Input from "componentes/Input";
 import useAuth from "contexts/useAuth";
@@ -28,25 +28,25 @@ const Menu = () => {
                 <div className="flex lg:gap-3 gap-2 lg:order-last">
                     {isLoggedIn() == false ? (
                         <>
-                            <Botao classBtn="secundary">
+                            <Button classBtn="secundary">
                                 <Link to="/entrar">Entrar</Link>
-                            </Botao>
-                            <Botao>
+                            </Button>
+                            <Button>
                                 <Link to="/cadastre-se">Criar conta</Link>
-                            </Botao>
+                            </Button>
                         </>
                     ) : (
                         <>
-                            <BotaoIcone
+                            <ButtonIcone
                                 arialabel="Abrir carrinho"
                                 icon="before:bg-cart"
                                 rota="/carrinho"
-                            ></BotaoIcone>
-                            <BotaoIcone
+                            ></ButtonIcone>
+                            <ButtonIcone
                                 arialabel="Abrir favoritos"
                                 icon="before:bg-fav"
                                 rota="/favoritos"
-                            ></BotaoIcone>
+                            ></ButtonIcone>
                             <Dropdown />
                         </>
                     )}
