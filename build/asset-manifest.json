@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/nintendo-sweet-ecommerce/static/css/main.191d4c44.css",
+    "main.js": "/nintendo-sweet-ecommerce/static/js/main.0a681376.js",
+    "static/media/NS-logo.svg": "/nintendo-sweet-ecommerce/static/media/NS-logo.b4d33c906ebdf0064a53.svg",
+    "static/media/cart-filled_icon.svg": "/nintendo-sweet-ecommerce/static/media/cart-filled_icon.d60409bc87a77c7dc34a.svg",
+    "static/media/cart-white-filled_icon.svg": "/nintendo-sweet-ecommerce/static/media/cart-white-filled_icon.bc64d4d937c5c8b0ed59.svg",
+    "static/media/cart_icon.svg": "/nintendo-sweet-ecommerce/static/media/cart_icon.b2d09fe0d702490c41bd.svg",
+    "static/media/NS-logo-min.svg": "/nintendo-sweet-ecommerce/static/media/NS-logo-min.d3127d861b244fa124d7.svg",
+    "index.html": "/nintendo-sweet-ecommerce/index.html",
+    "static/media/fav-white_icon.svg": "/nintendo-sweet-ecommerce/static/media/fav-white_icon.982b871e160315a7ba32.svg",
+    "static/media/fav_icon.svg": "/nintendo-sweet-ecommerce/static/media/fav_icon.e54dcb72a3635a246ac9.svg",
+    "main.191d4c44.css.map": "/nintendo-sweet-ecommerce/static/css/main.191d4c44.css.map",
+    "main.0a681376.js.map": "/nintendo-sweet-ecommerce/static/js/main.0a681376.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.191d4c44.css",
+    "static/js/main.0a681376.js"
+  ]
+}
