@@ -38,7 +38,7 @@ const SignUp = () => {
 
     return (
         <section className=" flex items-center justify-center">
-            <form className="rounded-3xl shadow-2xl p-14 flex flex-col gap-2 w-[480px]">
+            <form className="rounded-3xl shadow-2xl bg-branco-puro p-14 flex flex-col gap-2 w-[480px]">
                 <img
                     className="h-[40px] self-center mb-5"
                     src="./img/NS-logo.svg"

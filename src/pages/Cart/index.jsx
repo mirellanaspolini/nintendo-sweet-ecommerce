@@ -42,7 +42,7 @@ const Cart = () => {
                         ))}
                     </ul>
 
-                    <div className="relative w-full md:w-1/2 shadow-lg p-5 rounded-3xl h-fit grid auto-rows-min grid-cols-2 gap-4 font-titulos text-rosa-03">
+                    <div className="relative w-full md:w-1/2 bg-branco-puro shadow-lg p-5 rounded-3xl h-fit grid auto-rows-min grid-cols-2 gap-4 font-titulos text-rosa-03">
                         <p>Valor:</p>
                         <p className="text-right">
                             R$ {calculateCartTotal().toFixed(2)}

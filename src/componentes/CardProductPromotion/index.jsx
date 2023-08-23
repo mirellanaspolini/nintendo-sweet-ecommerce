@@ -7,7 +7,7 @@ const CardProductPromotion = ({ product }) => {
 
     return (
         <Link to={"/produtos/" + product.slug}>
-            <div className="font-medium font-titulos rounded-3xl shadow-lg flex flex-row h-auto">
+            <div className="font-medium font-titulos rounded-3xl shadow-lg bg-branco-puro flex flex-row h-auto">
                 <div className="w-3/5 sm:w-1/2 relative">
                     <span className="absolute right-0 bg-pink-600 py-1 px-2 sm:p-2 sm:px-4 rounded-bl-xl text-branco text-xl sm:text-3xl">
                         {`- ${product.inPromotion[1] * 100}%`}

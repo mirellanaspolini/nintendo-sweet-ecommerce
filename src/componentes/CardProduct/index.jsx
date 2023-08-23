@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const CardProduct = ({ product }) => {
     return (
-        <div className="font-medium font-titulos rounded-3xl shadow-lg">
+        <div className="font-medium font-titulos rounded-3xl shadow-lg bg-branco-puro">
             <Link to={"/produtos/" + product.slug}>
                 <img
                     className="w-full h-[200px] object-cover rounded-t-3xl"

@@ -6,7 +6,7 @@ const CardProductCart = ({ product }) => {
     const { removeProduct, addProduct } = useCartContext();
     return (
         <li className="flex flex-col md:flex-row mb-4">
-            <div className=" rounded-3xl shadow-lg flex">
+            <div className="rounded-3xl shadow-lg flex bg-branco-puro">
                 <Link className="w-2/5 " to={"/produtos/" + product.slug}>
                     <img
                         className="h-full object-cover rounded-l-3xl"
