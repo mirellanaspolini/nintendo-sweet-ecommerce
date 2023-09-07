@@ -1,12 +1,12 @@
-const Button = ({ onclick, children, classBtn = "default", classe }) => {
+const Button = ({ onclick, children, classBtn = 'default', classe }) => {
     const classes =
-        classBtn === "default"
-            ? "bg-violeta-01 text-branco-puro border-violeta-01 hover:bg-branco hover:text-violeta-01"
-            : classBtn === "secundary"
-            ? "bg-branco-puro text-violeta-01 border-violeta-01 hover:bg-violeta-01 hover:text-branco-puro"
-            : classBtn === "rosa"
-            ? "bg-rosa-01 text-branco-puro border-rosa-01 hover:bg-branco-puro hover:text-rosa-01"
-            : "";
+        classBtn === 'default'
+            ? 'bg-violeta-01 text-branco-puro border-violeta-01 hover:bg-branco hover:text-violeta-01'
+            : classBtn === 'secundary'
+            ? 'bg-branco-puro text-violeta-01 border-violeta-01 hover:bg-violeta-01 hover:text-branco-puro'
+            : classBtn === 'rosa'
+            ? 'bg-rosa-01 text-branco-puro border-rosa-01 hover:bg-branco-puro hover:text-rosa-01'
+            : '';
 
     return (
         <>

@@ -1,13 +1,23 @@
-import Button from "componentes/Button";
-import { useCartContext } from "contexts/Cart";
-import { Link } from "react-router-dom";
+import Button from 'componentes/Button';
+import { useCartContext } from 'contexts/Cart';
+import { Link } from 'react-router-dom';
 
 const CardProductCart = ({ product }) => {
-    const { removeProduct, addProduct } = useCartContext();
+    const { setCartItems, removeProduct, removeProductFromCart } =
+        useCartContext();
+
+    const addProduct = (newProduct) => {
+        setCartItems((oldCart) =>
+            oldCart.map((cartItem) => {
+                if (cartItem.id === newProduct.id) cartItem.quantity += 1;
+                return cartItem;
+            })
+        );
+    };
     return (
         <li className="flex flex-col md:flex-row mb-4">
             <div className="rounded-3xl shadow-lg flex bg-branco-puro">
-                <Link className="w-2/5 " to={"/produtos/" + product.slug}>
+                <Link className="w-2/5 " to={'/produtos/' + product.slug}>
                     <img
                         className="h-full object-cover rounded-l-3xl"
                         src={product.images[0]}
@@ -19,13 +29,13 @@ const CardProductCart = ({ product }) => {
                     <div className="flex justify-between">
                         <Link
                             className="w-5/6 cardProduct_name text-rosa-01 font-titulos"
-                            to={"/produtos/" + product.slug}
+                            to={'/produtos/' + product.slug}
                         >
                             <h3>{product.name}</h3>
                         </Link>
                         <button
                             className="pl-2 w-1/6 max-w-[26px]"
-                            onClick={() => removeProduct(product.id)}
+                            onClick={() => removeProductFromCart(product.id)}
                         >
                             <img
                                 className="w-full"
@@ -42,9 +52,16 @@ const CardProductCart = ({ product }) => {
                                 classBtn="secundary"
                                 classe="btnRemoveQuantity"
                             />
-                            {product?.quantity || 0}
+                            <input
+                                type="text"
+                                value={product?.quantity}
+                                className="w-[20px] text-center"
+                                readOnly
+                            />
+                            {/* {product?.quantity || 0} */}
                             <Button
                                 onclick={() => addProduct(product)}
+                                classBtn="secundary"
                                 classe="btnAddQuantity"
                             />
                         </span>

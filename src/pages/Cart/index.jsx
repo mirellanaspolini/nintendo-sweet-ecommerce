@@ -52,7 +52,7 @@ const Cart = () => {
                         <hr className="border-t-2 border-amarelo-01 col-span-full" />
                         <p className="text-rosa-01 text-xl">Valor total:</p>
                         <p className="text-right text-rosa-01 text-xl">
-                            R$ 00.00
+                            R$ {calculateCartTotal().toFixed(2)}
                         </p>
                     </div>
                 </section>

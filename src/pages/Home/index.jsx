@@ -14,12 +14,17 @@ const Home = () => {
     });
     if (!inPromotion) <></>;
 
-    const category = [
-        "Armazenamento",
-        "Thumb Grips",
-        "Capa Protetora",
-        "Transporte",
-        "Nintendo Sports",
+    const category = [{
+            id: 0, category: "Armazenamento"
+        },{
+            id: 1, category: "Thumb Grips"
+        },{
+            id: 2, category: "Capa Protetora"
+        },{
+            id: 3, category: "Transporte"
+        },{
+            id: 4, category: "Nintendo Sports"
+        }
     ];
 
     return (
@@ -30,8 +35,8 @@ const Home = () => {
                         Busque por categorias:
                     </h3>
                     <div className="flex gap-2 sm:flex-wrap pb-4 whitespace-nowrap overflow-x-scroll sm:overflow-hidden">
-                        {category.map((c) => (
-                            <Category category={c} />
+                        {category.map((item) => (
+                            <Category key={item.id} category={item.category} />
                         ))}
                     </div>
                 </aside>
