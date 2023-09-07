@@ -1,14 +1,14 @@
-import Button from "componentes/Button";
-import Input from "componentes/Input";
-import Header from "componentes/Header";
-import useAuth from "contexts/useAuth";
-import { useState } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import Button from 'componentes/Button';
+import Input from 'componentes/Input';
+import Header from 'componentes/Header';
+import useAuth from 'contexts/useAuth';
+import { useState } from 'react';
+import { Link, useNavigate } from 'react-router-dom';
 
 const SignIn = () => {
-    const [email, setEmail] = useState("");
-    const [senha, setSenha] = useState("");
-    const [error, setError] = useState("");
+    const [email, setEmail] = useState('');
+    const [senha, setSenha] = useState('');
+    const [error, setError] = useState('');
 
     const { signin } = useAuth();
     const navigate = useNavigate();
@@ -16,10 +16,10 @@ const SignIn = () => {
     const handleLogin = (e) => {
         e.preventDefault();
         if (!email | !senha) {
-            setError("Preencha todos os campos");
+            setError('Preencha todos os campos');
             return;
         } else if (senha.length < 8) {
-            setError("A senha precisa ter pelo menos 8 caracteres");
+            setError('A senha precisa ter pelo menos 8 caracteres');
             return;
         }
 
@@ -30,16 +30,16 @@ const SignIn = () => {
             return;
         }
 
-        navigate("/");
+        navigate('/');
     };
 
     return (
         <section className="h-screen flex items-center justify-center">
             <form className="rounded-3xl shadow-2xl bg-branco-puro p-14 flex flex-col gap-2 w-[480px]">
                 <img
-                    className="h-[40px] inline self-center mb-5"
-                    src="./img/NS-logo.svg"
-                    alt="Logo da Nintendo Sweet"
+                    className="h-[50px] inline self-center mb-5"
+                    src="./img/SS-logo.svg"
+                    alt="Logo da Switch 'n Sweet"
                 />
                 <Header>Fazer login</Header>
                 <Input
@@ -48,7 +48,7 @@ const SignIn = () => {
                     tipo="email"
                     value={email}
                     onChange={(e) => {
-                        return setEmail(e.target.value), setError("");
+                        return setEmail(e.target.value), setError('');
                     }}
                 />
                 <Input
@@ -57,7 +57,7 @@ const SignIn = () => {
                     tipo="password"
                     value={senha}
                     onChange={(e) => {
-                        return [setSenha(e.target.value), setError("")];
+                        return [setSenha(e.target.value), setError('')];
                     }}
                 />
                 <Link
