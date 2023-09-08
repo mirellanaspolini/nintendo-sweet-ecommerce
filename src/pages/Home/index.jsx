@@ -1,30 +1,35 @@
-import CardProductPromotion from "componentes/CardProductPromotion";
-import Category from "componentes/Category";
-import Products from "componentes/Products";
-import useAuth from "contexts/useAuth";
-import products from "json/produtos.json";
-import { useNavigate } from "react-router-dom";
+import CardProductPromotion from 'componentes/CardProductPromotion';
+import Category from 'componentes/Category';
+import Products from 'componentes/Products';
+import products from 'json/produtos.json';
 
 const Home = () => {
-    const { signout } = useAuth();
-    const navigate = useNavigate();
-
     const inPromotion = products.find((product) => {
         return product.inPromotion[0] === true;
     });
     if (!inPromotion) <></>;
 
-    const category = [{
-            id: 0, category: "Armazenamento"
-        },{
-            id: 1, category: "Thumb Grips"
-        },{
-            id: 2, category: "Capa Protetora"
-        },{
-            id: 3, category: "Transporte"
-        },{
-            id: 4, category: "Nintendo Sports"
-        }
+    const category = [
+        {
+            id: 0,
+            category: 'Armazenamento',
+        },
+        {
+            id: 1,
+            category: 'Thumb Grips',
+        },
+        {
+            id: 2,
+            category: 'Capa Protetora',
+        },
+        {
+            id: 3,
+            category: 'Transporte',
+        },
+        {
+            id: 4,
+            category: 'Nintendo Sports',
+        },
     ];
 
     return (

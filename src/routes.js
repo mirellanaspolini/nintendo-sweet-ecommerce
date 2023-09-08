@@ -1,17 +1,18 @@
-import DefaultPage from "componentes/DefaultPage";
-import ProductPage from "componentes/ProductPage";
-import { CartProvider } from "contexts/Cart";
-import { FavoriteProvider } from "contexts/Favorites";
-import useAuth from "contexts/useAuth";
-import Cart from "pages/Cart";
-import Favorites from "pages/Favorites";
-import NotFound from "pages/NotFound";
-import SearchResults from "pages/SearchResults";
-import { Fragment } from "react";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
-import HomePage from "./pages/Home";
-import SignIn from "./pages/SignIn";
-import SignUp from "./pages/SignUp";
+import DefaultPage from 'componentes/DefaultPage';
+import ProductPage from 'componentes/ProductPage';
+import ScrollToTop from 'componentes/ScrollToTop';
+import { CartProvider } from 'contexts/Cart';
+import { FavoriteProvider } from 'contexts/Favorites';
+import useAuth from 'contexts/useAuth';
+import Cart from 'pages/Cart';
+import Favorites from 'pages/Favorites';
+import NotFound from 'pages/NotFound';
+import SearchResults from 'pages/SearchResults';
+import { Fragment } from 'react';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import HomePage from './pages/Home';
+import SignIn from './pages/SignIn';
+import SignUp from './pages/SignUp';
 
 const Private = ({ Item }) => {
     const { signed } = useAuth();
@@ -23,6 +24,7 @@ function AppRoutes() {
         <CartProvider>
             <FavoriteProvider>
                 <BrowserRouter>
+                    <ScrollToTop />
                     <Fragment>
                         <Routes>
                             <Route path="/" element={<DefaultPage />}>

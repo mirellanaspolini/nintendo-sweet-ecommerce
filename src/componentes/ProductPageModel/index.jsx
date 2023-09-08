@@ -16,7 +16,7 @@ const ProductPageModel = ({ product }) => {
     const isLoggedIn = () => (signed > 0 ? true : false);
     const navigate = useNavigate();
     const { addProduct } = useCartContext();
-    const { addItemFav } = useFavoriteContext();
+    const { favItems, addFavItem } = useFavoriteContext();
 
     const [quantity, setQuantity] = useState(1);
 
@@ -130,12 +130,12 @@ const ProductPageModel = ({ product }) => {
                                     }
                                 />
                                 <AddFavButton
+                                    onClick={() => addFavItem(product)}
                                     isFavorite={
                                         product.isFavorite
-                                            ? 'remover dos favs'
-                                            : 'adicionar aos favs'
+                                            ? 'Remover dos favoritos'
+                                            : 'Adicionar aos favoritos'
                                     }
-                                    onClick={() => addItemFav(product)}
                                 />
                             </>
                         )}

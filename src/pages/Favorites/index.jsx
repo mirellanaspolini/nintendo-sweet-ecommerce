@@ -1,16 +1,17 @@
-import Button from "componentes/Button";
-import Header from "componentes/Header";
-import { useFavoriteContext } from "contexts/Favorites";
-import { useNavigate } from "react-router-dom";
+import Button from 'componentes/Button';
+import CardProductFavs from 'componentes/CardProductFavs';
+import Header from 'componentes/Header';
+import { useFavoriteContext } from 'contexts/Favorites';
+import { useNavigate } from 'react-router-dom';
 
 const Favorites = () => {
     const { favItems, isFavorite } = useFavoriteContext();
     const navigate = useNavigate();
-    const handleClick = () => navigate("/");
+    const handleClick = () => navigate('/');
 
     return (
         <>
-            {favItems.length === 0 ? (
+            {favItems.length == 0 ? (
                 <section className="gap-6 flex items-center pt-4 flex flex-col items-center m-auto">
                     <Header corTexto="rosa">
                         Você ainda não favoritou nenhum produto!
@@ -31,7 +32,14 @@ const Favorites = () => {
                     </Button>
                 </section>
             ) : (
-                {favItems}
+                <section className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+                    {favItems.map((product) => (
+                        <CardProductFavs
+                            key={product.id}
+                            product={{ ...product }}
+                        />
+                    ))}
+                </section>
             )}
         </>
     );
