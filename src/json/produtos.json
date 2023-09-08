@@ -16,7 +16,7 @@
         ],
         "quantity": 1,
         "isFavorite": false,
-        "category": "Capa protetora",
+        "category": "capa-protetora",
         "slug": "capa-protetora-sakura-card-captors-nintendo-switch",
         "inPromotion": [false, 0]
     },
@@ -37,7 +37,7 @@
         ],
         "quantity": 1,
         "isFavorite": false,
-        "category": "Thumb Grip",
+        "category": "thumb-grips",
         "slug": "thumb-grip-com-desenho-de-gato-para-nintendo-switch-lite",
         "inPromotion": [false, 0]
     },
@@ -58,7 +58,7 @@
         ],
         "quantity": 1,
         "isFavorite": false,
-        "category": "Thumb Grip",
+        "category": "thumb-grips",
         "slug": "capa-decorativa-de-botao-com-design-de-sapo-para-nintendo-switch-lite",
         "inPromotion": [false, 0]
     },
@@ -79,7 +79,7 @@
         ],
         "quantity": 1,
         "isFavorite": false,
-        "category": "Armazenamento",
+        "category": "armazenamento",
         "slug": "estojo-de-armazenamento-mymelody-com-24-slots",
         "inPromotion": [false, 0]
     },
@@ -100,7 +100,7 @@
         ],
         "quantity": 1,
         "isFavorite": false,
-        "category": "Armazenamento",
+        "category": "armazenamento transporte",
         "slug": "estojo-de-transporte-rosa-para-nintendo-switch-oled",
         "inPromotion": [false, 0]
     },
@@ -121,7 +121,7 @@
         ],
         "quantity": 1,
         "isFavorite": false,
-        "category": "Armazenamento",
+        "category": "armazenamento",
         "slug": "caixa-para-cartoes-de-jogo-com-design-de-pata-de-gato",
         "inPromotion": [false, 0]
     },
@@ -142,7 +142,7 @@
         ],
         "quantity": 1,
         "isFavorite": false,
-        "category": "Capa protetora",
+        "category": "capa-protetora",
         "slug": "capa-protetora-rosa-nintendo-switch-pro",
         "inPromotion": [false, 0]
     },
@@ -163,7 +163,7 @@
         ],
         "quantity": 1,
         "isFavorite": false,
-        "category": "Nintendo Switch Sports",
+        "category": "nintendo-sports",
         "slug": "volante-para-nintendo-switch",
         "inPromotion": [false, 0]
     },
@@ -184,7 +184,7 @@
         ],
         "quantity": 1,
         "isFavorite": false,
-        "category": "Thumb Grip",
+        "category": "thumb-grips",
         "slug": "4-capas-decorativas-botao-garra-de-gato",
         "inPromotion": [false, 0]
     },
@@ -205,7 +205,7 @@
         ],
         "quantity": 1,
         "isFavorite": false,
-        "category": "Capa protetora",
+        "category": "capa-protetora",
         "slug": "capa-protetora-shiba-inu",
         "inPromotion": [false, 0]
     },
@@ -226,7 +226,7 @@
         ],
         "quantity": 1,
         "isFavorite": false,
-        "category": "Capa protetora",
+        "category": "capa-protetora",
         "slug": "capa-protetora-animais-marinhos",
         "inPromotion": [false, 0]
     },
@@ -247,7 +247,7 @@
         ],
         "quantity": 1,
         "isFavorite": false,
-        "category": "Thumb Grip",
+        "category": "thumb-grips",
         "slug": "capa-joystick-grip",
         "inPromotion": [false, 0]
     },
@@ -268,7 +268,7 @@
         ],
         "quantity": 1,
         "isFavorite": false,
-        "category": "Capa protetora",
+        "category": "capa-protetora",
         "slug": "capa-protetora-de-tpu-rigida-para-nintendo-switch-ns",
         "inPromotion": [false, 0]
     },
@@ -289,7 +289,7 @@
         ],
         "quantity": 1,
         "isFavorite": false,
-        "category": "Nintendo Switch Sports",
+        "category": "nintendo-sports",
         "slug": "raquetes-badminton-gatinho-nintendo-switch-oled",
         "inPromotion": [false, 0]
     },
@@ -310,7 +310,7 @@
         ],
         "quantity": 1,
         "isFavorite": false,
-        "category": "Capa protetora",
+        "category": "capa-protetora",
         "slug": "capa-protetora-amarela-nintendo-switch-pro",
         "inPromotion": [false, 0]
     },
@@ -331,7 +331,7 @@
         ],
         "quantity": 1,
         "isFavorite": false,
-        "category": "Thumb Grip",
+        "category": "thumb-grips",
         "slug": "thumb-grip-transparente-com-efeito-glitter",
         "inPromotion": [false, 0]
     },
@@ -343,7 +343,7 @@
             "price": 34,
             "originCep": 12837643
         },
-        "rating":4.5,
+        "rating": 4.5,
         "description": "Estojo de armazenamento para Nintendo Switch ou Switch OLED Model, e com espaço para colocar todo o equipamento necessário para o switch. \n\n &nbsp;\n\n **Possuí espaço para**: \n\n Switch Dock, Joy-Con Grip e alças, Switch Pro Controller, Adaptador AC, Cabo HDMI, PokeBall Plus, 21 cartões de jogo.",
         "images": [
             "/img/produtos/case-transporte-1.jpg",
@@ -352,7 +352,7 @@
         ],
         "quantity": 1,
         "isFavorite": false,
-        "category": "Capa protetora",
+        "category": "transporte",
         "slug": "capa-de-transporte-para-nintendo-switch",
         "inPromotion": [true, 0.15]
     }

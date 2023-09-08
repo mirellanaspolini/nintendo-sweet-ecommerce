@@ -1,13 +1,15 @@
-import Button from "componentes/Button";
-import CardProduto from "componentes/CardProduct";
-import Header from "componentes/Header";
-import productList from "json/produtos.json";
-import { useLocation, useNavigate } from "react-router-dom";
+import Button from 'componentes/Button';
+import CardProduto from 'componentes/CardProduct';
+import Header from 'componentes/Header';
+import productList from 'json/produtos.json';
+import { useLocation, useNavigate } from 'react-router-dom';
 
 const SearchResults = () => {
     const location = useLocation();
     const searchParams = new URLSearchParams(location.search);
-    const query = searchParams.get("query");
+    console.log(searchParams);
+    const query = searchParams.get('query');
+    const category = searchParams.get('category');
     const navigate = useNavigate();
 
     const searchProducts = (query) => {
@@ -16,16 +18,30 @@ const SearchResults = () => {
         });
     };
 
-    const searchResults = searchProducts(query);
+    const searchProductByCategory = (category) => {
+        return productList.filter((product) => {
+            return product.category
+                .toLowerCase()
+                .includes(category.toLowerCase());
+        });
+    };
+
+    let searchResults = [];
+
+    if (query !== null) {
+        searchResults = searchProducts(query);
+    } else if (category !== null) {
+        searchResults = searchProductByCategory(category);
+    }
 
     const handleClick = () => {
-        navigate("/");
+        navigate('/');
     };
 
     return (
-        <div>
+        <section>
             {searchResults.length == 0 ? (
-                <section className="gap-6 flex items-center pt-4 flex flex-col items-center m-auto">
+                <div className="gap-6 flex items-center pt-4 flex flex-col items-center m-auto">
                     <Header corTexto="rosa">
                         Ops! Não encontramos nenhum resultado para a sua busca.
                     </Header>
@@ -44,11 +60,12 @@ const SearchResults = () => {
                     <Button classBtn="rosa" onclick={handleClick}>
                         Voltar para a página principal
                     </Button>
-                </section>
+                </div>
             ) : (
                 <>
                     <h2 className="text-violeta-01 font-bold font-titulos mb-2">
-                        Resultados de busca para "{query}":
+                        Resultados de busca para "{query}
+                        {category}":
                     </h2>
                     {/* filtros */}
                     <ul className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 lg:gap-5 gap-3 sm:gap-4">
@@ -61,7 +78,7 @@ const SearchResults = () => {
                     </ul>
                 </>
             )}
-        </div>
+        </section>
     );
 };
 

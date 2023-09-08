@@ -13,22 +13,27 @@ const Home = () => {
         {
             id: 0,
             category: 'Armazenamento',
+            slug: 'armazenamento',
         },
         {
             id: 1,
             category: 'Thumb Grips',
+            slug: 'thumb-grips',
         },
         {
             id: 2,
             category: 'Capa Protetora',
+            slug: 'capa-protetora',
         },
         {
             id: 3,
             category: 'Transporte',
+            slug: 'transporte',
         },
         {
             id: 4,
             category: 'Nintendo Sports',
+            slug: 'nintendo-sports',
         },
     ];
 
@@ -41,7 +46,11 @@ const Home = () => {
                     </h3>
                     <div className="flex gap-2 sm:flex-wrap pb-4 whitespace-nowrap overflow-x-scroll sm:overflow-hidden">
                         {category.map((item) => (
-                            <Category key={item.id} category={item.category} />
+                            <Category
+                                key={item.id}
+                                category={item.category}
+                                slug={item.slug}
+                            />
                         ))}
                     </div>
                 </aside>
