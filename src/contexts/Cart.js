@@ -1,7 +1,7 @@
-import { createContext, useContext, useState } from 'react';
+import { createContext, useContext, useState } from "react";
 
 export const CartContext = createContext();
-CartContext.displayName = 'Cart';
+CartContext.displayName = "Cart";
 
 export const CartProvider = ({ children }) => {
     const [cartItems, setCartItems] = useState([]);
@@ -59,6 +59,14 @@ export const useCartContext = () => {
 
     const calculateCartTotal = () => {
         const total = cartItems.reduce((accumulator, cartItem) => {
+            if (cartItem.inPromotion[0]) {
+                return (
+                    accumulator +
+                    (cartItem.price -
+                        cartItem.price * cartItem.inPromotion[1]) *
+                        cartItem.quantity
+                );
+            }
             return accumulator + cartItem.price * cartItem.quantity;
         }, 0);
         return total;

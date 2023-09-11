@@ -7,7 +7,6 @@ import { useLocation, useNavigate } from 'react-router-dom';
 const SearchResults = () => {
     const location = useLocation();
     const searchParams = new URLSearchParams(location.search);
-    console.log(searchParams);
     const query = searchParams.get('query');
     const category = searchParams.get('category');
     const navigate = useNavigate();
