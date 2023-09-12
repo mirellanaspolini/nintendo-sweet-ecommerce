@@ -1,102 +1,114 @@
-import Button from 'componentes/Button';
-import Input from 'componentes/Input';
-import Header from 'componentes/Header';
-import useAuth from 'contexts/useAuth';
-import React, { useState } from 'react';
-import { Link, useNavigate } from 'react-router-dom';
+import Button from "componentes/Button";
+import Header from "componentes/Header";
+import Field from "componentes/Field";
+import { ErrorMessage, Form, Formik } from "formik";
+import { Link } from "react-router-dom";
+import * as yup from "yup";
+import Input from "componentes/Input";
 
 const SignUp = () => {
-    const [nome, setNome] = useState('');
-    const [sobrenome, setSobrenome] = useState('');
-    const [email, setEmail] = useState('');
-    const [senha, setSenha] = useState('');
-    const [senhaConf, setSenhaConf] = useState(''); // confirmação da senha
-    const [error, setError] = useState('');
+    const validation = yup.object({
+        name: yup.string().required("Preencha este campo"),
+        lastName: yup.string().required("Preencha este campo"),
 
-    const { signup } = useAuth();
-    const navigate = useNavigate();
-
-    const handleSignup = (e) => {
-        e.preventDefault();
-        if (!nome | !sobrenome | !email | !senhaConf | !senha) {
-            setError('Preencha todos os campos');
-            return;
-        } else if (senha !== senhaConf) {
-            setError('As senhas precisam ser iguais');
-            return;
-        }
-
-        const res = signup(email, senha);
-
-        if (res) {
-            setError(res);
-            return;
-        }
-
-        navigate('/entrar');
-    };
+        email: yup
+            .string()
+            .email("Digite um endereço de email válido")
+            .required("Preencha este campo"),
+        password: yup
+            .string()
+            .min(8, "A senha deve conter 8 caracteres")
+            .required("Preencha este campo"),
+    });
 
     return (
         <section className=" flex items-center justify-center">
-            <form className="rounded-3xl shadow-2xl bg-branco-puro p-14 flex flex-col gap-2 w-[480px]">
-                <img
-                    className="h-[50px] self-center mb-5"
-                    src="./img/SS-logo.svg"
-                    alt="Logo da Switch 'n Sweet"
-                />
-                <Header>Crie sua conta</Header>
-                <Input
-                    placeholder="Digite seu nome"
-                    label="Nome"
-                    value={nome}
-                    onChange={(e) => {
-                        return setNome(e.target.value), setError('');
-                    }}
-                />
-                <Input
-                    placeholder="Digite seu sobrenome"
-                    label="Sobrenome"
-                    value={sobrenome}
-                    onChange={(e) => {
-                        return setSobrenome(e.target.value), setError('');
-                    }}
-                />
-                <Input
-                    placeholder="email@exemplo.com"
-                    label="Email"
-                    tipo="email"
-                    value={email}
-                    onChange={(e) => {
-                        return setEmail(e.target.value), setError('');
-                    }}
-                />
-                <Input
-                    placeholder="No mínimo 8 dígitos"
-                    label="Senha"
-                    tipo="password"
-                    value={senha}
-                    onChange={(e) => {
-                        return [setSenha(e.target.value), setError('')];
-                    }}
-                />
-                <Input
-                    placeholder="Confirme sua senha"
-                    label=""
-                    tipo="password"
-                    value={senhaConf}
-                    onChange={(e) => {
-                        return [setSenhaConf(e.target.value), setError('')];
-                    }}
-                />
-                <p className="font-textos text-pink-600">{error}</p>
-                <Button onclick={handleSignup}>Criar conta</Button>
-                <p className="text-center font-textos text-lilas">
-                    Já tem uma conta?&nbsp;
-                    <Link className="text-pink-600 underline" to="/entrar">
-                        Entrar
-                    </Link>
-                </p>
-            </form>
+            <Formik
+                initialValues={{
+                    name: "",
+                    lastName: "",
+                    email: "",
+                    password: "",
+                }}
+                validationSchema={validation}
+            >
+                <Form className="rounded-3xl shadow-2xl bg-branco-puro p-14 flex flex-col gap-2 w-[480px]">
+                    <img
+                        className="h-[50px] self-center mb-5"
+                        src="./img/SS-logo.svg"
+                        alt="Logo da Switch 'n Sweet"
+                    />
+                    <Header>Crie sua conta</Header>
+
+                    <div>
+                        <Field
+                            className=""
+                            type="text"
+                            name="name"
+                            placeholder="Digite seu nome"
+                        />
+                        <ErrorMessage
+                            className="font-textos text-pink-600"
+                            component="div"
+                            name="name"
+                        />
+                    </div>
+
+                    <div>
+                        <Field
+                            className=""
+                            type="text"
+                            name="lastName"
+                            placeholder="Digite seu sobrenome"
+                        />
+                        <ErrorMessage
+                            className="font-textos text-pink-600"
+                            component="div"
+                            name="lastName"
+                        />
+                    </div>
+
+                    <div>
+                        <Input
+                            className="text-amarelo-01"
+                            type="email"
+                            name="email"
+                            placeholder="Digite seu email"
+                        />
+                        <ErrorMessage
+                            className="font-textos text-pink-600"
+                            component="div"
+                            name="email"
+                        />
+                    </div>
+                    <div>
+                        <Field
+                            className="text-amarelo-01"
+                            type="password"
+                            name="password"
+                            placeholder="No mínimo 8 digitos"
+                        />
+                        <ErrorMessage
+                            className="font-textos text-pink-600"
+                            component="div"
+                            name="password"
+                        />
+                    </div>
+                    {/* <Input
+                        placeholder="Confirme sua senha"
+                        label=""
+                        tipo="password"
+                    /> */}
+                    {/* <p className="font-textos text-pink-600">{error}</p> */}
+                    <Button tipo="submit">Criar conta</Button>
+                    <p className="text-center font-textos text-lilas">
+                        Já tem uma conta?&nbsp;
+                        <Link className="text-pink-600 underline" to="/entrar">
+                            Entrar
+                        </Link>
+                    </p>
+                </Form>
+            </Formik>
         </section>
     );
 };

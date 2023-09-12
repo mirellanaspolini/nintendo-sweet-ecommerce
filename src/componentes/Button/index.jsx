@@ -1,4 +1,4 @@
-const Button = ({ onclick, children, classBtn = 'default', classe }) => {
+const Button = ({ onclick, children, classBtn = 'default', classe, tipo = "button" }) => {
     const classes =
         classBtn === 'default'
             ? 'bg-violeta-01 text-branco-puro border-violeta-01 hover:bg-branco hover:text-violeta-01'
@@ -11,6 +11,7 @@ const Button = ({ onclick, children, classBtn = 'default', classe }) => {
     return (
         <>
             <button
+                type={tipo}
                 className={`${classe} font-titulos font-medium text-lg sm:text-xl rounded-full border-2 px-3 py-2 sm:py-3 duration-200 ${classes}`}
                 onClick={onclick}
             >
