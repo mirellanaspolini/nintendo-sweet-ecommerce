@@ -1,40 +1,45 @@
-import Button from "componentes/Button";
-import Header from "componentes/Header";
-import Field from "componentes/Field";
-import { ErrorMessage, Form, Formik } from "formik";
-import { Link, useNavigate } from "react-router-dom";
-import * as yup from "yup";
-import Input from "componentes/Input";
+import Button from 'componentes/Button';
+import Header from 'componentes/Header';
+import Input from 'componentes/Input';
+import useAuth from 'contexts/useAuth';
+import { ErrorMessage, Form, Formik } from 'formik';
+import { Link, useNavigate } from 'react-router-dom';
+import * as yup from 'yup';
 
 const SignUp = () => {
     const validation = yup.object({
-        name: yup.string().required("Preencha este campo"),
-        lastName: yup.string().required("Preencha este campo"),
-
+        firstName: yup.string().required('Preencha este campo'),
+        lastName: yup.string().required('Preencha este campo'),
         email: yup
             .string()
-            .email("Digite um endereço de email válido")
-            .required("Preencha este campo"),
+            .email('Digite um endereço de email válido')
+            .required('Preencha este campo'),
         password: yup
             .string()
-            .min(8, "A senha deve conter 8 caracteres")
-            .required("Preencha este campo"),
+            .min(8, 'A senha deve conter 8 caracteres')
+            .required('Preencha este campo'),
     });
 
     const navigate = useNavigate();
+    const { signUp, error } = useAuth();
 
-    const handleSubmit = () => {
-        navigate("/entrar");
+    const handleSubmit = async (values) => {
+        const { email, password } = values;
+        const authenticated = await signUp(email, password);
+
+        if (authenticated) {
+            navigate('/');
+        }
     };
 
     return (
         <section className=" flex items-center justify-center">
             <Formik
                 initialValues={{
-                    name: "",
-                    lastName: "",
-                    email: "",
-                    password: "",
+                    firstName: '',
+                    lastName: '',
+                    email: '',
+                    password: '',
                 }}
                 validationSchema={validation}
                 onSubmit={handleSubmit}
@@ -48,24 +53,24 @@ const SignUp = () => {
                     <Header>Crie sua conta</Header>
 
                     <div>
-                        <Field
-                            className=""
+                        <Input
                             type="text"
-                            name="name"
+                            name="firstName"
+                            label="Nome"
                             placeholder="Digite seu nome"
                         />
                         <ErrorMessage
                             className="font-textos text-pink-600"
                             component="div"
-                            name="name"
+                            name="firstName"
                         />
                     </div>
 
                     <div>
-                        <Field
-                            className=""
+                        <Input
                             type="text"
                             name="lastName"
+                            label="Sobrenome"
                             placeholder="Digite seu sobrenome"
                         />
                         <ErrorMessage
@@ -80,8 +85,9 @@ const SignUp = () => {
                             type="email"
                             name="email"
                             label="Email"
-                            placeholder="Digite seu email"
+                            placeholder="email@exemplo.com"
                         />
+                        <p className="font-textos text-pink-600">{error}</p>
                         <ErrorMessage
                             className="font-textos text-pink-600"
                             component="div"
@@ -89,10 +95,10 @@ const SignUp = () => {
                         />
                     </div>
                     <div>
-                        <Field
-                            className="text-amarelo-01"
+                        <Input
                             type="password"
                             name="password"
+                            label="Senha"
                             placeholder="No mínimo 8 digitos"
                         />
                         <ErrorMessage
@@ -101,10 +107,13 @@ const SignUp = () => {
                             name="password"
                         />
                     </div>
-                    <Button tipo="submit">Criar conta</Button>
-                    <p className="text-center font-textos text-lilas">
+
+                    <Button classe="mt-4" tipo="submit">
+                        Criar conta
+                    </Button>
+                    <p className="text-center font-textos text-gray-600">
                         Já tem uma conta?&nbsp;
-                        <Link className="text-pink-600 underline" to="/entrar">
+                        <Link className="text-amber-600 underline" to="/entrar">
                             Entrar
                         </Link>
                     </p>
