@@ -1,14 +1,14 @@
-import Button from 'componentes/Button';
-import CardProduto from 'componentes/CardProduct';
-import Header from 'componentes/Header';
-import productList from 'json/produtos.json';
-import { useLocation, useNavigate } from 'react-router-dom';
+import Button from "componentes/Button";
+import CardProduto from "componentes/CardProduct";
+import Header from "componentes/Header";
+import productList from "json/produtos.json";
+import { useLocation, useNavigate } from "react-router-dom";
 
 const SearchResults = () => {
     const location = useLocation();
     const searchParams = new URLSearchParams(location.search);
-    const query = searchParams.get('query');
-    const category = searchParams.get('category');
+    const query = searchParams.get("query");
+    const category = searchParams.get("category");
     const navigate = useNavigate();
 
     const searchProducts = (query) => {
@@ -34,7 +34,7 @@ const SearchResults = () => {
     }
 
     const handleClick = () => {
-        navigate('/');
+        navigate("/");
     };
 
     return (
@@ -51,7 +51,7 @@ const SearchResults = () => {
                     </p>
                     <div className="rounded-t-lg w-full ">
                         <img
-                            className="rounded-b-lg m-auto h-[250px] bg-amarelo-02"
+                            className="rounded-b-lg m-auto h-[250px] bg-amarelo-03"
                             src="../img/ilustracoes/gatos_caixa.svg"
                             alt="Gato branco brincando com um novelo de lã amarelo"
                         />
@@ -62,10 +62,15 @@ const SearchResults = () => {
                 </div>
             ) : (
                 <>
-                    <h2 className="text-violeta-01 font-bold font-titulos mb-2">
-                        Resultados de busca para "{query}
-                        {category}":
-                    </h2>
+                    <div className="flex items-center gap-4 mb-4">
+                        <button  className="rosa p-3 py-2 bg-branco rounded-xl border-2 hover:border-violeta-01" onclick={()=> navigate("/")}>
+                            <img src="/img/icons/arrow-left_icon.svg" width="20px" alt="" />
+                        </button>
+                        <h2 className="text-violeta-01 font-bold font-titulos">
+                            Resultados de busca para "{query}
+                            {category}":
+                        </h2>
+                    </div>
                     {/* filtros */}
                     <ul className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 lg:gap-5 gap-3 sm:gap-4">
                         {searchResults.map((product) => (

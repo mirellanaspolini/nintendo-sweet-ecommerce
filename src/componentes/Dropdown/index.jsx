@@ -8,7 +8,7 @@ function classNames(...classes) {
 }
 
 const Dropdown = () => {
-    const { signout } = useAuth();
+    const { signOut } = useAuth();
     const navigate = useNavigate();
     return (
         <Menu as="div" className="relative inline-block text-left">
@@ -74,7 +74,7 @@ const Dropdown = () => {
                                 <button
                                     type="button"
                                     onClick={() => [
-                                        signout(),
+                                        signOut(),
                                         navigate("/entrar"),
                                     ]}
                                     className={classNames(

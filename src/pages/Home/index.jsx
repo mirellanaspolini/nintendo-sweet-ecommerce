@@ -1,7 +1,7 @@
-import CardProductPromotion from 'componentes/CardProductPromotion';
-import Category from 'componentes/Category';
-import Products from 'componentes/Products';
-import products from 'json/produtos.json';
+import CardProductPromotion from "componentes/CardProductPromotion";
+import Category from "componentes/Category";
+import Products from "componentes/Products";
+import products from "json/produtos.json";
 
 const Home = () => {
     const inPromotion = products.find((product) => {
@@ -12,28 +12,28 @@ const Home = () => {
     const category = [
         {
             id: 0,
-            category: 'Armazenamento',
-            slug: 'armazenamento',
+            category: "Armazenamento",
+            slug: "armazenamento",
         },
         {
             id: 1,
-            category: 'Thumb Grips',
-            slug: 'thumb-grips',
+            category: "Thumb Grips",
+            slug: "thumb-grips",
         },
         {
             id: 2,
-            category: 'Capa Protetora',
-            slug: 'capa-protetora',
+            category: "Capa Protetora",
+            slug: "capa-protetora",
         },
         {
             id: 3,
-            category: 'Transporte',
-            slug: 'transporte',
+            category: "Transporte",
+            slug: "transporte",
         },
         {
             id: 4,
-            category: 'Nintendo Sports',
-            slug: 'nintendo-sports',
+            category: "Nintendo Sports",
+            slug: "nintendo-sports",
         },
     ];
 

@@ -1,13 +1,13 @@
-import Button from 'componentes/Button';
-import CardProductFavs from 'componentes/CardProductFavs';
-import Header from 'componentes/Header';
-import { useFavoriteContext } from 'contexts/Favorites';
-import { useNavigate } from 'react-router-dom';
+import Button from "componentes/Button";
+import CardProductFavs from "componentes/CardProductFavs";
+import Header from "componentes/Header";
+import { useFavoriteContext } from "contexts/Favorites";
+import { useNavigate } from "react-router-dom";
 
 const Favorites = () => {
     const { favItems, isFavorite } = useFavoriteContext();
     const navigate = useNavigate();
-    const handleClick = () => navigate('/');
+    const handleClick = () => navigate("/");
 
     return (
         <>
@@ -22,7 +22,7 @@ const Favorites = () => {
                     </p>
                     <div className="rounded-t-lg w-full ">
                         <img
-                            className="rounded-b-lg m-auto h-[250px] bg-amarelo-02"
+                            className="rounded-b-lg m-auto h-[250px] bg-amarelo-03"
                             src="../img/ilustracoes/gatos_caixa.svg"
                             alt="Gato branco brincando com um novelo de lã amarelo"
                         />
@@ -32,14 +32,19 @@ const Favorites = () => {
                     </Button>
                 </section>
             ) : (
-                <section className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
-                    {favItems.map((product) => (
-                        <CardProductFavs
-                            key={product.id}
-                            product={{ ...product }}
-                        />
-                    ))}
-                </section>
+                <>
+                    <h3 className="mb-4 text-base sm:text-lg font-titulos text-rosa-01">
+                        Meus favoritos
+                    </h3>
+                    <section className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+                        {favItems.map((product) => (
+                            <CardProductFavs
+                                key={product.id}
+                                product={{ ...product }}
+                            />
+                        ))}
+                    </section>
+                </>
             )}
         </>
     );
