@@ -51,7 +51,7 @@ const SearchResults = () => {
                     </p>
                     <div className="rounded-t-lg w-full ">
                         <img
-                            className="rounded-b-lg m-auto h-[250px] bg-amarelo-02"
+                            className="rounded-b-lg m-auto h-[250px] bg-amarelo-03"
                             src="../img/ilustracoes/gatos_caixa.svg"
                             alt="Gato branco brincando com um novelo de lã amarelo"
                         />

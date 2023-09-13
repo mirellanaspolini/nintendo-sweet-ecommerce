@@ -1,15 +1,6 @@
 import { useField } from "formik";
 
-const Input = ({
-    label,
-    classe = "",
-    placeholder,
-    onChange,
-    tipo = "text",
-    value,
-    size = "lg",
-    ...props
-}) => {
+const Input = ({ label, classe = "", size = "lg", ...props }) => {
     const [inputProps, meta] = useField(props);
 
     const sizeClass =
@@ -21,19 +12,20 @@ const Input = ({
 
     return (
         <div>
-            <label
-                className="font-titulos font-medium mb-2 text-lg text-violeta-01"
-                htmlFor={`txt${label}`}
-            >
-                {label}
-            </label>
+            {label && (
+                <label
+                    className="font-titulos font-medium mb-2 text-lg text-violeta-01"
+                    htmlFor={`txt${label}`}
+                >
+                    {label}
+                </label>
+            )}
+
             <input
                 {...inputProps}
+                {...props}
                 className={`${classe} ${sizeClass} font-textos text-base border-2 border-violeta-01 text-cinza-06 `}
-                type={tipo}
                 id={`txt${label}`}
-                placeholder={placeholder}
-                onChange={onChange}
             />
         </div>
     );

@@ -2,7 +2,7 @@ import Button from "componentes/Button";
 import Header from "componentes/Header";
 import Field from "componentes/Field";
 import { ErrorMessage, Form, Formik } from "formik";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import * as yup from "yup";
 import Input from "componentes/Input";
 
@@ -21,6 +21,12 @@ const SignUp = () => {
             .required("Preencha este campo"),
     });
 
+    const navigate = useNavigate();
+
+    const handleSubmit = () => {
+        navigate("/entrar");
+    };
+
     return (
         <section className=" flex items-center justify-center">
             <Formik
@@ -31,6 +37,7 @@ const SignUp = () => {
                     password: "",
                 }}
                 validationSchema={validation}
+                onSubmit={handleSubmit}
             >
                 <Form className="rounded-3xl shadow-2xl bg-branco-puro p-14 flex flex-col gap-2 w-[480px]">
                     <img
@@ -70,9 +77,9 @@ const SignUp = () => {
 
                     <div>
                         <Input
-                            className="text-amarelo-01"
                             type="email"
                             name="email"
+                            label="Email"
                             placeholder="Digite seu email"
                         />
                         <ErrorMessage
@@ -94,12 +101,6 @@ const SignUp = () => {
                             name="password"
                         />
                     </div>
-                    {/* <Input
-                        placeholder="Confirme sua senha"
-                        label=""
-                        tipo="password"
-                    /> */}
-                    {/* <p className="font-textos text-pink-600">{error}</p> */}
                     <Button tipo="submit">Criar conta</Button>
                     <p className="text-center font-textos text-lilas">
                         Já tem uma conta?&nbsp;
