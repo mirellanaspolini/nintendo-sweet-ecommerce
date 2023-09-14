@@ -1,6 +1,6 @@
 import Button from 'componentes/Button';
 import Header from 'componentes/Header';
-import Input from 'componentes/Input';
+import InputFormik from 'componentes/InputFormik';
 import useAuth from 'contexts/useAuth';
 import { ErrorMessage, Form, Formik } from 'formik';
 import { Link, useNavigate } from 'react-router-dom';
@@ -22,7 +22,7 @@ const SignIn = () => {
     const validation = yup.object({
         email: yup
             .string()
-            .email('O email deve conter "@"')
+            .email('Digite um email com "@"')
             .required('Preencha este campo'),
         password: yup
             .string()
@@ -44,7 +44,7 @@ const SignIn = () => {
                         alt="Logo da Switch 'n Sweet"
                     />
                     <Header>Fazer login</Header>
-                    <Input
+                    <InputFormik
                         placeholder="email@exemplo.com"
                         label="Email"
                         type="email"
@@ -55,7 +55,7 @@ const SignIn = () => {
                         component="div"
                         name="email"
                     />
-                    <Input
+                    <InputFormik
                         placeholder="No mínimo 8 dígitos"
                         label="Senha"
                         type="password"

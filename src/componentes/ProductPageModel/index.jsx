@@ -1,7 +1,6 @@
 import AddCartButton from 'componentes/AddCartButton';
 import AddFavButton from 'componentes/AddFavButton';
 import Button from 'componentes/Button';
-import Input from 'componentes/Input';
 import Rating from 'componentes/Rating';
 import { useCartContext } from 'contexts/Cart';
 import { useFavoriteContext } from 'contexts/Favorites';
@@ -43,7 +42,7 @@ const ProductPageModel = ({ product }) => {
     return (
         <>
             <article className="flex flex-col md:flex-row gap-5 mb-9">
-                <div className="w-full md:w-2/5 border-4 border-indigo-500/100 imageGalley-wrapper">
+                <div className="w-full md:w-2/5 imageGalley-wrapper">
                     <ReactImageGallery
                         items={items}
                         showFullscreenButton={false}
@@ -85,10 +84,11 @@ const ProductPageModel = ({ product }) => {
                         <p className="text-cinza-06 font-textos">
                             Calcular frete:
                         </p>
-                        <Input
-                            id="txtShippingCalc"
-                            size="sm"
+                        <input
+                            type="text"
+                            className="px-2 py-1 rounded-xl w-[120px] font-textos text-base border-2 border-violeta-01 text-cinza-06"
                             placeholder="Digite o CEP"
+                            id="txtShippingCalc"
                         />
                     </div>
                     <div className="flex items-center gap-16 mb-5">
@@ -113,31 +113,20 @@ const ProductPageModel = ({ product }) => {
                         </span>
                     </div>
                     <div className="flex flex-wrap gap-2">
+                        <AddCartButton product={product} quantity={quantity} />
                         {isLoggedIn() === false ? (
-                            <>
-                                <AddCartButton
-                                    onClick={() => navigate('/entrar')}
-                                />
-                                <AddFavButton
-                                    isFavorite={'Adicionar aos favoritos'}
-                                />
-                            </>
+                            <AddFavButton
+                                isFavorite={'Adicionar aos favoritos'}
+                            />
                         ) : (
-                            <>
-                                <AddCartButton
-                                    onClick={() =>
-                                        addProduct(product, quantity)
-                                    }
-                                />
-                                <AddFavButton
-                                    onClick={() => addFavItem(product)}
-                                    isFavorite={
-                                        product.isFavorite
-                                            ? 'Remover dos favoritos'
-                                            : 'Adicionar aos favoritos'
-                                    }
-                                />
-                            </>
+                            <AddFavButton
+                                onClick={() => addFavItem(product)}
+                                isFavorite={
+                                    product.isFavorite
+                                        ? 'Remover dos favoritos'
+                                        : 'Adicionar aos favoritos'
+                                }
+                            />
                         )}
                     </div>
                 </div>

@@ -1,16 +1,15 @@
-import Button from "componentes/Button";
-import ButtonIcone from "componentes/IconButton";
-import Dropdown from "componentes/Dropdown";
-import Input from "componentes/Input";
-import useAuth from "contexts/useAuth";
-import { useState } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import Button from 'componentes/Button';
+import ButtonIcone from 'componentes/IconButton';
+import Dropdown from 'componentes/Dropdown';
+import useAuth from 'contexts/useAuth';
+import { useState } from 'react';
+import { Link, useNavigate } from 'react-router-dom';
 
 const Menu = () => {
     const { signed } = useAuth();
     const isLoggedIn = () => (signed > 0 ? true : false);
 
-    const [searchQuery, setSearchQuery] = useState("");
+    const [searchQuery, setSearchQuery] = useState('');
     const navigate = useNavigate();
 
     const handleSearch = (e) => {
@@ -55,14 +54,17 @@ const Menu = () => {
                     <form onSubmit={handleSearch} className=" w-full">
                         <input
                             type="search"
-                            className="font-textos focus-visible:outline-none  outline-none  w-full text-base bg-transparent py-3 pl-4 pr-2 text-cinza-06 order-last lg:order-2 min-w-auto md:min-w-[300px]"
+                            className="font-textos focus-visible:outline-none outline-none w-full text-base bg-transparent py-3 pl-4 pr-2 text-cinza-06 order-last lg:order-2 min-w-auto md:min-w-[300px]"
                             placeholder="O que você procura?"
                             id="txtSearch"
                             value={searchQuery}
                             onChange={(e) => setSearchQuery(e.target.value)}
                         />
                     </form>
-                    <button className="p-3 relative right-0 top-0" onClick={handleSearch}>
+                    <button
+                        className="p-3 relative right-0 top-0"
+                        onClick={handleSearch}
+                    >
                         <img src="/img/icons/Search_icon.svg" alt="Buscar" />
                     </button>
                 </div>

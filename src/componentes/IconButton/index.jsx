@@ -1,6 +1,6 @@
-import { useNavigate } from "react-router-dom";
+import { useNavigate } from 'react-router-dom';
 
-const IconButton = ({ onclick, children, icon, arialabel, rota, classe }) => {
+const IconButton = ({ children, icon, arialabel, rota, classe }) => {
     const navigate = useNavigate();
     const handleClick = () => {
         navigate(rota);

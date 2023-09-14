@@ -1,6 +1,6 @@
 import Button from 'componentes/Button';
 import Header from 'componentes/Header';
-import Input from 'componentes/Input';
+import InputFormik from 'componentes/InputFormik';
 import useAuth from 'contexts/useAuth';
 import { ErrorMessage, Form, Formik } from 'formik';
 import { Link, useNavigate } from 'react-router-dom';
@@ -12,7 +12,7 @@ const SignUp = () => {
         lastName: yup.string().required('Preencha este campo'),
         email: yup
             .string()
-            .email('Digite um endereço de email válido')
+            .email('Digite um email com "@"')
             .required('Preencha este campo'),
         password: yup
             .string()
@@ -53,7 +53,7 @@ const SignUp = () => {
                     <Header>Crie sua conta</Header>
 
                     <div>
-                        <Input
+                        <InputFormik
                             type="text"
                             name="firstName"
                             label="Nome"
@@ -67,7 +67,7 @@ const SignUp = () => {
                     </div>
 
                     <div>
-                        <Input
+                        <InputFormik
                             type="text"
                             name="lastName"
                             label="Sobrenome"
@@ -81,7 +81,7 @@ const SignUp = () => {
                     </div>
 
                     <div>
-                        <Input
+                        <InputFormik
                             type="email"
                             name="email"
                             label="Email"
@@ -95,7 +95,7 @@ const SignUp = () => {
                         />
                     </div>
                     <div>
-                        <Input
+                        <InputFormik
                             type="password"
                             name="password"
                             label="Senha"
