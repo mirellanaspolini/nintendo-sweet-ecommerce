@@ -11,7 +11,7 @@ import { ReactMarkdown } from "react-markdown/lib/react-markdown";
 const ProductPageModel = ({ product }) => {
     const { signed } = useAuth();
     const isLoggedIn = () => (signed > 0 ? true : false);
-    const { addFavItem } = useFavoriteContext();
+    const { addFavItem, favItems } = useFavoriteContext();
     const [quantity, setQuantity] = useState(1);
 
     const incQuantity = () => {
@@ -23,6 +23,12 @@ const ProductPageModel = ({ product }) => {
             setQuantity(quantity - 1);
         }
     };
+
+    const hasOnFavs = favItems.find((item) => {
+        return item.id === product.id;
+    });
+
+    
 
     const items = product.images.map((img) => {
         return {
@@ -123,7 +129,7 @@ const ProductPageModel = ({ product }) => {
                             <AddFavButton
                                 onClick={() => addFavItem(product)}
                                 isFavorite={
-                                    product.isFavorite
+                                    hasOnFavs
                                         ? "Remover dos favoritos"
                                         : "Adicionar aos favoritos"
                                 }

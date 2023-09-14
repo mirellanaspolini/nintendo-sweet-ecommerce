@@ -5,6 +5,7 @@ const NotFound = () => {
 
     return (
         <ErrorModel
+            fullPage={true}
             title="Página não encontrada!"
             text="Eita... parece que houve algum erro ou página que você procurou não existe."
         />
