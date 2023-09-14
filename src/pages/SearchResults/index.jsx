@@ -1,13 +1,13 @@
-import CardProduto from "componentes/CardProduct";
-import ErrorModel from "componentes/ErrorModel";
-import productList from "json/produtos.json";
-import { Link, useLocation } from "react-router-dom";
+import CardProduto from 'componentes/CardProduct';
+import ErrorModel from 'componentes/ErrorModel';
+import productList from 'json/produtos.json';
+import { Link, useLocation } from 'react-router-dom';
 
 const SearchResults = () => {
     const location = useLocation();
     const searchParams = new URLSearchParams(location.search);
-    const query = searchParams.get("query");
-    const category = searchParams.get("category");
+    const query = searchParams.get('query');
+    const category = searchParams.get('category');
     const searchProducts = (query) => {
         return productList.filter((product) => {
             return product.name.toLowerCase().includes(query.toLowerCase());
@@ -48,7 +48,7 @@ const SearchResults = () => {
                         />
                         <h1 className="text-violeta-01 text-lg font-bold font-titulos">
                             Resultados de busca para "{query}
-                            {category}":
+                            {category.replace('-', ' ')}":
                         </h1>
                     </div>
                     <ul className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 lg:gap-5 gap-3 sm:gap-4">

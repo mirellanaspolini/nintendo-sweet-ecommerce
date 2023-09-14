@@ -3,7 +3,6 @@ import ProductPage from 'componentes/ProductPage';
 import ScrollToTop from 'componentes/ScrollToTop';
 import { CartProvider } from 'contexts/Cart';
 import { FavoriteProvider } from 'contexts/Favorites';
-import useAuth from 'contexts/useAuth';
 import Cart from 'pages/Cart';
 import Favorites from 'pages/Favorites';
 import NotFound from 'pages/NotFound';

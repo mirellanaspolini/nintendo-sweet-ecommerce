@@ -1,8 +1,8 @@
-import React from "react";
+import React from 'react';
 
 const Footer = () => {
     return (
-        <div className="w-full block bg-amarelo-03">
+        <div className="w-full block bg-amarelo-03 absolute bottom-0 z-50">
             <footer className="flex flex-wrap m-auto gap-4 p-5 md:px-6 justify-center items-center md:justify-between max-w-5xl">
                 <img
                     src="/img/SS-logo-rosa.svg"
@@ -10,7 +10,7 @@ const Footer = () => {
                     width="90px"
                 />
                 <p className="text-rosa-03 font-textos">
-                    Desenvolvido por{" "}
+                    Desenvolvido por{' '}
                     <a
                         className="font-medium"
                         href="https://linkedin.com/in/mirellanaspolini-12768322b"
