@@ -15,9 +15,9 @@ const Cart = () => {
                 />
             ) : (
                 <>
-                    <h3 className="mb-4 text-base sm:text-lg font-titulos text-rosa-01">
+                    <h1 className="mb-4 text-base sm:text-lg font-titulos text-rosa-01">
                         Meu carrinho
-                    </h3>
+                    </h1>
                     <section className="flex flex-col md:flex-row gap-5 w-full">
                         <ul className="w-full md:w-1/2">
                             {cartItems.map((product) => (

@@ -1,12 +1,12 @@
-import AddCartButton from 'componentes/AddCartButton';
-import AddFavButton from 'componentes/AddFavButton';
-import Button from 'componentes/Button';
-import Rating from 'componentes/Rating';
-import { useFavoriteContext } from 'contexts/Favorites';
-import useAuth from 'contexts/useAuth';
-import { useState } from 'react';
-import ReactImageGallery from 'react-image-gallery';
-import { ReactMarkdown } from 'react-markdown/lib/react-markdown';
+import AddCartButton from "componentes/AddCartButton";
+import AddFavButton from "componentes/AddFavButton";
+import Button from "componentes/Button";
+import Rating from "componentes/Rating";
+import { useFavoriteContext } from "contexts/Favorites";
+import useAuth from "contexts/useAuth";
+import { useState } from "react";
+import ReactImageGallery from "react-image-gallery";
+import { ReactMarkdown } from "react-markdown/lib/react-markdown";
 
 const ProductPageModel = ({ product }) => {
     const { signed } = useAuth();
@@ -29,8 +29,8 @@ const ProductPageModel = ({ product }) => {
             thumbnail: img,
             original: img,
             originalClass:
-                'rounded-lg h-[280px] sm:h-[360px] object-cover lg:h-[360px]',
-            thumbnailClass: 'rounded-3xl max-w-[100px] w-1/3',
+                "rounded-lg h-[280px] sm:h-[360px] object-cover lg:h-[360px]",
+            thumbnailClass: "rounded-3xl max-w-[100px] w-1/3",
         };
     });
 
@@ -59,7 +59,7 @@ const ProductPageModel = ({ product }) => {
                             </p>
                             <h2
                                 className={
-                                    'text-3xl text-rosa-01 mb-5 font-titulos'
+                                    "text-3xl text-rosa-01 mb-5 font-titulos"
                                 }
                             >
                                 R$
@@ -87,14 +87,20 @@ const ProductPageModel = ({ product }) => {
                         />
                     </div>
                     <div className="flex items-center gap-16 mb-5">
-                        <p className="text-cinza-06 font-textos">Quantidade:</p>
+                        <label
+                            htmlFor="txtQuantity"
+                            className="text-cinza-06 font-textos"
+                        >
+                            Quantidade:
+                        </label>
                         <span className="flex gap-2 items-center">
                             <Button
                                 onclick={decQuantity}
-                                classBtn="secundary"
-                                classe="btnRemoveQuantity"
+                                classes="btnRemoveQuantity secundary"
+                                aria-label="Remover uma unidade do produto"
                             />
                             <input
+                                id="txtQuantity"
                                 className="w-[20px] text-center appearance-none"
                                 type="text"
                                 value={quantity}
@@ -102,8 +108,8 @@ const ProductPageModel = ({ product }) => {
                             />
                             <Button
                                 onclick={incQuantity}
-                                classe="btnAddQuantity"
-                                classBtn="secundary"
+                                classes="btnAddQuantity secundary"
+                                aria-label="Adicionar uma unidade do produto"
                             />
                         </span>
                     </div>
@@ -111,15 +117,15 @@ const ProductPageModel = ({ product }) => {
                         <AddCartButton product={product} quantity={quantity} />
                         {isLoggedIn() === false ? (
                             <AddFavButton
-                                isFavorite={'Adicionar aos favoritos'}
+                                isFavorite={"Adicionar aos favoritos"}
                             />
                         ) : (
                             <AddFavButton
                                 onClick={() => addFavItem(product)}
                                 isFavorite={
                                     product.isFavorite
-                                        ? 'Remover dos favoritos'
-                                        : 'Adicionar aos favoritos'
+                                        ? "Remover dos favoritos"
+                                        : "Adicionar aos favoritos"
                                 }
                             />
                         )}

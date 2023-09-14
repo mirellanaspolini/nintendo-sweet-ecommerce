@@ -1,6 +1,6 @@
-import Button from 'componentes/Button';
-import { useCartContext } from 'contexts/Cart';
-import { Link } from 'react-router-dom';
+import Button from "componentes/Button";
+import { useCartContext } from "contexts/Cart";
+import { Link } from "react-router-dom";
 
 const CardProductCart = ({ product }) => {
     const { setCartItems, removeProduct, removeProductFromCart } =
@@ -17,11 +17,11 @@ const CardProductCart = ({ product }) => {
     return (
         <li className="flex flex-col md:flex-row mb-4">
             <div className="rounded-3xl shadow-lg flex bg-branco-puro">
-                <Link className="w-2/5 " to={'/produtos/' + product.slug}>
+                <Link className="w-2/5 " to={"/produtos/" + product.slug}>
                     <img
                         className="h-full object-cover rounded-l-3xl"
                         src={product.images[0]}
-                        alt={product.name}
+                        alt=""
                     />
                 </Link>
 
@@ -29,18 +29,19 @@ const CardProductCart = ({ product }) => {
                     <div className="flex justify-between">
                         <Link
                             className="w-5/6 cardProduct_name text-rosa-01 font-titulos"
-                            to={'/produtos/' + product.slug}
+                            to={"/produtos/" + product.slug}
                         >
                             <h3>{product.name}</h3>
                         </Link>
                         <button
                             className="pl-2 w-1/6 max-w-[26px]"
                             onClick={() => removeProductFromCart(product.id)}
+                            aria-label="Excluir produto do carrinho"
                         >
                             <img
                                 className="w-full"
                                 src="/img/icons/Trash_icon.svg"
-                                alt={`Excluir produto do carrinho`}
+                                alt=""
                             />
                         </button>
                     </div>
@@ -49,21 +50,23 @@ const CardProductCart = ({ product }) => {
                         <span className="flex gap-2 items-center">
                             <Button
                                 onclick={() => removeProduct(product.id)}
-                                classBtn="secundary"
-                                classe="btnRemoveQuantity"
+                                classes="btnRemoveQuantity secundary"
+                                aria-label="Remover uma unidade do produto do carrinho"
                             />
+                            <label className="sr-only" htmlFor="txtQuantity">
+                                Quantidade:
+                            </label>
                             <input
+                                id="txtQuantity"
                                 type="text"
                                 value={product?.quantity}
                                 className="w-[20px] text-center"
                                 readOnly
                             />
-                            {/* {product?.quantity || 0} */}
                             <Button
                                 onclick={() => addProduct(product)}
-                                classBtn="secundary"
-                                classe="btnAddQuantity"
-                            />
+                                classes="btnAddQuantity secundary"
+                            aria-label="Adicionar mais uma unidade do produto ao carrinho"/>
                         </span>
                         <h5 className="font-titulos text-violeta-01 text-lg">
                             R$

@@ -8,8 +8,9 @@ const CardProduct = ({ product }) => {
                 <img
                     className="w-full h-[200px] object-cover rounded-t-3xl"
                     src={product.images[0]}
-                    alt={product.name}
+                    alt=""
                 />
+                <span className='sr-only'>abrir página do produto {product.name}</span>
             </Link>
 
             <div className="p-4 h-min">

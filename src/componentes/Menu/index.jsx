@@ -23,11 +23,13 @@ const Menu = () => {
                 <Link
                     to="/"
                     className="h-[38px] w-[38px] order-first duration-100 bg-logoMin bg-no-repeat bg-contain sm:bg-logo sm:w-[90px] sm:h-[50px]"
-                ></Link>
+                >
+                    <span className="sr-only">Ir para a página inicial</span>
+                </Link>
                 <div className="flex lg:gap-3 gap-2 lg:order-last">
                     {isLoggedIn() === false ? (
                         <>
-                            <Button classBtn="secundary">
+                            <Button classes="secundary">
                                 <Link to="/entrar">Entrar</Link>
                             </Button>
                             <Button>
@@ -56,6 +58,7 @@ const Menu = () => {
                             type="search"
                             className="font-textos focus-visible:outline-none outline-none w-full text-base bg-transparent py-3 pl-4 pr-2 text-cinza-06 order-last lg:order-2 min-w-auto md:min-w-[300px]"
                             placeholder="O que você procura?"
+                            aria-label="Pesquisar no site"
                             id="txtSearch"
                             value={searchQuery}
                             onChange={(e) => setSearchQuery(e.target.value)}

@@ -5,11 +5,11 @@ const Footer = () => {
         <div className="w-full block bg-amarelo-03">
             <footer className="flex flex-wrap m-auto gap-4 p-5 md:px-6 justify-center items-center md:justify-between max-w-5xl">
                 <img
-                    src="/img/SS-logo-amarela.svg"
+                    src="/img/SS-logo-rosa.svg"
                     alt="Logo Switch 'n Sweet"
                     width="90px"
                 />
-                <p className="text-rosa-01 font-textos">
+                <p className="text-rosa-03 font-textos">
                     Desenvolvido por{" "}
                     <a
                         className="font-medium"

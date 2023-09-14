@@ -44,11 +44,12 @@ const SearchResults = () => {
                         <Link
                             className="bg-arrowLeft bg-center bg-no-repeat bg-contain rosa p-3 py-2 bg-branco rounded-xl hover:border-violeta-01"
                             to="/"
-                        ></Link>
-                        <h2 className="text-violeta-01 font-bold font-titulos">
+                            aria-label="Voltar para a página inicial"
+                        />
+                        <h1 className="text-violeta-01 text-lg font-bold font-titulos">
                             Resultados de busca para "{query}
                             {category}":
-                        </h2>
+                        </h1>
                     </div>
                     <ul className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 lg:gap-5 gap-3 sm:gap-4">
                         {searchResults.map((product) => (

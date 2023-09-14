@@ -15,9 +15,9 @@ const Favorites = () => {
                 />
             ) : (
                 <>
-                    <h3 className="mb-4 text-base sm:text-lg font-titulos text-rosa-01">
+                    <h1 className="mb-4 text-base sm:text-lg font-titulos text-rosa-01">
                         Meus favoritos
-                    </h3>
+                    </h1>
                     <section className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
                         {favItems.map((product) => (
                             <CardProductFavs

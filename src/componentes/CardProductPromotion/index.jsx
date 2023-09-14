@@ -21,13 +21,13 @@ const CardProductPromotion = ({ product }) => {
                         R$
                         {product.price.toFixed(2)}
                     </p>
-                    <p className={" text-xl sm:text-2xl mb-1 text-violeta-01"}>
+                    <h2 className={"text-xl sm:text-2xl mb-1 text-violeta-01"}>
                         R$
                         {(
                             product.price -
                             product.price * product.inPromotion[1]
                         ).toFixed(2)}
-                    </p>
+                    </h2>
                     <h3 className="mb-4 text-base sm:text-lg text-rosa-01">
                         {product.name}
                     </h3>

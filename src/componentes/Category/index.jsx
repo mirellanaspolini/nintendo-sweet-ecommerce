@@ -12,7 +12,7 @@ const Category = ({ category, slug }) => {
 
     return (
         <button
-            className="rounded-full bg-amarelo-01 text-medium font-textos text-amarelo-04 py-0.5 px-2.5"
+            className="rounded-full bg-amarelo-01 text-medium font-textos text-amarelo-05 py-0.5 px-2.5"
             onClick={handleSearch}
         >
             {category}

@@ -9,7 +9,7 @@ const ErrorModel = ({ title, text, img = 'bg-cat' }) => {
     };
     return (
         <section className="h-screen gap-6 flex items-center justify-center flex flex-col items-center m-auto">
-            <Header corTexto="rosa">{title}</Header>
+            <Header classes="rosa">{title}</Header>
             <p className="text-center text-lg text-cinza-06">{text}</p>
             <div
                 className={`rounded-xl md:w-1/2 w-4/5 h-[280px] bg-cover bg-no-repeat bg-center ${img}`}

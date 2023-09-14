@@ -1,5 +1,6 @@
 import CardProductPromotion from "componentes/CardProductPromotion";
 import Category from "componentes/Category";
+import Header from "componentes/Header";
 import Products from "componentes/Products";
 import products from "json/produtos.json";
 
@@ -39,6 +40,10 @@ const Home = () => {
 
     return (
         <>
+            <Header classes="mb-4 rosa">
+                <span className="sr-only">Página inicial - </span>
+                Explore nossos produtos
+            </Header>
             <article className="flex flex-col md:flex-row gap-2 sm:gap-5 mb-6">
                 <aside className="w-full md:w-1/5">
                     <h3 className="mb-2 text-violeta-02 font-medium font-titulos">

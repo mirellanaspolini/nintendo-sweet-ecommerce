@@ -22,7 +22,8 @@ module.exports = {
                 // tons rosa
                 'rosa-01': '#c33470',
                 'rosa-02': '#f472b6',
-                'rosa-03': '#500724',
+                'rosa-03': '#96003f',
+                'rosa-04': '#500724',
                 // tons roxo/lilas
                 lilas: '#9972d8',
                 'violeta-01': '#4f359b',
