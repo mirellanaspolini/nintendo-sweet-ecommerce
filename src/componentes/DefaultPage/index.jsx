@@ -4,7 +4,7 @@ import { Outlet } from 'react-router-dom';
 
 const DefaultPage = () => {
     return (
-        <div className="relative min-h-screen flex flex-col">
+        <div className="flex flex-col min-h-screen">
             <a
                 href="#content"
                 className="sr-only bg-violeta-02 w-full text-white"
@@ -15,7 +15,7 @@ const DefaultPage = () => {
 
             <main
                 id="content"
-                className="flex-grow pb-[11rem] p-4 md:p-6 max-w-5xl lg:m-auto"
+                className="flex-grow p-4 md:p-6 max-w-5xl lg:m-auto"
             >
                 <Outlet />
             </main>
