@@ -1,19 +1,13 @@
-import Button from 'componentes/Button';
 import CardProductCart from 'componentes/CardProductCart';
 import ErrorModel from 'componentes/ErrorModel';
-import Header from 'componentes/Header';
 import { useCartContext } from 'contexts/Cart';
-import { useNavigate } from 'react-router-dom';
 
 const Cart = () => {
     const { cartItems, calculateCartTotal } = useCartContext();
-    const navigate = useNavigate();
-    const handleClick = () => {
-        navigate('/');
-    };
+
     return (
         <>
-            {cartItems.length == 0 ? (
+            {cartItems.length === 0 ? (
                 <ErrorModel
                     title="Seu carrinho está vazio!"
                     text="Poxa, parece que você ainda não adicionou nenhum produto no seu carrinho. Continue navegando e descubra tudo que temos a oferecer!"

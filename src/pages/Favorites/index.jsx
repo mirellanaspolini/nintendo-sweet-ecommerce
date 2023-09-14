@@ -1,18 +1,13 @@
-import Button from 'componentes/Button';
-import CardProductFavs from 'componentes/CardProductFavs';
-import ErrorModel from 'componentes/ErrorModel';
-import Header from 'componentes/Header';
-import { useFavoriteContext } from 'contexts/Favorites';
-import { useNavigate } from 'react-router-dom';
+import CardProductFavs from "componentes/CardProductFavs";
+import ErrorModel from "componentes/ErrorModel";
+import { useFavoriteContext } from "contexts/Favorites";
 
 const Favorites = () => {
-    const { favItems, isFavorite } = useFavoriteContext();
-    const navigate = useNavigate();
-    const handleClick = () => navigate('/');
+    const { favItems } = useFavoriteContext();
 
     return (
         <>
-            {favItems.length == 0 ? (
+            {favItems.length === 0 ? (
                 <ErrorModel
                     title="Você ainda não favoritou nenhum produto!"
                     text="Facilite sua busca! Comece a favoritar nossos produtos e tenha todos os itens de seu interesse no mesmo lugar."

@@ -15,6 +15,7 @@ const Footer = () => {
                         className="font-medium"
                         href="https://linkedin.com/in/mirellanaspolini-12768322b"
                         target="_blank"
+                        rel="noreferrer"
                     >
                         Mirella Naspolini
                     </a>

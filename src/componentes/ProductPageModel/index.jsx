@@ -2,21 +2,16 @@ import AddCartButton from 'componentes/AddCartButton';
 import AddFavButton from 'componentes/AddFavButton';
 import Button from 'componentes/Button';
 import Rating from 'componentes/Rating';
-import { useCartContext } from 'contexts/Cart';
 import { useFavoriteContext } from 'contexts/Favorites';
 import useAuth from 'contexts/useAuth';
 import { useState } from 'react';
 import ReactImageGallery from 'react-image-gallery';
 import { ReactMarkdown } from 'react-markdown/lib/react-markdown';
-import { useNavigate } from 'react-router';
 
 const ProductPageModel = ({ product }) => {
     const { signed } = useAuth();
     const isLoggedIn = () => (signed > 0 ? true : false);
-    const navigate = useNavigate();
-    const { addProduct } = useCartContext();
-    const { favItems, addFavItem } = useFavoriteContext();
-
+    const { addFavItem } = useFavoriteContext();
     const [quantity, setQuantity] = useState(1);
 
     const incQuantity = () => {

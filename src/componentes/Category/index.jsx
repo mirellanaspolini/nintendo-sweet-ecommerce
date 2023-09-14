@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
 const Category = ({ category, slug }) => {
-    const [searchQuery, setSearchQuery] = useState(slug);
+    const [searchQuery] = useState(slug);
     const navigate = useNavigate();
 
     const handleSearch = (e) => {

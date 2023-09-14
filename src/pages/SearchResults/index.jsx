@@ -1,17 +1,13 @@
-import Button from 'componentes/Button';
-import CardProduto from 'componentes/CardProduct';
-import ErrorModel from 'componentes/ErrorModel';
-import Header from 'componentes/Header';
-import productList from 'json/produtos.json';
-import { Link, useLocation, useNavigate } from 'react-router-dom';
+import CardProduto from "componentes/CardProduct";
+import ErrorModel from "componentes/ErrorModel";
+import productList from "json/produtos.json";
+import { Link, useLocation } from "react-router-dom";
 
 const SearchResults = () => {
     const location = useLocation();
     const searchParams = new URLSearchParams(location.search);
-    const query = searchParams.get('query');
-    const category = searchParams.get('category');
-    const navigate = useNavigate();
-
+    const query = searchParams.get("query");
+    const category = searchParams.get("category");
     const searchProducts = (query) => {
         return productList.filter((product) => {
             return product.name.toLowerCase().includes(query.toLowerCase());
@@ -34,13 +30,9 @@ const SearchResults = () => {
         searchResults = searchProductByCategory(category);
     }
 
-    const handleClick = () => {
-        navigate('/');
-    };
-
     return (
         <section>
-            {searchResults.length == 0 ? (
+            {searchResults.length === 0 ? (
                 <ErrorModel
                     title="Ops! Não encontramos nenhum resultado para a sua busca"
                     text="Experimente fazer uma nova busca com termos diferentes, ou explore nossas categorias para encontrar o que procura!"

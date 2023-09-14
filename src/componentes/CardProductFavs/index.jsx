@@ -1,4 +1,4 @@
-import { FavoriteContext, useFavoriteContext } from 'contexts/Favorites';
+import { useFavoriteContext } from 'contexts/Favorites';
 import { Link } from 'react-router-dom';
 
 const CardProductFavs = ({ product }) => {

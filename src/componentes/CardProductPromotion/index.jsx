@@ -1,10 +1,7 @@
-import ButtonIcone from "componentes/IconButton";
 import { ReactMarkdown } from "react-markdown/lib/react-markdown";
 import { Link } from "react-router-dom";
 
 const CardProductPromotion = ({ product }) => {
-    const beforePrice = `before:content-[\"${product.price.toString()}\"]`;
-
     return (
         <Link to={"/produtos/" + product.slug}>
             <div className="font-medium font-titulos rounded-3xl shadow-lg bg-branco-puro flex flex-row h-auto">

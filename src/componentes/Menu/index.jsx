@@ -1,15 +1,15 @@
-import Button from 'componentes/Button';
-import ButtonIcone from 'componentes/IconButton';
-import Dropdown from 'componentes/Dropdown';
-import useAuth from 'contexts/useAuth';
-import { useState } from 'react';
-import { Link, useNavigate } from 'react-router-dom';
+import Button from "componentes/Button";
+import ButtonIcone from "componentes/IconButton";
+import Dropdown from "componentes/Dropdown";
+import useAuth from "contexts/useAuth";
+import { useState } from "react";
+import { Link, useNavigate } from "react-router-dom";
 
 const Menu = () => {
     const { signed } = useAuth();
     const isLoggedIn = () => (signed > 0 ? true : false);
 
-    const [searchQuery, setSearchQuery] = useState('');
+    const [searchQuery, setSearchQuery] = useState("");
     const navigate = useNavigate();
 
     const handleSearch = (e) => {
@@ -25,7 +25,7 @@ const Menu = () => {
                     className="h-[38px] w-[38px] order-first duration-100 bg-logoMin bg-no-repeat bg-contain sm:bg-logo sm:w-[90px] sm:h-[50px]"
                 ></Link>
                 <div className="flex lg:gap-3 gap-2 lg:order-last">
-                    {isLoggedIn() == false ? (
+                    {isLoggedIn() === false ? (
                         <>
                             <Button classBtn="secundary">
                                 <Link to="/entrar">Entrar</Link>

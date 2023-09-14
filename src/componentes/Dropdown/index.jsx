@@ -41,8 +41,7 @@ const Dropdown = () => {
                     <div className="py-1">
                         <Menu.Item>
                             {({ active }) => (
-                                <a
-                                    href="#"
+                                <button
                                     className={classNames(
                                         active
                                             ? "bg-roxo-hover text-violeta-02"
@@ -51,12 +50,12 @@ const Dropdown = () => {
                                     )}
                                 >
                                     Configurações
-                                </a>
+                                </button>
                             )}
                         </Menu.Item>
                         <Menu.Item>
                             {({ active }) => (
-                                <a
+                                <button
                                     href="#"
                                     className={classNames(
                                         active
@@ -66,7 +65,7 @@ const Dropdown = () => {
                                     )}
                                 >
                                     Meus pedidos
-                                </a>
+                                </button>
                             )}
                         </Menu.Item>
                         <Menu.Item>

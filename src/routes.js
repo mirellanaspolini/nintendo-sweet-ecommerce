@@ -14,11 +14,6 @@ import HomePage from './pages/Home';
 import SignIn from './pages/SignIn';
 import SignUp from './pages/SignUp';
 
-const Private = ({ Item }) => {
-    const { signed } = useAuth();
-    return signed > 0 ? <Item /> : <></>;
-};
-
 function AppRoutes() {
     return (
         <CartProvider>

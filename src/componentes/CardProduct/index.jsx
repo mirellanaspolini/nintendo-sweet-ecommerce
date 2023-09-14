@@ -1,4 +1,3 @@
-import AddCartButton from 'componentes/AddCartButton';
 import Rating from 'componentes/Rating';
 import { Link } from 'react-router-dom';
 

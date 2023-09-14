@@ -1,14 +1,14 @@
-import { useField } from 'formik';
+import { useField } from "formik";
 
-const InputFormik = ({ label, classe = '', size = 'lg', ...props }) => {
+const InputFormik = ({ label, classe = "", size = "lg", ...props }) => {
     const [inputProps, meta] = useField(props);
 
     const sizeClass =
-        size === 'lg'
-            ? 'py-3 px-4 rounded-2xl w-full'
-            : size === 'sm'
-            ? 'px-2 py-1 rounded-xl w-[120px]'
-            : '';
+        size === "lg"
+            ? "py-3 px-4 rounded-2xl w-full"
+            : size === "sm"
+            ? "px-2 py-1 rounded-xl w-[120px]"
+            : "";
 
     return (
         <div>
