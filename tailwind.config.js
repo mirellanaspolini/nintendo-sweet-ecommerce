@@ -66,6 +66,8 @@ module.exports = {
                 trash: 'url("/public/img/icons/Trash_icon.svg")',
                 logoMin: 'url("/public/img/SS-logo-min.svg")',
                 logo: 'url("/public/img/SS-logo.svg")',
+                cat: 'url("/public/img/ilustracoes/gato.svg")',
+                catBox: 'url("/public/img/ilustracoes/gatos_caixa.svg")',
             },
         },
     },

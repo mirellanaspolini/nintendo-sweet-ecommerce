@@ -1,36 +1,24 @@
-import Button from "componentes/Button";
-import CardProductCart from "componentes/CardProductCart";
-import Header from "componentes/Header";
-import { useCartContext } from "contexts/Cart";
-import { useNavigate } from "react-router-dom";
+import Button from 'componentes/Button';
+import CardProductCart from 'componentes/CardProductCart';
+import ErrorModel from 'componentes/ErrorModel';
+import Header from 'componentes/Header';
+import { useCartContext } from 'contexts/Cart';
+import { useNavigate } from 'react-router-dom';
 
 const Cart = () => {
     const { cartItems, calculateCartTotal } = useCartContext();
     const navigate = useNavigate();
     const handleClick = () => {
-        navigate("/");
+        navigate('/');
     };
     return (
         <>
             {cartItems.length == 0 ? (
-                <section className="gap-6 flex items-center pt-4 flex flex-col items-center m-auto">
-                    <Header corTexto="rosa">Seu carrinho está vazio!</Header>
-                    <p className="text-center text-lg text-cinza-06">
-                        Poxa, parece que você ainda não adicionou nenhum produto
-                        no seu carrinho. Continue navegando e descubra tudo que
-                        temos a oferecer!
-                    </p>
-                    <div className="rounded-t-lg w-full ">
-                        <img
-                            className="rounded-b-lg m-auto h-[250px] bg-amarelo-03"
-                            src="../img/ilustracoes/gatos_caixa.svg"
-                            alt="Gato branco brincando com um novelo de lã amarelo"
-                        />
-                    </div>
-                    <Button classBtn="rosa" onclick={handleClick}>
-                        Voltar para a página principal
-                    </Button>
-                </section>
+                <ErrorModel
+                    title="Seu carrinho está vazio!"
+                    text="Poxa, parece que você ainda não adicionou nenhum produto no seu carrinho. Continue navegando e descubra tudo que temos a oferecer!"
+                    img="bg-amarelo-03 bg-catBox"
+                />
             ) : (
                 <>
                     <h3 className="mb-4 text-base sm:text-lg font-titulos text-rosa-01">

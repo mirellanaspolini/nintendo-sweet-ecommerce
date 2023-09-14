@@ -1,7 +1,8 @@
-import Button from "componentes/Button";
-import Header from "componentes/Header";
-import React from "react";
-import { useNavigate } from "react-router-dom";
+import Button from 'componentes/Button';
+import ErrorModel from 'componentes/ErrorModel';
+import Header from 'componentes/Header';
+import React from 'react';
+import { useNavigate } from 'react-router-dom';
 
 const NotFound = () => {
     const navigate = useNavigate();
@@ -9,22 +10,10 @@ const NotFound = () => {
         navigate(-1);
     };
     return (
-        <section className="h-screen gap-6 flex items-center justify-center flex flex-col items-center m-auto">
-            <Header corTexto="rosa">Página não encontrada!</Header>
-            <p className="text-center text-lg text-cinza-06">
-                Eita... parece que houve algum erro ou página que você procurou
-                não existe.
-            </p>
-            <div className="md:w-1/2 w-4/5">
-                <img
-                    src="../img/ilustracoes/gato.svg"
-                    alt="Gato branco brincando com um novelo de lã amarelo"
-                />
-            </div>
-            <Button classBtn="rosa" onclick={handleClick}>
-                Voltar
-            </Button>
-        </section>
+        <ErrorModel
+            title="Página não encontrada!"
+            text="Eita... parece que houve algum erro ou página que você procurou não existe."
+        />
     );
 };
 

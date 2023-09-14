@@ -1,5 +1,6 @@
 import Button from 'componentes/Button';
 import CardProduto from 'componentes/CardProduct';
+import ErrorModel from 'componentes/ErrorModel';
 import Header from 'componentes/Header';
 import productList from 'json/produtos.json';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
@@ -40,26 +41,11 @@ const SearchResults = () => {
     return (
         <section>
             {searchResults.length == 0 ? (
-                <div className="gap-6 flex items-center pt-4 flex flex-col items-center m-auto">
-                    <Header corTexto="rosa">
-                        Ops! Não encontramos nenhum resultado para a sua busca.
-                    </Header>
-                    <p className="text-center text-lg text-cinza-06">
-                        Experimente fazer uma nova busca com termos diferentes,
-                        ou explore nossas categorias para encontrar o que
-                        procura
-                    </p>
-                    <div className="rounded-t-lg w-full ">
-                        <img
-                            className="rounded-b-lg m-auto h-[250px] bg-amarelo-03"
-                            src="../img/ilustracoes/gatos_caixa.svg"
-                            alt="Gato branco brincando com um novelo de lã amarelo"
-                        />
-                    </div>
-                    <Button classBtn="rosa" onclick={handleClick}>
-                        Voltar para a página principal
-                    </Button>
-                </div>
+                <ErrorModel
+                    title="Ops! Não encontramos nenhum resultado para a sua busca"
+                    text="Experimente fazer uma nova busca com termos diferentes, ou explore nossas categorias para encontrar o que procura!"
+                    img="bg-cat"
+                />
             ) : (
                 <>
                     <div className="flex items-center gap-4 mb-4">
