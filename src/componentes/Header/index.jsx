@@ -1,4 +1,4 @@
-const Header = ({ classes, children }) => {
+const Header = ({ classes = "", children }) => {
     const corTexto = classes.includes("rosa")
         ? "text-rosa-01"
         : "text-violeta-01";
