@@ -48,7 +48,7 @@ const SearchResults = () => {
                         />
                         <h1 className="text-violeta-01 text-lg font-bold font-titulos">
                             Resultados de busca para "{query}
-                            {category.replace('-', ' ')}":
+                            {category?.replace('-', ' ')}":
                         </h1>
                     </div>
                     <ul className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 lg:gap-5 gap-3 sm:gap-4">

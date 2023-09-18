@@ -1,9 +1,9 @@
-import Tooltip from 'componentes/Tooltip';
-import { useCartContext } from 'contexts/Cart';
-import useAuth from 'contexts/useAuth';
-import React from 'react';
-import { useState } from 'react';
-import { useNavigate } from 'react-router';
+import Tooltip from "componentes/Tooltip";
+import { useCartContext } from "contexts/Cart";
+import useAuth from "contexts/useAuth";
+import React from "react";
+import { useState } from "react";
+import { useNavigate } from "react-router";
 
 const AddCartButton = ({ product, quantity }) => {
     const { signed } = useAuth();
@@ -14,8 +14,8 @@ const AddCartButton = ({ product, quantity }) => {
     const navigate = useNavigate();
 
     const handleOnClick = () => {
-        if (!isLoggedIn) {
-            navigate('/');
+        if (!isLoggedIn()) {
+            navigate("/entrar");
         }
         addProduct(product, quantity);
         setShowTooltip(true);

@@ -37,7 +37,7 @@ const SignIn = () => {
                 validationSchema={validation}
                 initialValues={{ email: '', password: '' }}
             >
-                <Form className="rounded-3xl shadow-2xl bg-branco-puro p-14 flex flex-col gap-2 w-[480px]">
+                <Form className="rounded-3xl shadow-2xl bg-branco-puro py-12 px-8 md:p-14 flex flex-col gap-2 w-[480px] mx-[15px]">
                     <img
                         className="h-[50px] inline self-center mb-5"
                         src="./img/SS-logo.svg"

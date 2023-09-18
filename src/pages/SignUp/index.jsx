@@ -1,23 +1,23 @@
-import Button from 'componentes/Button';
-import Header from 'componentes/Header';
-import InputFormik from 'componentes/InputFormik';
-import useAuth from 'contexts/useAuth';
-import { ErrorMessage, Form, Formik } from 'formik';
-import { Link, useNavigate } from 'react-router-dom';
-import * as yup from 'yup';
+import Button from "componentes/Button";
+import Header from "componentes/Header";
+import InputFormik from "componentes/InputFormik";
+import useAuth from "contexts/useAuth";
+import { ErrorMessage, Form, Formik } from "formik";
+import { Link, useNavigate } from "react-router-dom";
+import * as yup from "yup";
 
 const SignUp = () => {
     const validation = yup.object({
-        firstName: yup.string().required('Preencha este campo'),
-        lastName: yup.string().required('Preencha este campo'),
+        firstName: yup.string().required("Preencha este campo"),
+        lastName: yup.string().required("Preencha este campo"),
         email: yup
             .string()
             .email('Digite um email com "@"')
-            .required('Preencha este campo'),
+            .required("Preencha este campo"),
         password: yup
             .string()
-            .min(8, 'A senha deve conter 8 caracteres')
-            .required('Preencha este campo'),
+            .min(8, "A senha deve conter 8 caracteres")
+            .required("Preencha este campo"),
     });
 
     const navigate = useNavigate();
@@ -28,23 +28,23 @@ const SignUp = () => {
         const authenticated = await signUp(email, password);
 
         if (authenticated) {
-            navigate('/');
+            navigate("/");
         }
     };
 
     return (
-        <section className=" flex items-center justify-center">
+        <section className="mt-6 flex items-center justify-center">
             <Formik
                 initialValues={{
-                    firstName: '',
-                    lastName: '',
-                    email: '',
-                    password: '',
+                    firstName: "",
+                    lastName: "",
+                    email: "",
+                    password: "",
                 }}
                 validationSchema={validation}
                 onSubmit={handleSubmit}
             >
-                <Form className="rounded-3xl shadow-2xl bg-branco-puro p-14 flex flex-col gap-2 w-[480px]">
+                <Form className="rounded-3xl shadow-2xl bg-branco-puro py-12 px-8 md:p-14 flex flex-col gap-2 w-[480px]">
                     <img
                         className="h-[50px] self-center mb-5"
                         src="./img/SS-logo.svg"
@@ -108,7 +108,7 @@ const SignUp = () => {
                         />
                     </div>
 
-                    <Button classe="mt-4" tipo="submit">
+                    <Button classes="mt-4 default" tipo="submit">
                         Criar conta
                     </Button>
                     <p className="text-center font-textos text-gray-600">
