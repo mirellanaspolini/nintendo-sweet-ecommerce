@@ -28,7 +28,7 @@ const SignUp = () => {
         const authenticated = await signUp(email, password);
 
         if (authenticated) {
-            navigate("/");
+            navigate("/entrar");
         }
     };
 
