@@ -3,15 +3,12 @@ import AddFavButton from "componentes/AddFavButton";
 import Button from "componentes/Button";
 import Rating from "componentes/Rating";
 import { useFavoriteContext } from "contexts/Favorites";
-import useAuth from "contexts/useAuth";
 import { useState } from "react";
 import ReactImageGallery from "react-image-gallery";
 import { ReactMarkdown } from "react-markdown/lib/react-markdown";
 
 const ProductPageModel = ({ product }) => {
-    const { signed } = useAuth();
-    const isLoggedIn = () => (signed > 0 ? true : false);
-    const { addFavItem, favItems } = useFavoriteContext();
+    const { favItems } = useFavoriteContext();
     const [quantity, setQuantity] = useState(1);
 
     const incQuantity = () => {
@@ -27,8 +24,6 @@ const ProductPageModel = ({ product }) => {
     const hasOnFavs = favItems.find((item) => {
         return item.id === product.id;
     });
-
-    
 
     const items = product.images.map((img) => {
         return {
@@ -90,6 +85,7 @@ const ProductPageModel = ({ product }) => {
                             className="px-2 py-1 rounded-xl w-[120px] font-textos text-base border-2 border-violeta-01 text-cinza-06"
                             placeholder="Digite o CEP"
                             id="txtShippingCalc"
+                            readOnly
                         />
                     </div>
                     <div className="flex items-center gap-16 mb-5">
@@ -121,20 +117,14 @@ const ProductPageModel = ({ product }) => {
                     </div>
                     <div className="flex flex-wrap gap-2">
                         <AddCartButton product={product} quantity={quantity} />
-                        {isLoggedIn() === false ? (
-                            <AddFavButton
-                                isFavorite={"Adicionar aos favoritos"}
-                            />
-                        ) : (
-                            <AddFavButton
-                                onClick={() => addFavItem(product)}
-                                isFavorite={
-                                    hasOnFavs
-                                        ? "Remover dos favoritos"
-                                        : "Adicionar aos favoritos"
-                                }
-                            />
-                        )}
+                        <AddFavButton
+                            product={product}                                
+                            isFavorite={
+                                hasOnFavs
+                                    ? "Remover dos favoritos"
+                                    : "Adicionar aos favoritos"
+                            }
+                        />
                     </div>
                 </div>
             </article>

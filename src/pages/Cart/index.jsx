@@ -34,7 +34,7 @@ const Cart = () => {
                                 R$ {calculateCartTotal().toFixed(2)}
                             </p>
                             <p>Frete:</p>
-                            <p className="text-right">R$ 00.00</p>
+                            <p className="text-right text-rosa-02">Frete grátis</p>
                             <hr className="border-t-2 border-amarelo-01 col-span-full" />
                             <p className="text-rosa-01 text-xl">Valor total:</p>
                             <p className="text-right text-rosa-01 text-xl">

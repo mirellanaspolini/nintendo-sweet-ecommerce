@@ -1,7 +1,6 @@
 import Tooltip from "componentes/Tooltip";
 import { useCartContext } from "contexts/Cart";
 import useAuth from "contexts/useAuth";
-import React from "react";
 import { useState } from "react";
 import { useNavigate } from "react-router";
 
@@ -10,7 +9,6 @@ const AddCartButton = ({ product, quantity }) => {
     const { addProduct } = useCartContext();
     const isLoggedIn = () => (signed > 0 ? true : false);
     const [showTooltip, setShowTooltip] = useState(false);
-
     const navigate = useNavigate();
 
     const handleOnClick = () => {
@@ -18,11 +16,16 @@ const AddCartButton = ({ product, quantity }) => {
             navigate("/entrar");
         }
         addProduct(product, quantity);
+        toggleTooltip();
+    };
+
+    const toggleTooltip = () => {
         setShowTooltip(true);
         setTimeout(() => {
             setShowTooltip(false);
         }, 2000);
     };
+    
     return (
         <div className="relative">
             {showTooltip && <Tooltip>Item adicionado ao carrinho!</Tooltip>}
