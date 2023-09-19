@@ -1,5 +1,5 @@
-<h3 align='center'> 🚧 Em construção 🚧</h3>
-<h1 align='center'> Switch 'n Sweet</h1>
+<h3 align="center"> 🚧 Em construção 🚧</h3>
+<h1 align="center"> Switch 'n Sweet</h1>
 
 <p align="center">O site fictício "Switch 'n Sweet" foi desenvolvido com o intuito de exercitar as minhas habilidades e competências de desenvolvimento Front-end e também os conhecimentos de UI/UX. O projeto simula um e-commerce, oferecendo aos visitantes a experiência de navegar por uma loja online fictícia.</p>
 
@@ -13,8 +13,8 @@
 -   [Design de Interface (UX-UI)](#art-design-de-interface-ux-ui)
 -   [Funcionalidades](#sparkles-funcionalidades)
 -   [Tecnologias](#hammer_and_wrench-tecnologias)
--  [Implementações futuras](#rocket-implementações-futuras)
--  [Licença](#licença)
+-   [Implementações futuras](#rocket-implementações-futuras)
+-   [Licença](#licença)
 
 <hr>
 
@@ -49,6 +49,7 @@ $ npm start
 ### :camera: Screenshots
 
 #### Home
+
 <p align="center">
  <img src="https://github.com/mirellanaspolini/switch-n-sweet/blob/main/public/img/screenshots/home-mobile.png" height="240" /> 
  <img src="https://github.com/mirellanaspolini/switch-n-sweet/blob/main/public/img/screenshots/home-tablet.png" height="240" /> 
@@ -56,6 +57,7 @@ $ npm start
 </p>
 
 #### Página do produto
+
 <p align="center">
  <img src="https://github.com/mirellanaspolini/switch-n-sweet/blob/main/public/img/screenshots/paginaProduto-mobile.png" height="240" /> 
  <img src="https://github.com/mirellanaspolini/switch-n-sweet/blob/main/public/img/screenshots/paginaProduto-tablet.png" height="240" /> 
@@ -63,6 +65,7 @@ $ npm start
 </p>
 
 #### Favoritos
+
 <p align="center">
  <img src="https://github.com/mirellanaspolini/switch-n-sweet/blob/main/public/img/screenshots/favoritos-mobile.png" height="240" /> 
  <img src="https://github.com/mirellanaspolini/switch-n-sweet/blob/main/public/img/screenshots/favoritos-tablet.png" height="240" /> 
@@ -82,8 +85,8 @@ Você pode ter acesso ao Figma completo do projeto [aqui](https://www.figma.com/
 -   Cadastro de usuário
 -   Catálogo de produtos
     -   os visitantes podem explorar os produtos, buscar por nome e categoria
-- Adicionar, remover e alterar quantidade produtos do carrinho de compras
-- Adicionar e remover produtos da lista de favoritos
+-   Adicionar, remover e alterar quantidade produtos do carrinho de compras
+-   Adicionar e remover produtos da lista de favoritos
 
 <hr>
 
@@ -91,6 +94,7 @@ Você pode ter acesso ao Figma completo do projeto [aqui](https://www.figma.com/
 
 -   Consumir API de CEP para calcular o valor do frete dos produtos
 -   Filtros na busca por produtos
+-   Salvar lista de carrinho e favoritos no localStorage
 
 <hr>
 
@@ -100,6 +104,8 @@ Esse projeto foi desenvolvido com:
 
 -   React
 -   Context API
+-   React Router DOM
+-   Javascript
 -   Tailwind CSS
 -   Figma
     -   Criação de todo o UX/UI e identidade visual do site
