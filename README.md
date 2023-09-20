@@ -1,11 +1,10 @@
-<h3 align="center"> 🚧 Em construção 🚧</h3>
-<h1 align="center"> Switch 'n Sweet</h1>
+<h1 align="center">🌸 Switch 'n Sweet 🌸</h1>
 
 <p align="center">O site fictício "Switch 'n Sweet" foi desenvolvido com o intuito de exercitar as minhas habilidades e competências de desenvolvimento Front-end e também os conhecimentos de UI/UX. O projeto simula um e-commerce, oferecendo aos visitantes a experiência de navegar por uma loja online fictícia.</p>
 
 <hr>
 
-### :bookmark: Tabela de Conteúdos
+## :bookmark: Tabela de Conteúdos
 
 -   [Pré requisitos](#hammer_and_wrench-pré-requisitos)
 -   [Rodando o projeto](#game_die-rodando-o-projeto)
@@ -14,11 +13,11 @@
 -   [Funcionalidades](#sparkles-funcionalidades)
 -   [Tecnologias](#hammer_and_wrench-tecnologias)
 -   [Implementações futuras](#rocket-implementações-futuras)
--   [Licença](#licença)
+-   [Licença](#page_with_curl-licença)
 
 <hr>
 
-### :hammer_and_wrench: Pré-requisitos
+## :hammer_and_wrench: Pré-requisitos
 
 Antes de começar, você vai precisar ter instalado em sua máquina as seguintes ferramentas:
 [Git](https://git-scm.com), [Node.js](https://nodejs.org/en/).
@@ -26,7 +25,7 @@ Além disto é bom ter um editor para trabalhar com o código como [VSCode](http
 
 <hr>
 
-### :game_die: Rodando o projeto
+## :game_die: Rodando o projeto
 
 ```bash
 # Clone este repositório
@@ -46,9 +45,9 @@ $ npm start
 
 <hr>
 
-### :camera: Screenshots
+## :camera: Screenshots
 
-#### Home
+### Home
 
 <p align="center">
  <img src="https://github.com/mirellanaspolini/switch-n-sweet/blob/main/public/img/screenshots/home-mobile.png" height="240" /> 
@@ -56,7 +55,7 @@ $ npm start
   <img src="https://github.com/mirellanaspolini/switch-n-sweet/blob/main/public/img/screenshots/home-desktop.png" height="240" />
 </p>
 
-#### Página do produto
+### Página do produto
 
 <p align="center">
  <img src="https://github.com/mirellanaspolini/switch-n-sweet/blob/main/public/img/screenshots/paginaProduto-mobile.png" height="240" /> 
@@ -64,7 +63,7 @@ $ npm start
  <img src="https://github.com/mirellanaspolini/switch-n-sweet/blob/main/public/img/screenshots/paginaProduto-desktop.png" height="240" />
 </p>
 
-#### Favoritos
+### Favoritos
 
 <p align="center">
  <img src="https://github.com/mirellanaspolini/switch-n-sweet/blob/main/public/img/screenshots/favoritos-mobile.png" height="240" /> 
@@ -74,13 +73,13 @@ $ npm start
 
 <hr>
 
-### :art: Design de Interface (UX-UI)
+## :art: Design de Interface (UX-UI)
 
 Você pode ter acesso ao Figma completo do projeto [aqui](https://www.figma.com/file/ZxHv4wrVM19zAmN1hR9Bsr/Switch-'n-sweet?type=design&node-id=3%3A141&mode=design&t=gOKqy8srzQ9t8KuZ-1)
 
 <hr>
 
-### :sparkles: Funcionalidades
+## :sparkles: Funcionalidades
 
 -   Cadastro de usuário
 -   Catálogo de produtos
@@ -90,15 +89,15 @@ Você pode ter acesso ao Figma completo do projeto [aqui](https://www.figma.com/
 
 <hr>
 
-### :rocket: Implementações futuras
+## :rocket: Implementações futuras
 
 -   Consumir API de CEP para calcular o valor do frete dos produtos
 -   Filtros na busca por produtos
 -   Salvar lista de carrinho e favoritos no localStorage
 
 <hr>
-
-### :hammer_and_wrench: Tecnologias
+  
+## :hammer_and_wrench: Tecnologias
 
 Esse projeto foi desenvolvido com:
 
@@ -111,5 +110,6 @@ Esse projeto foi desenvolvido com:
     -   Criação de todo o UX/UI e identidade visual do site
 -   ChatGPT
     -   Nome do site, criação das informações dos produtos, e uma ajudinha no código rs
-
-<hr>
+ 
+## :page_with_curl: Licença 
+Este projeto esta sob a licença [MIT](https://choosealicense.com/licenses/mit/)
