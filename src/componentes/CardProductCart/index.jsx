@@ -46,7 +46,7 @@ const CardProductCart = ({ product }) => {
                         </button>
                     </div>
 
-                    <div className="flex items-center justify-between">
+                    <div className="flex flex-wrap items-center gap-2 justify-between">
                         <span className="flex gap-2 items-center">
                             <Button
                                 onclick={() => removeProduct(product.id)}
@@ -66,7 +66,8 @@ const CardProductCart = ({ product }) => {
                             <Button
                                 onclick={() => addProduct(product)}
                                 classes="btnAddQuantity secundary"
-                            aria-label="Adicionar mais uma unidade do produto ao carrinho"/>
+                                aria-label="Adicionar mais uma unidade do produto ao carrinho"
+                            />
                         </span>
                         <h5 className="font-titulos text-violeta-01 text-lg">
                             R$
